@@ -30,3 +30,30 @@ body{
 #yellow{
     background-color: #FF9914;
 }
+
+.align {
+  display: flex;
+  justify-content: center;
+}
+
+.top-row {
+   display: flex;
+  justify-content: center;
+}
+
+.middle-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 15px auto;
+}
+
+.bottom-row {
+   display: flex;
+  justify-content: center;
+}
+
+#gameNumber{
+    padding-left: 40px;
+    padding-right: 40px;
+}
