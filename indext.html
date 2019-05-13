@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--Bootstrap 4-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!--CSS link-->
+  <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+  <title>Document</title>
 </head>
+
 <body>
-    <div class="row">
+  <div class="row">
     <div class="col-md-12">
       <div class="gamefield">
         <div class="btn-sett" data-toggle="modal" data-target="#myModal">
@@ -19,15 +25,18 @@
         <div class="middle-row">
           <div id="green" class="gamebutton" onClick="addToPlayer(this.id)"></div>
           <div id="gameNumber">
-            <h2 id="clickNumber">0</h2></div>
+            <h2 id="clickNumber">0</h2>
+          </div>
           <div id="red" class="gamebutton" onClick="addToPlayer(this.id)"></div>
         </div>
         <div class="bottom-row">
-          <div id="dark" class="gamebutton" onClick="addToPlayer(this.id)"></div>
+          <div id="yellow" class="gamebutton" onClick="addToPlayer(this.id)"></div>
           <div>
           </div>
         </div>
       </div>
-    
+      <!--Script link-->
+      <script type="text/javascript" src="assets/scripts/script.js"></script>
 </body>
+
 </html>
