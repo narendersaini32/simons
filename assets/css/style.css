@@ -63,6 +63,14 @@ li {
 #yellow {
     background-color: #FF9914;
 }
+
+.level h2{
+    font-family: 'Press Start 2P', cursive;
+}
+
+.score h2{
+    font-family: 'Press Start 2P', cursive;
+}
 /*-------------------------Sections*/
 .fourButtons {
     height: 500px;
