@@ -18,31 +18,60 @@
       <div class="col-md-12">
         <div class="gamefield">
 
-          <div id="gameNumber">
-            <h2 id="clickNumber">0</h2>
-            <button id="start" class="bt">start</button>
-            <button id="strict" class="bt">strict</button>
+          <div class="col-md-12">
+
+            <div class="level">
+              <h2>Level: 1</h2>
+            </div>
+
+            <div class="score">
+              <h2>Score: 0</h2>
+            </div>
+
+            <ul class="difficulty">
+
+              <li>
+                <input type="radio" class="difOpt" name="difficulty" value="2">Easy
+              </li>
+
+              <li>
+                <input type="radio" class="difOpt" name="difficulty" value="1" checked>Normal
+              </li>
+
+              <li>
+                <input type="radio" class="difOpt" name="difficulty" value="0.5">Hard
+              </li>
+
+              <li>
+                <input type="radio" class="difOpt" name="difficulty" value="0.25">Insane
+              </li>
+            </ul>
+            <div class="sButton">
+              <button class="start">start</button>
+            </div>
           </div>
+
+
 
           <div class="fourButtons container">
             <div class="buttonCollor">
-            <div class="top-row ">
-              <div id="blue" class="gamebutton" onClick="addToPlayer(this.id)"></div>
-              <!--button blue-->
+              <div class="top-row ">
+                <div id="blue" class="gamebutton" onClick="addToPlayer(this.id)"></div>
+                <!--button blue-->
 
-            </div>
-            <div class="middle-row ">
-              <div id="green" class="gamebutton" onClick="addToPlayer(this.id)"></div>
-              <!--button green-->
+              </div>
+              <div class="middle-row ">
+                <div id="green" class="gamebutton" onClick="addToPlayer(this.id)"></div>
+                <!--button green-->
 
-              <div id="red" class="gamebutton" onClick="addToPlayer(this.id)"></div>
-              <!--button red-->
+                <div id="red" class="gamebutton" onClick="addToPlayer(this.id)"></div>
+                <!--button red-->
 
-            </div>
-            <div class="bottom-row row ">
-              <div id="yellow" class="gamebutton" onClick="addToPlayer(this.id)"></div>
-              <!--button yellow-->
-            </div>
+              </div>
+              <div class="bottom-row row ">
+                <div id="yellow" class="gamebutton" onClick="addToPlayer(this.id)"></div>
+                <!--button yellow-->
+              </div>
             </div>
           </div>
         </div>
