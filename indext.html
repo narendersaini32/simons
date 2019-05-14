@@ -16,24 +16,37 @@
   <div class="row">
     <div class="col-md-12">
       <div class="gamefield">
-        <div class="btn-sett" data-toggle="modal" data-target="#myModal">
-          <h5>Settings</h5>
-        </div>
+        
         <div class="top-row">
-          <div id="blue" class="gamebutton" onClick="addToPlayer(this.id)"></div>
+          <div id="blue" class="gamebutton" onClick="addToPlayer(this.id)"></div><!--button blue-->
         </div>
+        
+        
+        
         <div class="middle-row">
-          <div id="green" class="gamebutton" onClick="addToPlayer(this.id)"></div>
+          <div id="green" class="gamebutton" onClick="addToPlayer(this.id)"></div><!--button green-->
+          
           <div id="gameNumber">
             <h2 id="clickNumber">0</h2>
+            <button id="start" class="bt">start</button>
+            <button id="strict" class="bt">strict</button>
           </div>
-          <div id="red" class="gamebutton" onClick="addToPlayer(this.id)"></div>
+          
+          <div class="row text-center">
+            <form id="count"> </form>
+          </div>
+          
+          <div id="red" class="gamebutton" onClick="addToPlayer(this.id)"></div><!--button red-->
         </div>
+        
+        
         <div class="bottom-row">
-          <div id="yellow" class="gamebutton" onClick="addToPlayer(this.id)"></div>
+          <div id="yellow" class="gamebutton" onClick="addToPlayer(this.id)"></div><!--button yellow-->
           <div>
           </div>
         </div>
+        
+        
       </div>
       <!--Script link-->
       <script type="text/javascript" src="assets/scripts/script.js"></script>
