@@ -12,37 +12,28 @@
   <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
   <title>Document</title>
 </head>
-
 <body>
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="gamefield">
-
           <div class="col-md-12">
-
             <div class="level">
               <h2>Level: 1</h2>
             </div>
-
             <div class="score">
               <h2>Score: 0</h2>
             </div>
-
             <ul class="difficulty ">
-
               <li>
                 <input type="radio" class="difOpt " name="difficulty" value="2">Easy
               </li>
-
               <li>
                 <input type="radio" class="difOpt " name="difficulty" value="1" checked>Normal
               </li>
-
               <li>
                 <input type="radio" class="difOpt " name="difficulty" value="0.5">Hard
               </li>
-
               <li>
                 <input type="radio" class="difOpt " name="difficulty" value="0.25">Insane
               </li>
@@ -51,26 +42,20 @@
               <button class="push_button red start">start</button>
             </div>
           </div>
-
-
-
           <div class="fourButtons container">
             <div class="buttonCollor">
               <div class="top-row">
-                <div id="blue" class="gamebutton" onClick="addToPlayer(this.id)"></div>
+                <div id="blue" class="gamebutton" onClick="btnBlue()"></div>
                 <!--button blue-->
-
               </div>
               <div class="middle-row">
-                <div id="green" class="gamebutton" onClick="addToPlayer(this.id)"></div>
+                <div id="green" class="gamebutton" onClick="btnGreen()"></div>
                 <!--button green-->
-
-                <div id="red" class="gamebutton" onClick="addToPlayer(this.id)"></div>
+                <div id="red" class="gamebutton" onClick="btnRed()"></div>
                 <!--button red-->
-
               </div>
               <div class="bottom-row">
-                <div id="yellow" class="gamebutton" onClick="addToPlayer(this.id)"></div>
+                <div id="yellow" class="gamebutton" onClick="btnYellow()"></div>
                 <!--button yellow-->
               </div>
             </div>
