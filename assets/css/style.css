@@ -1,5 +1,4 @@
-
-body{
+body {
     background-color: #071013;
     color: #fff;
     min-height: 100vh;
@@ -8,52 +7,59 @@ body{
     justify-content: center;
 }
 
-.gamebutton{
+.gamebutton {
     width: 90px;
     height: 90px;
     background-color: white;
     border-radius: 50%;
 }
-
-#blue{
+/*-----------------------button collors*/
+#blue {
     background-color: blue;
 }
 
-#green{
+#green {
     background-color: green;
+    padding-right: 40px;
 }
 
-#red{
+#red {
     background-color: red;
+    padding-left: 40px;
 }
 
-#yellow{
+#yellow {
     background-color: #FF9914;
+}
+/*-------------------------Sections*/
+.fourButtons {
+    height: 500px;
+    width: 500px;
 }
 
 .align {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 .top-row {
-   display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 .middle-row {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 15px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 15px auto;
+    width: 400px;
 }
 
 .bottom-row {
-   display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
-#gameNumber{
-    padding-left: 40px;
-    padding-right: 40px;
+#gameNumber {
+    
 }

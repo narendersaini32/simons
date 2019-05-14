@@ -13,43 +13,45 @@
 </head>
 
 <body>
-  <div class="row">
-    <div class="col-md-12">
-      <div class="gamefield">
-        
-        <div class="top-row">
-          <div id="blue" class="gamebutton" onClick="addToPlayer(this.id)"></div><!--button blue-->
-        </div>
-        
-        
-        
-        <div class="middle-row">
-          <div id="green" class="gamebutton" onClick="addToPlayer(this.id)"></div><!--button green-->
-          
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="gamefield">
+
           <div id="gameNumber">
             <h2 id="clickNumber">0</h2>
             <button id="start" class="bt">start</button>
             <button id="strict" class="bt">strict</button>
           </div>
-          
-          <div class="row text-center">
-            <form id="count"> </form>
+
+          <div class="fourButtons container">
+            <div class="top-row row align-items-start">
+              <div id="blue" class="gamebutton" onClick="addToPlayer(this.id)"></div>
+              <!--button blue-->
+
+            </div>
+            <div class="middle-row row align-items-center">
+              <div id="green" class="gamebutton" onClick="addToPlayer(this.id)"></div>
+              <!--button green-->
+
+              <div id="red" class="gamebutton" onClick="addToPlayer(this.id)"></div>
+              <!--button red-->
+
+            </div>
+            <div class="bottom-row row align-items-end">
+              <div id="yellow" class="gamebutton" onClick="addToPlayer(this.id)"></div>
+              <!--button yellow-->
+
+              <div>
+              </div>
+            </div>
           </div>
-          
-          <div id="red" class="gamebutton" onClick="addToPlayer(this.id)"></div><!--button red-->
         </div>
-        
-        
-        <div class="bottom-row">
-          <div id="yellow" class="gamebutton" onClick="addToPlayer(this.id)"></div><!--button yellow-->
-          <div>
-          </div>
-        </div>
-        
-        
       </div>
-      <!--Script link-->
-      <script type="text/javascript" src="assets/scripts/script.js"></script>
+    </div>
+  </div>
+  <!--Script link-->
+  <script type="text/javascript" src="assets/scripts/script.js"></script>
 </body>
 
 </html>
