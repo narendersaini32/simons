@@ -17,8 +17,6 @@ function btnBlue() {
   document.getElementById("blue").style.backgroundColor = "white";
 }
 
-
-
 function btnGreen() {
   document.getElementById("green").style.backgroundColor = "white";
 }
