@@ -7,10 +7,10 @@ let greenBtnAudio = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound4
 
 // VARIABLES - DOM QUERIES
 
-const btnBlue = document.querySelectorAll("btnBlue");
-const btnGreen = document.querySelectorAll("btnGreen");
-const btnRed = document.querySelectorAll("btnRed");
-const btnYellow = document.querySelectorAll("btnYellow");
+const btnBlue = document.querySelectorAll("#btnBlue");
+const btnGreen = document.querySelectorAll("#btnGreen");
+const btnRed = document.querySelectorAll("#btnRed");
+const btnYellow = document.querySelectorAll("#btnYellow");
 
 /*function btnBlue() {
   document.getElementById("blue").style.backgroundColor = "white";
@@ -53,4 +53,4 @@ function buttonEffect(value) {
   }
   sound = true;
 }
-console.log(blueBtnAudio.play());
+
