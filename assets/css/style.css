@@ -48,22 +48,22 @@ li {
 
 /*-----------------------button collors*/
 
-#blue {
+#btnBlue {
     background-color: blue;
     padding-bottom: 50px;
 }
 
-#green {
+#btnGreen {
     background-color: green;
     padding-right: 40px;
 }
 
-#red {
+#btnRed {
     background-color: red;
     padding-left: 40px;
 }
 
-#yellow {
+#btnYellow {
     background-color: #FF9914;
 }
 
