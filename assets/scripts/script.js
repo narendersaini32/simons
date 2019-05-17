@@ -28,8 +28,8 @@ function btnYellow() {
   document.getElementById("yellow").style.backgroundColor = "white";
 }*/
 
-function buttonEffect(value) {
-  if (sound) {
+function buttonEffect() {
+  if (sound) {//maybe the error is here??
     switch (value) {
       case 1:
         blueBtnAudio.play();
