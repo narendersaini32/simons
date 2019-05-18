@@ -1,4 +1,3 @@
-
 let sound = true;
 let blueBtnAudio = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound1.mp3');
 let redBtnAudio = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound2.mp3');
@@ -22,35 +21,8 @@ function btnGreen() {
 
 function btnRed() {
   document.getElementById("red").style.backgroundColor = "white";
-}
-
-function btnYellow() {
-  document.getElementById("yellow").style.backgroundColor = "white";
 }*/
 
-function buttonEffect() {
-  if (sound) {//maybe the error is here??
-    switch (value) {
-      case 1:
-        blueBtnAudio.play();
-        btnBlue.style.backgroundColor = "#66AFF8"; //Soft blue   
-        break;
-      case 2:
-        greenBtnAudio.play();
-        btnGreen.style.backgroundColor = "#29FF9E"; //  Brighter green    
-        break;
-      case 3:
-        redBtnAudio.play();
-        btnRed.style.backgroundColor = "#E07070"; // Soft red
-        break;
-      case 4:
-        yellowBtnAudio.play();
-        btnYellow.style.backgroundColor = "#FAD362"; // Soft orange
-        break;
-      default:
-        return false;
-    }
-  }
-  sound = true;
-}
-
+$('#btnGreen').on('click',function(){
+    $(this).toggleClass('.2ndBtnGreen');
+});

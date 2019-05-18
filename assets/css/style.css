@@ -53,8 +53,18 @@ li {
     padding-bottom: 50px;
 }
 
+.2ndBtnBlue {
+    background-color: #00FFFF;
+    padding-right: 40px;
+}
+
 #btnGreen {
     background-color: green;
+    padding-right: 40px;
+}
+
+.2ndBtnGreen {
+    background-color: #7FFFD4;
     padding-right: 40px;
 }
 
@@ -63,8 +73,18 @@ li {
     padding-left: 40px;
 }
 
+.2ndBtnRed {
+    background-color: #F08080;
+    padding-right: 40px;
+}
+
 #btnYellow {
     background-color: #FF9914;
+}
+
+.2ndBtnYellow {
+    background-color: #F0E68C;
+    padding-right: 40px;
 }
 
 .level h2 {
@@ -108,7 +128,7 @@ li {
     justify-content: center;
 }
 
-#gameNumber {}
+
 
 /*-------------push_button from samwebe.com*/
 
@@ -187,4 +207,3 @@ li {
 }
 
 /*-------------------- Radio buttons from samwebe.com*/
-
