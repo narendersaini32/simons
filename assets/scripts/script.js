@@ -15,24 +15,27 @@ const btnYellow = document.querySelectorAll("#btnYellow");
 $(document).ready(function() {
 
   $("#btnBlue").click(function() {
-        $(this).css('background-color', '#00FFFF');	 
-        blueBtnAudio.play();
-	}); 
-	
-	$("#btnGreen").click(function() {
-        $(this).css('background-color', '#7FFF00');	 
-        greenBtnAudio.play();
-	});
-	
-	$("#btnRed").click(function() {
-        $(this).css('background-color', '#F08080');	 
-        redBtnAudio.play();
-	});
-	
-	$("#btnYellow").click(function() {
-        $(this).css('background-color', '#F0E68C');	 
-        yellowBtnAudio.play();
-	});
-	
+    $(this).css('background-color', '#00FFFF');
+    blueBtnAudio.play();
+    if (this == '#00FFFF') {
+      document.getElementById('btnBlue').style.color = "blue";
+    }
+  });
+
+  $("#btnGreen").click(function() {
+    $(this).css('background-color', '#7FFF00');
+    greenBtnAudio.play();
+  });
+
+  $("#btnRed").click(function() {
+    $(this).css('background-color', '#F08080');
+    redBtnAudio.play();
+  });
+
+  $("#btnYellow").click(function() {
+    $(this).css('background-color', '#F0E68C');
+    yellowBtnAudio.play();
+  });
+
 });
 // you will have to create more four functions like the above..
