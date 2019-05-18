@@ -23,6 +23,17 @@ function btnRed() {
   document.getElementById("red").style.backgroundColor = "white";
 }*/
 
-$('#btnGreen').on('click',function(){
-    $(this).toggleClass('.2ndBtnGreen');
+$(document).ready(function() {
+
+  $("#btnBlue").click(function() {
+        $(this).css('background-color', '#00FFFF');	 
+        blueBtnAudio.play();
+	});
+	
+	$("#btnGreen").click(function() {
+        $(this).css('background-color', '#7FFFD4');	 
+        greenBtnAudio.play();
+	});
+	
 });
+// you will have to create more four functions like the above..
