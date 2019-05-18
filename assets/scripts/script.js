@@ -11,28 +11,27 @@ const btnGreen = document.querySelectorAll("#btnGreen");
 const btnRed = document.querySelectorAll("#btnRed");
 const btnYellow = document.querySelectorAll("#btnYellow");
 
-/*function btnBlue() {
-  document.getElementById("blue").style.backgroundColor = "white";
-}
-
-function btnGreen() {
-  document.getElementById("green").style.backgroundColor = "white";
-}
-
-function btnRed() {
-  document.getElementById("red").style.backgroundColor = "white";
-}*/
 
 $(document).ready(function() {
 
   $("#btnBlue").click(function() {
         $(this).css('background-color', '#00FFFF');	 
         blueBtnAudio.play();
-	});
+	}); 
 	
 	$("#btnGreen").click(function() {
-        $(this).css('background-color', '#7FFFD4');	 
+        $(this).css('background-color', '#7FFF00');	 
         greenBtnAudio.play();
+	});
+	
+	$("#btnRed").click(function() {
+        $(this).css('background-color', '#F08080');	 
+        redBtnAudio.play();
+	});
+	
+	$("#btnYellow").click(function() {
+        $(this).css('background-color', '#F0E68C');	 
+        yellowBtnAudio.play();
 	});
 	
 });
