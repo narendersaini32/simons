@@ -1,4 +1,4 @@
-let sound = true;
+
 let blueBtnAudio = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound1.mp3');
 let redBtnAudio = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound2.mp3');
 let yellowBtnAudio = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound3.mp3');
@@ -14,25 +14,29 @@ const btnYellow = document.querySelectorAll("#btnYellow");
 
 $(document).ready(function() {
 
-  $("#btnBlue").click(function() {
+  $(btnBlue).click(function() {
     $(this).css('background-color', '#00FFFF');
     blueBtnAudio.play();
-    if (this == '#00FFFF') {
-      document.getElementById('btnBlue').style.color = "blue";
-    }
+    /*var changeBtnBlue = $(this).css('background-color', '#00FFFF');
+    if($(changeBtnBlue ===)){
+      $(this).css('background-color', 'blue');
+    }*/
   });
+  
+      console.log(btnBlue);
 
-  $("#btnGreen").click(function() {
+
+  $(btnGreen).click(function() {
     $(this).css('background-color', '#7FFF00');
     greenBtnAudio.play();
   });
 
-  $("#btnRed").click(function() {
+  $(btnRed).click(function() {
     $(this).css('background-color', '#F08080');
     redBtnAudio.play();
   });
 
-  $("#btnYellow").click(function() {
+  $(btnYellow).click(function() {
     $(this).css('background-color', '#F0E68C');
     yellowBtnAudio.play();
   });
