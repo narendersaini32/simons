@@ -17,13 +17,14 @@ $(document).ready(function() {
   $(btnBlue).click(function() {
     $(this).css('background-color', '#00FFFF');
     blueBtnAudio.play();
-    /*var changeBtnBlue = $(this).css('background-color', '#00FFFF');
-    if($(changeBtnBlue ===)){
-      $(this).css('background-color', 'blue');
-    }*/
+    var changeBtnBlue = $(this).css('background-color', '#00FFFF');
+    if(btnBlue == '#00FFFF' ){
+      $(this).css('background-color', 'blue'), '200';
+    }
   });
   
-      console.log(btnBlue);
+  
+      console.log(changeBtnBlue);
 
 
   $(btnGreen).click(function() {
