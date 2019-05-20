@@ -15,30 +15,20 @@ const btnYellow = document.querySelectorAll("#btnYellow");
 $(document).ready(function() {
 
   $(btnBlue).click(function() {
-    $(this).css('background-color', '#00FFFF');
     blueBtnAudio.play();
-    var changeBtnBlue = $(this).css('background-color', '#00FFFF');
-    if(btnBlue == '#00FFFF' ){
-      $(this).css('background-color', 'blue'), '200';
-    }
   });
   
   
-      console.log(changeBtnBlue);
-
 
   $(btnGreen).click(function() {
-    $(this).css('background-color', '#7FFF00');
     greenBtnAudio.play();
   });
 
   $(btnRed).click(function() {
-    $(this).css('background-color', '#F08080');
     redBtnAudio.play();
   });
 
-  $(btnYellow).click(function() {
-    $(this).css('background-color', '#F0E68C');
+  $(btnYellow).click(function(){
     yellowBtnAudio.play();
   });
 
