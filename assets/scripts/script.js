@@ -13,22 +13,37 @@ const btnYellow = document.querySelectorAll("#btnYellow");
 
 
 $(document).ready(function() {
+//button effects 
 
+//button blue effect
   $(btnBlue).click(function() {
-    blueBtnAudio.play();
-  });
-  
+	var originalColor = $(this).css('background-color');
+  blueBtnAudio.play();
+  $(this).css('background-color', '#00FFFF');	
+  setTimeout(function() {
+  	$(btnBlue).css('background-color', originalColor);
+  }, 100);  
+});
   
 
+//button green effect
   $(btnGreen).click(function() {
+    var originalColor = $(this).css('background-color');
     greenBtnAudio.play();
+    $(this).css('background-color', '#7FFF00');
+    setTimeout(function(){
+      $(btnGreen).css('background-color', originalColor);
+    }, 100)
   });
 
   $(btnRed).click(function() {
+    var originalColor = $(this).css('background-color', originalColor);
+    $(this).css('background-color', '#F08080');
     redBtnAudio.play();
   });
 
-  $(btnYellow).click(function(){
+  $(btnYellow).click(function() {
+    $(this).css('background-color', '#F0E68C');
     yellowBtnAudio.play();
   });
 

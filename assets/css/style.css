@@ -53,40 +53,39 @@ li {
     padding-bottom: 50px;
 }
 
-#btnBlue:active{
-    background-color: #00ffff;
-}
-
-
 #btnGreen {
     background-color: green;
     padding-right: 40px;
 }
-
-#btnGreen:active{
-    background-color: #7FFF00;
-}
-
 
 #btnRed {
     background-color: red;
     padding-left: 40px;
 }
 
-#btnRed:active{
-    background-color: #F08080;
-}
-
-
-
 #btnYellow {
     background-color: #FF9914;
 }
 
-#btnYellow:active{
-    background-color: #F0E68C;
+
+
+/*----active buttons*/
+/*#btnBlue:active{
+    background-color: #00ffff;
 }
 
+
+#btnGreen:active{
+    background-color: #7FFF00;
+}
+
+#btnRed:active{
+    background-color: #F08080;
+}
+
+#btnYellow:active{
+    background-color: #F0E68C;
+}*/
 
 
 .level h2 {
