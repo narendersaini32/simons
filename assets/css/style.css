@@ -68,12 +68,10 @@ li {
 }
 
 
-
 /*----active buttons*/
 /*#btnBlue:active{
     background-color: #00ffff;
 }
-
 
 #btnGreen:active{
     background-color: #7FFF00;
@@ -86,7 +84,6 @@ li {
 #btnYellow:active{
     background-color: #F0E68C;
 }*/
-
 
 .level h2 {
     font-family: 'Press Start 2P', cursive;

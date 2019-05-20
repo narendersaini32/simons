@@ -10,7 +10,7 @@ const btnGreen = document.querySelectorAll("#btnGreen");
 const btnRed = document.querySelectorAll("#btnRed");
 const btnYellow = document.querySelectorAll("#btnYellow");
 
-
+//jQuery
 $(document).ready(function() {
   //button effects 
 
