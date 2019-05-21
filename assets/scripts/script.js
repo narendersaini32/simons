@@ -1,27 +1,26 @@
 //jQuery
 $(document).ready(function() {
-  
-let blueBtnAudio = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound1.mp3');
-let redBtnAudio = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound2.mp3');
-let yellowBtnAudio = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound3.mp3');
-let greenBtnAudio = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound4.mp3');
 
-// VARIABLES - DOM QUERIES
 
-const btnBlue = "#btnBlue";
-const btnGreen = "#btnGreen";
-const btnRed = "#btnRed";
-const btnYellow = "#btnYellow";
 
-const startButton = "#startButton";
+  let blueBtnAudio = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound1.mp3');
+  let redBtnAudio = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound2.mp3');
+  let yellowBtnAudio = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound3.mp3');
+  let greenBtnAudio = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound4.mp3');
 
-const randomColors = ['blueButtonEffect', 'greenButtonEffect', 'redButtonEffect', 'yellowButtonEffect' ];
-console.log(randomColors);
+  // VARIABLES - DOM QUERIES
 
+  const btnBlue = "#btnBlue";
+  const btnGreen = "#btnGreen";
+  const btnRed = "#btnRed";
+  const btnYellow = "#btnYellow";
+
+  const startButton = "#startButton";
 
 
   //button effects 
   function buttonEffects() {
+
     //button blue effect
     var blueButtonEffect = $(btnBlue).click(function() {
       var originalColor = $(this).css('background-color');
@@ -58,13 +57,34 @@ console.log(randomColors);
         $(btnYellow).css('background-color', originalColor)
       }, 100);
     });
+    return {
+      item1: blueButtonEffect,
+      item2: redButtonEffect,
+      item3: greenButtonEffect,
+      item4: yellowButtonEffect
+      
+    };
   }
+  var effects = buttonEffects();
+  var blueButtonEffect = effects.item1;
+  var redButtonEffect = effects.item2;
+  var greenButtonEffect = effects.item3;
+  var yellowButtonEffect = effects.item4;
 
+  console.log(blueButtonEffect);
   // start the game
   function startGame() { // it has a bug if clicked twice!
     $(startButton).on('click', buttonEffects);
   };
   startGame();
 
+
+
+
+  function changeColor() {
+    //bodyBcg.style.backgroundColor = colors[2];
+    let random = Math.floor(Math.random() * randomColors.length)
+
+  }
+
 });
-// you will have to create more four functions like the above..
