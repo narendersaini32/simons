@@ -14,13 +14,19 @@ $(document).ready(function() {
   const btnGreen = "#btnGreen";
   const btnRed = "#btnRed";
   const btnYellow = "#btnYellow";
-
   const startButton = "#startButton";
+  
+  //objects from buttonEffect() function
+
+  var effects = buttonEffects();
+  var blueButtonEffect2 = effects.item1;
+  var redButtonEffect2 = effects.item2;
+  var greenButtonEffect2 = effects.item3;
+  var yellowButtonEffect2 = effects.item4;
 
 
   //button effects 
   function buttonEffects() {
-
     //button blue effect
     var blueButtonEffect = $(btnBlue).click(function() {
       var originalColor = $(this).css('background-color');
@@ -57,30 +63,22 @@ $(document).ready(function() {
         $(btnYellow).css('background-color', originalColor)
       }, 100);
     });
-    return {
+    return  {
       item1: blueButtonEffect,
       item2: redButtonEffect,
       item3: greenButtonEffect,
       item4: yellowButtonEffect
-      
     };
   }
-  var effects = buttonEffects();
-  var blueButtonEffect = effects.item1;
-  var redButtonEffect = effects.item2;
-  var greenButtonEffect = effects.item3;
-  var yellowButtonEffect = effects.item4;
-
-  console.log(blueButtonEffect);
+  
   // start the game
   function startGame() { // it has a bug if clicked twice!
     $(startButton).on('click', buttonEffects);
   };
   startGame();
-
-
-
-
+  
+  console.log(buttonEffects());
+  
   function changeColor() {
     //bodyBcg.style.backgroundColor = colors[2];
     let random = Math.floor(Math.random() * randomColors.length)
