@@ -1,3 +1,6 @@
+//jQuery
+$(document).ready(function() {
+  
 let blueBtnAudio = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound1.mp3');
 let redBtnAudio = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound2.mp3');
 let yellowBtnAudio = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound3.mp3');
@@ -12,11 +15,13 @@ const btnYellow = "#btnYellow";
 
 const startButton = "#startButton";
 
-//jQuery
-$(document).ready(function() {
+const randomColors = ['blueButtonEffect', 'greenButtonEffect', 'redButtonEffect', 'yellowButtonEffect' ];
+console.log(randomColors);
 
+
+
+  //button effects 
   function buttonEffects() {
-    //button effects 
     //button blue effect
     var blueButtonEffect = $(btnBlue).click(function() {
       var originalColor = $(this).css('background-color');
@@ -55,10 +60,11 @@ $(document).ready(function() {
     });
   }
 
-  function startGame() {// it has a bug if clicked twice!
-      $(startButton).on('click', buttonEffects);
-    };
+  // start the game
+  function startGame() { // it has a bug if clicked twice!
+    $(startButton).on('click', buttonEffects);
+  };
+  startGame();
 
-  
 });
 // you will have to create more four functions like the above..
