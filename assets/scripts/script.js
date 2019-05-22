@@ -25,7 +25,7 @@ $(document).ready(function() {
 
 
   //button effects 
-  function buttonEffects() {
+ 
     //button blue effect
     var blueButtonEffect = $(btnBlue).click(function() {
       var originalColor = $(this).css('background-color');
@@ -62,29 +62,44 @@ $(document).ready(function() {
         $(btnYellow).css('background-color', originalColor)
       }, 100);
     });
-    return  {
+    
+console.log(blueButtonEffect);
+    
+    
+    function buttonEffects(){
+     
+    }
+    
+    
+    
+    /*return  {
       item1: blueButtonEffect,
       item2: redButtonEffect,
       item3: greenButtonEffect,
       item4: yellowButtonEffect
-    };
-  }
+    };*/
+  
   
   // start the game
-  function startGame() { // it has a bug if clicked twice!
+  /*function startGame() { // it has a bug if clicked twice!
     $(startButton).on('click', buttonEffects);
   }
-  startGame();
+  startGame();*/
   
-  console.log(buttonEffects());
   
-  function changeColor() {
+/*  function changeColor() {
     let random = Math.floor(Math.random() *effects.length);
     gameButton.style.backgroundColor = effects[random];
-  }
+    var i;
+    for(i = 0; i < effects[random].length; i++){
+      
+    }
+  }*/
   
-  gameButton.addEventListener('click', changeColor);
   
-console.log(changeColor());
+  
+
 });
+// I create an object within the buttonEffect function
+// As a result the startGame function is no longer working (start)
 // 
