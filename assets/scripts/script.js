@@ -61,8 +61,10 @@ $(document).ready(function() {
   
  //will display the loop 
  function clickByItself(){
-   $(blueButtonEffect).click();
+   let random = Math.floor(Math.random()*arr.length)
+   $(arr[random]).click();
  }
+ clickByItself();
   // start the game
   /*function startGame() { // it has a bug if clicked twice!
     $(startButton).on('click', buttonEffects);
