@@ -59,12 +59,21 @@ $(document).ready(function() {
   //to be used on the buttonEffects()/clickByItself()
   var arr = [blueButtonEffect, redButtonEffect, greenButtonEffect, yellowButtonEffect];
   
- //will display the loop 
+ //will click on buttons randomly
  function clickByItself(){
    let random = Math.floor(Math.random()*arr.length)
    $(arr[random]).click();
  }
- clickByItself();
+
+ 
+ function changeColor() {
+      var i;
+      for(i = 0; i <=4; i++){
+        clickByItself();
+      }
+    }
+    
+    changeColor();
   // start the game
   /*function startGame() { // it has a bug if clicked twice!
     $(startButton).on('click', buttonEffects);
@@ -72,14 +81,7 @@ $(document).ready(function() {
   startGame();*/
 
 
-  /*  function changeColor() {
-      let random = Math.floor(Math.random() *effects.length);
-      gameButton.style.backgroundColor = effects[random];
-      var i;
-      for(i = 0; i < effects[random].length; i++){
-        
-      }
-    }*/
+   
 
 
 
