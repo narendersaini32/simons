@@ -15,7 +15,7 @@ $(document).ready(function() {
   const btnRed = "#btnRed";
   const btnYellow = "#btnYellow";
   const startButton = "#startButton";
-  const gameButton = ".gameButton";//button start
+  const gameButton = ".gameButton"; //button start
   //const effects = buttonEffects();//zombie code//objects from buttonEffect() function
 
   //four variables representing its button effects 
@@ -55,39 +55,69 @@ $(document).ready(function() {
       $(btnYellow).css('background-color', originalColor)
     }, 100);
   });
-  
+
   //to be used on the buttonEffects()/clickByItself()
   var arr = [blueButtonEffect, redButtonEffect, greenButtonEffect, yellowButtonEffect];
-  
- //will click on buttons randomly
- function clickByItself(){
-   let random = Math.floor(Math.random()*arr.length)
-   $(arr[random]).click();
- }
 
- 
- function changeColor() {
-      var i;
-      for(i = 0; i <=4; i++){
-        clickByItself();
-      }
+  //will click on buttons randomly
+  /*function clickByItself() {
+    let random = Math.floor(Math.random() * arr.length)
+    var i;
+    for (i = 0; i < 10; i++) {
+     setTimeout($(arr[random]).click(), 1000);
+   }
+  }*/
+
+  function clickByItself(times = 0) {
+    let random = Math.floor(Math.random() * arr.length);
+    $(arr[random]).click();
+    if (++times < 10) {
+      setTimeout(function() { clickByItself(times); }, 1000);
     }
-    
-    changeColor();
+  }
+  clickByItself();
+
+  function startButtonOnClick() {
+    $(startButton).on('click', clickByItself);
+
+  }
+  /*function changeColor() {
+  
+  }
+  
+  changeColor();*/
+
   // start the game
   /*function startGame() { // it has a bug if clicked twice!
     $(startButton).on('click', buttonEffects);
   }
   startGame();*/
 
-
-   
-
-
+  // Antonio 
 
 
 });
-
 // make a button effect function using those variables;[]
 // use the button effect variable to start the game;[]
 // make the button change its color randomly;[]
+
+//========================Tutor code==============================//
+
+
+//
+/*var buttons = {‘ yellow’: btnYellow, ‘green’: btnGreen };
+var buttonsColors = { 'yellow': 'darkyellow', 'green': 'darkgreen' };
+var buttonsAudio = { 'yellow': yellowBtnAudio, 'green': greenBtnAudio };
+
+
+var playButton = function(buttonName) {
+  var selectedButton = buttons[buttonName];
+  var selectedButtonColor = buttonsColors[buttonName];
+  var selectedButtonAudio = buttonsAudio[buttonName];
+  var originalColor = $(selectedButton).css('background-color');
+  selectedButtonAudio.play();
+  $(selectedButton).css('background-color', selectedButtonColor);
+  setTimeout(function() {
+    $(selectedButton).css('background-color', originalColor)
+  }, 100);
+};*/
