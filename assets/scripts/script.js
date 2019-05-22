@@ -26,7 +26,7 @@ $(document).ready(function() {
     $(this).css('background-color', '#00FFFF');
     setTimeout(function() {
       $(btnBlue).css('background-color', originalColor);
-    }, 100);
+    }, 1000);
   });
   //button green effect
   var greenButtonEffect = $(btnGreen).click(function() {
@@ -35,7 +35,7 @@ $(document).ready(function() {
     $(this).css('background-color', '#7FFF00');
     setTimeout(function() {
       $(btnGreen).css('background-color', originalColor);
-    }, 100);
+    }, 1000);
   });
   // button red effect
   var redButtonEffect = $(btnRed).click(function() {
@@ -44,7 +44,7 @@ $(document).ready(function() {
     $(this).css('background-color', '#F08080');
     setTimeout(function() {
       $(btnRed).css('background-color', originalColor)
-    }, 100);
+    }, 1000);
   });
   // button yellow effect
   var yellowButtonEffect = $(btnYellow).click(function() {
