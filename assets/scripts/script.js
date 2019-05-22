@@ -16,10 +16,9 @@ $(document).ready(function() {
   const btnYellow = "#btnYellow";
   const startButton = "#startButton";
   const gameButton = ".gameButton";//button start
-  const effects = buttonEffects();//zombie code//objects from buttonEffect() function
+  //const effects = buttonEffects();//zombie code//objects from buttonEffect() function
 
-  //button effects 
-
+  //four variables representing its button effects 
   //button blue effect
   var blueButtonEffect = $(btnBlue).click(function() {
     var originalColor = $(this).css('background-color');
@@ -57,12 +56,12 @@ $(document).ready(function() {
     }, 100);
   });
   
+  //to be used on the buttonEffects()/clickByItself()
   var arr = [blueButtonEffect, redButtonEffect, greenButtonEffect, yellowButtonEffect];
-  console.log(arr);
+  
  //will display the loop 
- function buttonEffects(){
-   
-   
+ function clickByItself(){
+   $(blueButtonEffect).click();
  }
   // start the game
   /*function startGame() { // it has a bug if clicked twice!
