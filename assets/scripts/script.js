@@ -59,33 +59,24 @@ $(document).ready(function() {
   //to be used on the buttonEffects()/clickByItself()
   var arr = [blueButtonEffect, redButtonEffect, greenButtonEffect, yellowButtonEffect];
 
-  //will click on buttons randomly
-  /*function clickByItself() {
-    let random = Math.floor(Math.random() * arr.length)
-    var i;
-    for (i = 0; i < 10; i++) {
-     setTimeout($(arr[random]).click(), 1000);
-   }
-  }*/
-
-  function clickByItself(times = 0) {
+ let times = 0;
+  //makes button effects play itself randomly 
+  function clickByItself() {
     let random = Math.floor(Math.random() * arr.length);
     $(arr[random]).click();
     if (++times < 10) {
       setTimeout(function() { clickByItself(times); }, 1000);
     }
+    
   }
   clickByItself();
 
-  function startButtonOnClick() {
-    $(startButton).on('click', clickByItself);
 
-  }
-  /*function changeColor() {
+    
+
+
   
-  }
   
-  changeColor();*/
 
   // start the game
   /*function startGame() { // it has a bug if clicked twice!
@@ -102,9 +93,16 @@ $(document).ready(function() {
 // make the button change its color randomly;[]
 
 //========================Tutor code==============================//
+// I do not understand for while
+//will click on buttons randomly
+  /*function clickByItself() {
+    let random = Math.floor(Math.random() * arr.length)
+    var i;
+    for (i = 0; i < 10; i++) {
+     setTimeout($(arr[random]).click(), 1000);
+   }
+  }*/
 
-
-//
 /*var buttons = {‘ yellow’: btnYellow, ‘green’: btnGreen };
 var buttonsColors = { 'yellow': 'darkyellow', 'green': 'darkgreen' };
 var buttonsAudio = { 'yellow': yellowBtnAudio, 'green': greenBtnAudio };
