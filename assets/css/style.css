@@ -10,7 +10,7 @@ body {
 /*----------------------Settings*/
 
 .level,
-.score {
+.strict {
     width: 50%;
     float: left;
     text-align: center;
@@ -92,6 +92,8 @@ li {
 .score h2 {
     font-family: 'Press Start 2P', cursive;
 }
+
+.strict.radio {font-family: 'Press Start 2P', cursive;}
 
 /*-------------------------Sections*/
 

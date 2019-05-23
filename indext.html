@@ -12,51 +12,44 @@
   <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
   <title>Document</title>
 </head>
+
 <body>
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="gamefield">
-          <div class="col-md-12">
-            <div class="level">
-              <h2>Level: 1</h2>
-            </div>
-            <div class="score">
-              <h2>Score: 0</h2>
-            </div>
-            <ul class="difficulty ">
-              <li>
-                <input type="radio" class="difOpt " name="difficulty" value="2">Easy
-              </li>
-              <li>
-                <input type="radio" class="difOpt " name="difficulty" value="1" checked>Normal
-              </li>
-              <li>
-                <input type="radio" class="difOpt " name="difficulty" value="0.5">Hard
-              </li>
-              <li>
-                <input type="radio" class="difOpt " name="difficulty" value="0.25">Insane
-              </li>
-            </ul>
-            <div class="sButton">
-              <button id="startButton" class="push_button red start" onClick="">start</button>
+          <div class="container">
+            <div class="row">
+                <div class=" col-md-6 score">
+                  <h2>Score: 0</h2>
+                </div>
+                <div id="strict" class=" col-md-6">
+                  <button>Strict</button>
+                </div>
+              <div class="col-md-3 sButton">
+                <button id="startButton" class="push_button red start" onClick="">start</button>
+              </div>
             </div>
           </div>
           <div class="fourButtons container">
             <div class="buttonCollor">
               <div class="top-row">
-                <div id="btnBlue" class="gamebutton" onClick=""></div> <!--button blue-->
-          
+                <div id="btnBlue" class="gamebutton" onClick=""></div>
+                <!--button blue-->
+
               </div>
               <div class="middle-row">
-                <div id="btnGreen" class="gamebutton" onClick=""></div><!--button green-->
-                
-                <div id="btnRed" class="gamebutton" onClick=""></div><!--button red-->
-                
+                <div id="btnGreen" class="gamebutton" onClick=""></div>
+                <!--button green-->
+
+                <div id="btnRed" class="gamebutton" onClick=""></div>
+                <!--button red-->
+
               </div>
               <div class="bottom-row">
-                <div id="btnYellow" class="gamebutton" onClick=""></div><!--button yellow-->
-                
+                <div id="btnYellow" class="gamebutton" onClick=""></div>
+                <!--button yellow-->
+
               </div>
             </div>
           </div>
@@ -68,7 +61,7 @@
   <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 
   <script type="text/javascript" src="assets/scripts/script.js"></script>
-    
+
 </body>
 
 </html>

@@ -7,7 +7,7 @@ $(document).ready(function() {
   let redBtnAudio = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound2.mp3');
   let yellowBtnAudio = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound3.mp3');
   let greenBtnAudio = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound4.mp3');
-
+  let strict = false;
   // VARIABLES - DOM QUERIES
 
   const btnBlue = "#btnBlue";
@@ -16,7 +16,21 @@ $(document).ready(function() {
   const btnYellow = "#btnYellow";
   const startButton = "#startButton";
   const gameButton = ".gameButton"; //button start (not used)
+  const strictButton = "#strict";
   //const effects = buttonEffects();//zombie code//objects from buttonEffect() function
+
+$(strictButton).on('click', (event) => {
+  if (strictButton.checked == true){
+    strict = true;
+  }else{
+    strict = false;
+  }
+});
+
+
+
+
+
 
   //four variables representing its button effects 
   //button blue effect
@@ -56,9 +70,9 @@ $(document).ready(function() {
     }, 100);
   });
 
-  //to be used on the buttonEffects()/clickByItself()
+  //to be used on the clickByItself() function
   var arr = [blueButtonEffect, redButtonEffect, greenButtonEffect, yellowButtonEffect];
-  let times = 0;
+  var times = 0;
   var enabled = 1; // Changed boolean to int easily updatable
   function clickByItself() {
     if (enabled == 1) {
@@ -69,15 +83,13 @@ $(document).ready(function() {
       }
     }
   }
-
+  //turn on/off if using the startButton
   function turnOnTurnOff() {
     if (enabled == 1) {
       clickByItself();
     }
   }
-
-
-
+  //clicking the button will call the turnOnTurnOff() function
   $(startButton).click(function() {
     turnOnTurnOff();
   });
