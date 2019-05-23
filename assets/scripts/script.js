@@ -58,30 +58,37 @@ $(document).ready(function() {
 
   //to be used on the buttonEffects()/clickByItself()
   var arr = [blueButtonEffect, redButtonEffect, greenButtonEffect, yellowButtonEffect];
- let enabled = true;
- let times = 0;
-  //makes button effects play itself randomly 
+  let times = 0;
+  var enabled = 1; // Changed boolean to int easily updatable
   function clickByItself() {
-    let random = Math.floor(Math.random() * arr.length);
-    $(arr[random]).click();
-    if (++times < 10) {
-      setTimeout(function() { clickByItself(times); }, 1000);
-    }
-    else if (enabled == true){
-      $(startButton).on('click', clickByItself);
-    }else(enabled == false)
-    {
-      $(startButton).off('click', clickByItself);
+    if (enabled == 1) {
+      let random = Math.floor(Math.random() * arr.length);
+      $(arr[random]).click();
+      if (++times < 10) {
+        setTimeout(function() { clickByItself(times); }, 1000);
+      }
     }
   }
   clickByItself();
 
+  function turnOnTurnOff() {
+    if (enabled == 1) {
+      enabled = 0;
+    }
+    else {
+      enabled = 1;
+      clickByItself();
+    }
+  }
 
-    
+  turnOnTurnOff();
+
+  $(startButton).click(function() {
+    turnOnTurnOff();
+  });
 
 
-  
-  
+
 
   // start the game
   /*function startGame() { // it has a bug if clicked twice!
@@ -100,13 +107,13 @@ $(document).ready(function() {
 //========================Tutor code==============================//
 // I do not understand for while
 //will click on buttons randomly
-  /*function clickByItself() {
-    let random = Math.floor(Math.random() * arr.length)
-    var i;
-    for (i = 0; i < 10; i++) {
-     setTimeout($(arr[random]).click(), 1000);
-   }
-  }*/
+/*function clickByItself() {
+  let random = Math.floor(Math.random() * arr.length)
+  var i;
+  for (i = 0; i < 10; i++) {
+   setTimeout($(arr[random]).click(), 1000);
+ }
+}*/
 
 /*var buttons = {‘ yellow’: btnYellow, ‘green’: btnGreen };
 var buttonsColors = { 'yellow': 'darkyellow', 'green': 'darkgreen' };
