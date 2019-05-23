@@ -15,7 +15,7 @@ $(document).ready(function() {
   const btnRed = "#btnRed";
   const btnYellow = "#btnYellow";
   const startButton = "#startButton";
-  const gameButton = ".gameButton"; //button start
+  const gameButton = ".gameButton"; //button start (not used)
   //const effects = buttonEffects();//zombie code//objects from buttonEffect() function
 
   //four variables representing its button effects 
@@ -69,19 +69,14 @@ $(document).ready(function() {
       }
     }
   }
-  
 
   function turnOnTurnOff() {
     if (enabled == 1) {
-      enabled = 0;
-    }
-    else {
-      enabled = 1;
       clickByItself();
     }
   }
 
-  turnOnTurnOff();
+
 
   $(startButton).click(function() {
     turnOnTurnOff();
