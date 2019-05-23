@@ -69,7 +69,7 @@ $(document).ready(function() {
       }
     }
   }
-  clickByItself();
+  
 
   function turnOnTurnOff() {
     if (enabled == 1) {
