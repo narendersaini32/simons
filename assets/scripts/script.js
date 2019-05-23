@@ -58,7 +58,7 @@ $(document).ready(function() {
 
   //to be used on the buttonEffects()/clickByItself()
   var arr = [blueButtonEffect, redButtonEffect, greenButtonEffect, yellowButtonEffect];
-
+ let enabled = true;
  let times = 0;
   //makes button effects play itself randomly 
   function clickByItself() {
@@ -67,7 +67,12 @@ $(document).ready(function() {
     if (++times < 10) {
       setTimeout(function() { clickByItself(times); }, 1000);
     }
-    
+    else if (enabled == true){
+      $(startButton).on('click', clickByItself);
+    }else(enabled == false)
+    {
+      $(startButton).off('click', clickByItself);
+    }
   }
   clickByItself();
 
