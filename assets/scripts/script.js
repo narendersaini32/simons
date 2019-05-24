@@ -7,7 +7,18 @@ $(document).ready(function() {
   let redBtnAudio = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound2.mp3');
   let yellowBtnAudio = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound3.mp3');
   let greenBtnAudio = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound4.mp3');
+  //======================//
+  let order = [];
+  let playerOrder = [];
+  let flash;
+  let turn;
+  let good;
+  let compTurn;
+  let intervalId;
   let strict = false;
+  let noise = true;
+  let on = false;
+  let win;
   // VARIABLES - DOM QUERIES
 
   const btnBlue = "#btnBlue";
@@ -25,6 +36,7 @@ $(strictButton).on('click', (event) => {
   }else{
     strict = false;
   }
+  console.log('HEllo');
 });
 
 
@@ -72,7 +84,8 @@ $(strictButton).on('click', (event) => {
 
   //to be used on the clickByItself() function
   var arr = [blueButtonEffect, redButtonEffect, greenButtonEffect, yellowButtonEffect];
-  var times = 0;
+  // fUNCTIONS WITH OLD APPROACH
+  /*var times = 0;
   var enabled = 1; // Changed boolean to int easily updatable
   function clickByItself() {
     if (enabled == 1) {
@@ -92,7 +105,7 @@ $(strictButton).on('click', (event) => {
   //clicking the button will call the turnOnTurnOff() function
   $(startButton).click(function() {
     turnOnTurnOff();
-  });
+  });*/
 
 
 
@@ -111,30 +124,4 @@ $(strictButton).on('click', (event) => {
 // use the button effect variable to start the game;[]
 // make the button change its color randomly;[]
 
-//========================Tutor code==============================//
-// I do not understand for while
-//will click on buttons randomly
-/*function clickByItself() {
-  let random = Math.floor(Math.random() * arr.length)
-  var i;
-  for (i = 0; i < 10; i++) {
-   setTimeout($(arr[random]).click(), 1000);
- }
-}*/
 
-/*var buttons = {‘ yellow’: btnYellow, ‘green’: btnGreen };
-var buttonsColors = { 'yellow': 'darkyellow', 'green': 'darkgreen' };
-var buttonsAudio = { 'yellow': yellowBtnAudio, 'green': greenBtnAudio };
-
-
-var playButton = function(buttonName) {
-  var selectedButton = buttons[buttonName];
-  var selectedButtonColor = buttonsColors[buttonName];
-  var selectedButtonAudio = buttonsAudio[buttonName];
-  var originalColor = $(selectedButton).css('background-color');
-  selectedButtonAudio.play();
-  $(selectedButton).css('background-color', selectedButtonColor);
-  setTimeout(function() {
-    $(selectedButton).css('background-color', originalColor)
-  }, 100);
-};*/
