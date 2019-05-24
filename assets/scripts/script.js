@@ -25,19 +25,37 @@ $(document).ready(function() {
   const btnGreen = "#btnGreen";
   const btnRed = "#btnRed";
   const btnYellow = "#btnYellow";
+  
+  const turnCounter = "#turn";
   const startButton = "#startButton";
   const gameButton = ".gameButton"; //button start (not used)
   const strictButton = "#strict";
+  const turnOnButton = "#on";
   //const effects = buttonEffects();//zombie code//objects from buttonEffect() function
 
-$(strictButton).on('click', (event) => {
-  if (strictButton.checked == true){
-    strict = true;
-  }else{
-    strict = false;
-  }
-  console.log('HEllo');
-});
+
+
+  //NEW APPROACH
+  $(strictButton).on('click', (event) => {
+    if (strictButton.checked == true) {
+      strict = true;
+    }
+    else {
+      strict = false;
+    }
+  });
+  
+  $(turnOnButton).on('click', function(event){
+    if(turnOnButton.checked == true){
+      on = true;
+      turnCounter.innerHTML = "-";
+    }else{
+      on = false;
+      turnCounter.innerHTML = "";
+      clearColor();
+      clearInterval(intervalId);
+    }
+  });
 
 
 
@@ -123,5 +141,3 @@ $(strictButton).on('click', (event) => {
 // make a button effect function using those variables;[]
 // use the button effect variable to start the game;[]
 // make the button change its color randomly;[]
-
-
