@@ -17,10 +17,10 @@ let win;
 //======================//
 // VARIABLES - DOM QUERIES
 
-const btnBlue = "#btnBlue";
-const btnGreen = "#btnGreen";
-const btnRed = "#btnRed";
-const btnYellow = "#btnYellow";
+const btnBlue = document.querySelector("#btnBlue");
+const btnGreen = document.querySelector("#btnGreen");
+const btnRed = document.querySelector("#btnRed");
+const btnYellow = document.querySelector("#btnYellow");
 
 const turnCounter = document.querySelector("#turn");
 const startButton = document.querySelector("#startButton");
@@ -97,19 +97,17 @@ function gameTurn() {
 
 function one() {
   if (noise) {
-    let audio = document.getElementById(greenBtnAudio);
-    audio.play();
+    blueBtnAudio.play();
   }
   noise = true;
   btnGreen.style.backgroundColor = "lightgreen";
 }
 
-console.log(strictButton);
+console.log(one());
 
 function two() {
   if (noise) {
-    let audio = document.getElementById(redBtnAudio);
-    audio.play();
+    redBtnAudio.play();
   }
   noise = true;
   btnRed.style.backgroundColor = "tomato";
@@ -117,8 +115,7 @@ function two() {
 
 function three() {
   if (noise) {
-    let audio = document.getElementById(yellowBtnAudio);
-    audio.play();
+    yellowBtnAudio.play();
   }
   noise = true;
   btnYellow.style.backgroundColor = "yellow";
@@ -128,8 +125,7 @@ function three() {
 
 function four() {
   if (noise) {
-    let audio = document.getElementById(blueBtnAudio);
-    audio.play();
+    blueBtnAudio.play();
   }
   noise = true;
   btnBlue.style.backgroundColor = "lightskyblue";
