@@ -26,7 +26,7 @@ $(document).ready(function() {
   const btnGreen = "#btnGreen";
   const btnRed = "#btnRed";
   const btnYellow = "#btnYellow";
-  
+
   const turnCounter = "#turn";
   const startButton = "#startButton";
   const gameButton = ".gameButton"; //button start (not used)
@@ -34,8 +34,70 @@ $(document).ready(function() {
   const turnOnButton = "#on";
   //const effects = buttonEffects();//zombie code//objects from buttonEffect() function
 
-  
-  
+  strictButton.addEventListener('click', function(event) {
+    if (strictButton.checked == true) {
+      strict = true;
+    }
+    else {
+      strict = false;
+    }
+  });
+
+  turnOnButton.addEventListener('click', function(event) {
+    if (turnOnButton.checked == true) {
+      on = true;
+      turnCounter.innerHTML = "-";
+    }
+    else {
+      on = false;
+      turnCounter.innerHTML = "";
+      clearColor();
+      clearInterval(intervalId);
+    }
+  });
+
+  startButton.addEventListener('click', function(event) {
+    if (on || win) {
+      play(); //change the name of this function..
+    }
+  });
+
+  function play() {
+    win = false;
+    order = [];
+    playerOrder = [];
+    flash = 0;
+    intervalId = 0;
+    turn = 1;
+    turnCounter.innerHTML = 1;
+    good = true;
+    for (var i = 0; i < 20; i++) {
+      order.push(Math.floor(Math.random() * 4) + 1);
+    }
+    compTurn = true;
+
+    intervalId = setInterval(gameTurn, 800);
+  }
+
+  function gameTurn() {
+
+    on = false;
+    if (flash == turn) {
+      clearInterval(intervalId);
+      compTurn = false;
+      clearColor();
+      on = true;
+    }
+   if (compTurn){
+     clearColor();
+     setTimeout(function(){
+       if (order[flash] == 1) one();
+       if (order[flash] == 2) two();
+       if (order[flash] == 3) three();
+       if (order[flash] == 4) four();
+     })
+   }
+  }
 });
 // make a button effect function using those variables;[]
 // use the button effect variable to start the game;[]
