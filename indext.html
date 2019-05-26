@@ -19,12 +19,13 @@
       <div class="col-md-12">
         <div class="gamefield">
           <div class="container">
-            <div class="row">
+            
+            <div id="switches" class="row">
                 <div class=" col-md-4 score" id="turn">
                   <h2>Score: </h2>
                 </div>
                 <div  class=" col-md-4">
-                  <button id="strict">Strict</button>
+                  <input type="checkbox" class="toggle" id="strict"><h2>strict</h2>
                 </div>
                 <div class="col-md-4">
                   <input type="checkbox" id="on"><h2>power</h2>
@@ -33,6 +34,8 @@
                 <button id="startButton" class="push_button red start" onClick="">start</button>
               </div>
             </div>
+            
+            
           </div>
           <div class="fourButtons container">
             <div class="buttonCollor">
@@ -52,7 +55,7 @@
               <div class="bottom-row">
                 <div id="btnYellow" class="gamebutton" onClick=""></div>
                 <!--button yellow-->
-
+                
               </div>
             </div>
           </div>
