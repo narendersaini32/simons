@@ -103,7 +103,7 @@ function one() {
   btnGreen.style.backgroundColor = "lightgreen";
 }
 
-console.log(one());
+console.log(one);
 
 function two() {
   if (noise) {
@@ -121,8 +121,6 @@ function three() {
   btnYellow.style.backgroundColor = "yellow";
 }
 
-
-
 function four() {
   if (noise) {
     blueBtnAudio.play();
@@ -130,6 +128,10 @@ function four() {
   noise = true;
   btnBlue.style.backgroundColor = "lightskyblue";
 }
-// make a button effect function using those variables;[]
-// use the button effect variable to start the game;[]
-// make the button change its color randomly;[]
+
+function clearColor(){
+  
+}
+
+// YOU HAVE TO SEE WHAT IS GOING ON WHITH THE clearColor() FUNCTION 
+// BECAUSE IT ARE ON ALL CODE SCOPE....
