@@ -137,7 +137,7 @@ function clearColor(){
 btnGreen.addEventListener('click', function(event){
   if(on){
     playerOrder.push(1);
-    //check();
+    check();
     one();
     if(!win){
       setTimeout(function(){
@@ -150,7 +150,7 @@ btnGreen.addEventListener('click', function(event){
 btnRed.addEventListener('click', function(event){
   if(on){
     playerOrder.push(2);
-    //check();
+    check();
     two();
     if(!win){
       setTimeout(function(){
@@ -163,7 +163,7 @@ btnRed.addEventListener('click', function(event){
 btnYellow.addEventListener('click', function(event){
   if(on){
     playerOrder.push(3);
-    //check();
+    check();
     three();
     if(!win){
       setTimeout(function(){
@@ -176,7 +176,7 @@ btnYellow.addEventListener('click', function(event){
 btnBlue.addEventListener('click', function(event){
   if(on){
     playerOrder.push(4);
-    //check();
+    check();
     four();
     if(!win){
       setTimeout(function(){
@@ -185,6 +185,23 @@ btnBlue.addEventListener('click', function(event){
     }
   }
 })
+
+function check(){
+  if(playerOrder[playerOrder.leghth -1] !== order[playerOrder.length - 1]){
+    good = false;
+    if(playerOrder.leghth == 2 && good){
+      winGame();
+      if(good == false){
+        flashColor();
+        turnCounter.innerHTML = "Wrong";
+        setTimeout(function(){
+          turnCounter.innerHTML = turn;
+          clearColor();
+        }, 800);
+      }
+    }
+  }
+}
 
 // YOU HAVE TO SEE WHAT IS GOING ON WHITH THE clearColor() FUNCTION 
 // compare and have a look
