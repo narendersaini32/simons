@@ -127,84 +127,116 @@ function four() {
   btnBlue.style.backgroundColor = "lightskyblue";
 }
 
-function clearColor(){
+function clearColor() {
   btnGreen.style.backgroundColor = "darkgreen";
   btnRed.style.backgroundColor = "darkred";
   btnYellow.style.backgroundColor = "goldenrod";
   btnBlue.style.backgroundColor = "darkblue";
 }
 
-btnGreen.addEventListener('click', function(event){
-  if(on){
+function flashColor() {
+  btnGreen.style.backgroundColor = "lightgreen";
+  btnRed.style.backgroundColor = "tomato";
+  btnYellow.style.backgroundColor = "yellow";
+  btnBlue.style.backgroundColor = "lightskyblue";
+}
+
+btnGreen.addEventListener('click', function(event) {
+  if (on) {
     playerOrder.push(1);
     check();
     one();
-    if(!win){
-      setTimeout(function(){
+    if (!win) {
+      setTimeout(function() {
         clearColor();
       }, 300);
     }
   }
 })
 
-btnRed.addEventListener('click', function(event){
-  if(on){
+btnRed.addEventListener('click', function(event) {
+  if (on) {
     playerOrder.push(2);
     check();
     two();
-    if(!win){
-      setTimeout(function(){
+    if (!win) {
+      setTimeout(function() {
         clearColor();
       }, 300);
     }
   }
 })
 
-btnYellow.addEventListener('click', function(event){
-  if(on){
+btnYellow.addEventListener('click', function(event) {
+  if (on) {
     playerOrder.push(3);
     check();
     three();
-    if(!win){
-      setTimeout(function(){
+    if (!win) {
+      setTimeout(function() {
         clearColor();
       }, 300);
     }
   }
 })
 
-btnBlue.addEventListener('click', function(event){
-  if(on){
+btnBlue.addEventListener('click', function(event) {
+  if (on) {
     playerOrder.push(4);
     check();
     four();
-    if(!win){
-      setTimeout(function(){
+    if (!win) {
+      setTimeout(function() {
         clearColor();
       }, 300);
     }
   }
 })
 
-function check(){
-  if(playerOrder[playerOrder.leghth -1] !== order[playerOrder.length - 1]){
+function check() {
+  if (playerOrder[playerOrder.length - 1] !== order[playerOrder.length - 1])
     good = false;
-    if(playerOrder.leghth == 2 && good){
-      winGame();
-      if(good == false){
-        flashColor();
-        turnCounter.innerHTML = "Wrong";
-        setTimeout(function(){
-          turnCounter.innerHTML = turn;
-          clearColor();
-        }, 800);
-      }
-    }
+
+  if (playerOrder.length == 20 && good) {
+    winGame();
   }
+
+  if (good == false) {
+    flashColor();
+    turnCounter.innerHTML = "NO!";
+    setTimeout(() => {
+      turnCounter.innerHTML = turn;
+      clearColor();
+
+      if (strict) {
+        play();
+      }
+      else {
+        compTurn = true;
+        flash = 0;
+        playerOrder = [];
+        good = true;
+        intervalId = setInterval(gameTurn, 800);
+      }
+    }, 800);
+
+    noise = false;
+  }
+
+  if (turn == playerOrder.length && good && !win) {
+    turn++;
+    playerOrder = [];
+    compTurn = true;
+    flash = 0;
+    turnCounter.innerHTML = turn;
+    intervalId = setInterval(gameTurn, 800);
+  }
+
 }
 
-// YOU HAVE TO SEE WHAT IS GOING ON WHITH THE clearColor() FUNCTION 
-// compare and have a look
-// BECAUSE IT ARE ON ALL CODE SCOPE....
-
-//fix score place
+function winGame() {
+  flashColor();
+  turnCounter.innerHTML = "WIN!";
+  on = false;
+  win = true;
+}
