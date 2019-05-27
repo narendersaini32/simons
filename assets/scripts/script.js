@@ -136,6 +136,19 @@ function clearColor(){
   btnBlue.style.backgroundColor = "darkblue";
 }
 
+btnGreen.addEventListener('click', function(event){
+  if(on){
+    playerOrder.push(1);
+    //check();
+    one();
+    if(!win){
+      setTimeout(function(){
+        clearColor();
+      }, 300);
+    }
+  }
+})
+
 // YOU HAVE TO SEE WHAT IS GOING ON WHITH THE clearColor() FUNCTION 
 // compare and have a look
 // BECAUSE IT ARE ON ALL CODE SCOPE....
