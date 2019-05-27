@@ -103,8 +103,6 @@ function one() {
   btnGreen.style.backgroundColor = "lightgreen";
 }
 
-console.log(one);
-
 function two() {
   if (noise) {
     redBtnAudio.play();
@@ -141,6 +139,45 @@ btnGreen.addEventListener('click', function(event){
     playerOrder.push(1);
     //check();
     one();
+    if(!win){
+      setTimeout(function(){
+        clearColor();
+      }, 300);
+    }
+  }
+})
+
+btnRed.addEventListener('click', function(event){
+  if(on){
+    playerOrder.push(2);
+    //check();
+    two();
+    if(!win){
+      setTimeout(function(){
+        clearColor();
+      }, 300);
+    }
+  }
+})
+
+btnYellow.addEventListener('click', function(event){
+  if(on){
+    playerOrder.push(3);
+    //check();
+    three();
+    if(!win){
+      setTimeout(function(){
+        clearColor();
+      }, 300);
+    }
+  }
+})
+
+btnBlue.addEventListener('click', function(event){
+  if(on){
+    playerOrder.push(4);
+    //check();
+    four();
     if(!win){
       setTimeout(function(){
         clearColor();
