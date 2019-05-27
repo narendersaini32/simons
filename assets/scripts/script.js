@@ -130,8 +130,14 @@ function four() {
 }
 
 function clearColor(){
-  
+  btnGreen.style.backgroundColor = "darkgreen";
+  btnRed.style.backgroundColor = "darkred";
+  btnYellow.style.backgroundColor = "goldenrod";
+  btnBlue.style.backgroundColor = "darkblue";
 }
 
 // YOU HAVE TO SEE WHAT IS GOING ON WHITH THE clearColor() FUNCTION 
+// compare and have a look
 // BECAUSE IT ARE ON ALL CODE SCOPE....
+
+//fix score place
