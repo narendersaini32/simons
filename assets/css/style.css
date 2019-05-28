@@ -129,6 +129,12 @@ li {
     font-family: 'Press Start 2P', cursive;
     font-size: 30px;
 }
+
+.score#turn {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;
+    padding-left: 60px;
+}
 /*-------------push_button from samwebe.com*/
 
 .push_button {
