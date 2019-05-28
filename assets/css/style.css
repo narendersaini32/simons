@@ -19,6 +19,7 @@ body {
 .sButton {
     width: 30%;
     margin: 0 auto;
+    padding-left: 40px;/*have a look on small screens*/
 }
 
 .start {
