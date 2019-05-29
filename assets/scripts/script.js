@@ -27,7 +27,6 @@ const startButton = document.querySelector("#startButton");
 const gameButton = document.querySelector(".gameButton"); //button start (not used)
 const strictButton = document.querySelector("#strict");
 const turnOnButton = document.querySelector("#on");
-//const effects = buttonEffects();//zombie code//objects from buttonEffect() function
 
 strictButton.addEventListener('click', function(event) {
   if (strictButton.checked == true) {

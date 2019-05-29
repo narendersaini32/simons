@@ -47,6 +47,7 @@ li {
     border-radius: 50%;
 }
 
+
 /*-----------------------button collors*/
 
 #btnBlue {
@@ -129,12 +130,14 @@ li {
 .labeStyle{
     font-family: 'Press Start 2P', cursive;
     font-size: 30px;
+    text-align: center;
 }
 
 .score#turn {
     font-family: 'Press Start 2P', cursive;
     font-size: 20px;
     padding-left: 60px;
+    text-align: center;
 }
 /*-------------push_button from samwebe.com*/
 
