@@ -3,7 +3,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #ffecb5;
+    background-image: linear-gradient(-20deg, #00cdac 0%, #8ddad5 100%);
     color: #071013;
 }
 
@@ -227,7 +227,7 @@ li {
 
 /*-------------------- Radio buttons from samwebe.com*/
 
-#panel, #flip {
+ #flip {/*make the button desapear while it goes up/down and appear after the effect changing what is written*/
   padding: 5px;
   text-align: center;
   background-color: #e5eecc;
