@@ -239,3 +239,10 @@ function winGame() {
   on = false;
   win = true;
 }
+
+//----------------------jquery test..
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideToggle("slow");
+  });
+});
