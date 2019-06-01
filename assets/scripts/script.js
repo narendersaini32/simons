@@ -96,7 +96,7 @@ function gameTurn() {
 
 function one() {
   if (noise) {
-    blueBtnAudio.play();
+    greenBtnAudio.play();
   }
   noise = true;
   btnGreen.style.backgroundColor = "lightgreen";
