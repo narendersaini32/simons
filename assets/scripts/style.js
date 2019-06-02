@@ -20,4 +20,4 @@ function changeColor(){
   change.style.backgroundColor= getRandomColor();
 }
 
-//setInterval(changeColor,10000);
+setInterval(changeColor,10000);
