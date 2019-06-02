@@ -29,6 +29,10 @@ body {
     color: #ffff00;
 }
 
+.container#meBaby{
+    min-width: 100%;
+}
+
 /*----------------------Settings*/
 
 .strict-style {
