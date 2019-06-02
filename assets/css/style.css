@@ -8,8 +8,9 @@ body {
 /*---------------------Images*/
 
 .image1 {
-    background-image: url("/assets/images/image1.jpg");
-    min-height: 100vh;
+    background: linear-gradient( rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.6)), url("/assets/images/image1.jpg");
+    min-height: 95vh;
     margin-top: 0;
     position: relative;
     /*background-attachment: fixed;*/
@@ -18,13 +19,14 @@ body {
     background-repeat: no-repeat;
 }
 
-h2 {
+.image1 h2 {
     font-size: 2rem;
     margin: 0;
     padding: 0;
     position: absolute;
     top: 50%;
     width: 100%;
+    color: #ffff00;
 }
 
 /*----------------------Settings*/
@@ -258,6 +260,7 @@ li {
     text-align: center;
     background-color: #e5eecc;
     border: solid 1px #c3c3c3;
+    border-radius: 10px;
 }
 
 #panel {
