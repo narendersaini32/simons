@@ -6,6 +6,12 @@ body {
     color: #071013;
 }
 
+/*---------------------Images*/
+.image1{
+ background-image: url("images/img1.jpeg");
+    min-height: 100%;
+    margin-top: 0; 
+}
 /*----------------------Settings*/
 .strict-style{
     text-align: center;
