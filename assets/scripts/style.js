@@ -2,10 +2,10 @@ $(document).ready(function() {
     //will scroll down on arrow down button click
     $('.ct-btn-scroll').click(function() {
         $('html,body').animate({
-                scrollTop: $("#meBaby").offset().top
-            },
-            'slow');
-            $('.ct-btn-scroll').hide(1000);
+            scrollTop: $("#meBaby").offset().top
+        }, 'slow');
+        //will hode button after click
+        $('.ct-btn-scroll').hide(1000);
     });
 });
 
@@ -13,16 +13,17 @@ $(document).ready(function() {
 var change = document.getElementById("meBaby"); // add to the top
 
 function getRandomColor() {
-    var letters = '0123456789ABCDEF';
-    var color = '#';
-    for (var i = 0; i < 6; i++) {
-        color += letters[Math.floor(Math.random() * 16)];
-    }
+    var letters = ['linear-gradient(120deg, #f6d365 0%, #fda085 100%)',
+        'linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%)',
+    ];
+
+    var color = letters[Math.floor(Math.random() * letters.length)];
+
     return color;
+
 }
 
 function changeColor() {
-    change.style.backgroundColor = getRandomColor();
+    change.style.background = getRandomColor();
 }
-
 setInterval(changeColor, 10000);
