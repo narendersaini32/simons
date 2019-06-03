@@ -8,8 +8,8 @@ body {
 /*---------------------Images*/
 
 .image1 {
-    background: linear-gradient( rgba(0, 0, 0, 0.6),
-    rgba(0, 0, 0, 0.6)), url("/assets/images/image1.jpg");
+    background: /*linear-gradient( rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.6)),*/ url("/assets/images/image1.jpg");
     min-height: 100vh;
     margin-top: 0;
     position: relative;
@@ -31,9 +31,14 @@ body {
 
 .container#meBaby {
     min-width: 100%;
+    top: 50px;
 }
 
 /*----------------------Settings*/
+
+#section2.container{
+    padding-top: 50px;
+}
 
 .strict-style {
     text-align: center;
@@ -258,21 +263,22 @@ li {
 
 /*-------------------- Radio buttons from samwebe.com*/
 
-
-
-
 /*---------------https://www.solodev.com*/
+
 .ct-btn-scroll {
-  width: 49px;
-  height: 49px;
-  position: absolute;
-  bottom: 80px;
-  left: 0;
-  right: 0;
-  margin: auto;
-  padding-top: 500px;
-  z-index: 9;
-  border-radius: 50%;
-  -webkit-transition: background-color 0.25s ease-in-out;
-  transition: background-color 0.25s ease-in-out;
+    width: 49px;/*the size of the image*/
+    height: 49px;/*the size of the image*/
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    margin: 0;
+    padding: 0;
+    z-index: 9;
+    border-radius: 50%;
+    -webkit-transition: background-color 0.25s ease-in-out;
+    transition: background-color 0.25s ease-in-out;
+}
+
+.ct-btn-scroll:hover {
+    background-color: #FF4500;
 }
