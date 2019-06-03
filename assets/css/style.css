@@ -10,7 +10,7 @@ body {
 .image1 {
     background: linear-gradient( rgba(0, 0, 0, 0.6),
     rgba(0, 0, 0, 0.6)), url("/assets/images/image1.jpg");
-    min-height: 95vh;
+    min-height: 100vh;
     margin-top: 0;
     position: relative;
     /*background-attachment: fixed;*/
@@ -258,29 +258,21 @@ li {
 
 /*-------------------- Radio buttons from samwebe.com*/
 
-#panel,
-#flip {
-    padding: 5px;
-    text-align: center;
-    background-color: #e5eecc;
-    border: solid 1px #c3c3c3;
-    border-radius: 10px;
+
+
+
+/*---------------https://www.solodev.com*/
+.ct-btn-scroll {
+  width: 49px;
+  height: 49px;
+  position: absolute;
+  bottom: 80px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding-top: 500px;
+  z-index: 9;
+  border-radius: 50%;
+  -webkit-transition: background-color 0.25s ease-in-out;
+  transition: background-color 0.25s ease-in-out;
 }
-
-#panel {
-    padding: 50px;
-    display: none;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-}
-
-/*TASKS*/
-
-/*
-1ST Make the button desapear while it goes up/down and appear after the effect changing what is written.
-2ND Make a better button design.
-3RD Add media queries so it can have a better look with mobile screens.
-4TH Make a function that changes the backgroundColor based on different rgba's colors https://webgradients.com/.
-5TH Fix both radio checkboxes.
-6TH Add comments for every function within your JS folder.
-7TH Fix function's names.
-*/
