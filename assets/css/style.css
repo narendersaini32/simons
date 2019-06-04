@@ -91,7 +91,6 @@ li {
     border-radius: 50%;
 }
 
-
 /*-----------------------button collors*/
 
 #btnBlue {
@@ -176,7 +175,7 @@ li {
 
 .labeStyle {
     font-family: 'Press Start 2P', cursive;
-    font-size: 30px;
+    font-size: 40px;
 }
 
 .score#turn {
@@ -185,6 +184,34 @@ li {
     padding-left: 60px;
 }
 
+/*---------------------*/
+@supports (zoom:2) {
+  input[type=checkbox]{
+	zoom: 4;/*defines the size of the checkbox*/
+	}
+}
+@supports not (zoom:2) {
+  input[type=checkbox]{
+		transform: scale(2);
+		margin: 15px;
+	}
+}
+label{
+  /* fix vertical align issues */
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 10px;
+}
+
+#strict.toggle{
+    position: relative;
+    top: 3px;
+}
+
+#on{
+    position: relative;
+    top: 3px;
+}
 /*-------------push_button from samwebe.com*/
 
 .push_button {
