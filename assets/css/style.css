@@ -7,7 +7,7 @@ body {
 
 /*---------------------Images*/
 
-.image1 {
+.image1 {  
     background: /*linear-gradient( rgba(0, 0, 0, 0.6),
     rgba(0, 0, 0, 0.6)),*/ url("/assets/images/image1.jpg");
     min-height: 100vh;
@@ -20,7 +20,7 @@ body {
 }
 
 .image1 h2 {
-    font-size: 2rem;
+    font-size: 3rem;
     margin: 0;
     padding: 0;
     position: absolute;
@@ -71,7 +71,6 @@ body {
     height: 30px;
     text-align: center;
 }
-
 
 .gamebutton {
     width: 90px;
@@ -176,12 +175,15 @@ body {
 /*---------------------*/
 @supports (zoom:2) {
   input[type=checkbox]{
-	zoom: 4;/*defines the size of the checkbox*/
+        zoom: 4;
+	 /*defines the size of the checkbox*/
 	}
 }
 @supports not (zoom:2) {
   input[type=checkbox]{
-		transform: scale(2);
+		-webkit-transform: scale(2);
+		    -ms-transform: scale(2);
+		        transform: scale(2);
 		margin: 15px;
 	}
 }
@@ -277,7 +279,6 @@ label{
     background-image: linear-gradient(top, #D25068, #F66C7B);
 }
 
-/*-------------------- Radio buttons from samwebe.com*/
 
 /*---------------https://www.solodev.com*/
 
