@@ -3,7 +3,7 @@ let redBtnAudio = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound2.m
 let yellowBtnAudio = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound3.mp3');
 let greenBtnAudio = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound4.mp3');
 //======================//
-let order = [];
+let organization = [];
 let playerOrder = [];
 let flash;
 let turn;
@@ -58,7 +58,7 @@ startButton.addEventListener('click', function(event) {
 
 function play() {
   win = false;
-  order = [];
+  organization = [];
   playerOrder = [];
   flash = 0;
   intervalId = 0;
@@ -66,7 +66,7 @@ function play() {
   turnCounter.innerHTML = 1;
   good = true;
   for (var i = 0; i < 20; i++) {
-    order.push(Math.floor(Math.random() * 4) + 1);
+    organization.push(Math.floor(Math.random() * 4) + 1);
   }
   compTurn = true;
 
@@ -85,16 +85,16 @@ function gameTurn() {
   if (compTurn) {
     clearColor();
     setTimeout(function() {
-      if (order[flash] == 1) one();
-      if (order[flash] == 2) two();
-      if (order[flash] == 3) three();
-      if (order[flash] == 4) four();
+      if (organization[flash] == 1) first();
+      if (organization[flash] == 2) second();
+      if (organization[flash] == 3) third();
+      if (organization[flash] == 4) fourth();
       flash++;
     }, 200);
   }
 }
 
-function one() {
+function first() {
   if (noise) {
     greenBtnAudio.play();
   }
@@ -102,7 +102,7 @@ function one() {
   btnGreen.style.backgroundColor = "lightgreen";
 }
 
-function two() {
+function second() {
   if (noise) {
     redBtnAudio.play();
   }
@@ -110,7 +110,7 @@ function two() {
   btnRed.style.backgroundColor = "tomato";
 }
 
-function three() {
+function third() {
   if (noise) {
     yellowBtnAudio.play();
   }
@@ -118,7 +118,7 @@ function three() {
   btnYellow.style.backgroundColor = "yellow";
 }
 
-function four() {
+function fourth() {
   if (noise) {
     blueBtnAudio.play();
   }
@@ -133,7 +133,7 @@ function clearColor() {
   btnBlue.style.backgroundColor = "darkblue";
 }
 
-function flashColor() {
+function btnLightColor() {
   btnGreen.style.backgroundColor = "lightgreen";
   btnRed.style.backgroundColor = "tomato";
   btnYellow.style.backgroundColor = "yellow";
@@ -144,7 +144,7 @@ btnGreen.addEventListener('click', function(event) {
   if (on) {
     playerOrder.push(1);
     check();
-    one();
+    first();
     if (!win) {
       setTimeout(function() {
         clearColor();
@@ -157,7 +157,7 @@ btnRed.addEventListener('click', function(event) {
   if (on) {
     playerOrder.push(2);
     check();
-    two();
+    second();
     if (!win) {
       setTimeout(function() {
         clearColor();
@@ -170,7 +170,7 @@ btnYellow.addEventListener('click', function(event) {
   if (on) {
     playerOrder.push(3);
     check();
-    three();
+    third();
     if (!win) {
       setTimeout(function() {
         clearColor();
@@ -183,7 +183,7 @@ btnBlue.addEventListener('click', function(event) {
   if (on) {
     playerOrder.push(4);
     check();
-    four();
+    fourth();
     if (!win) {
       setTimeout(function() {
         clearColor();
@@ -193,7 +193,7 @@ btnBlue.addEventListener('click', function(event) {
 })
 
 function check() {
-  if (playerOrder[playerOrder.length - 1] !== order[playerOrder.length - 1])
+  if (playerOrder[playerOrder.length - 1] !== organization[playerOrder.length - 1])
     good = false;
 
   if (playerOrder.length == 20 && good) {
@@ -201,7 +201,7 @@ function check() {
   }
 
   if (good == false) {
-    flashColor();
+    btnLightColor();
     turnCounter.innerHTML = "NO!";
     setTimeout(() => {
       turnCounter.innerHTML = turn;
@@ -234,7 +234,7 @@ function check() {
 }
 
 function winGame() {
-  flashColor();
+  btnLightColor();
   turnCounter.innerHTML = "WIN!";
   on = false;
   win = true;
