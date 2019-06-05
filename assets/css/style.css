@@ -313,10 +313,8 @@ label{
 
 @media only screen and (min-width: 320px) and (max-width: 823px) {
  
- body{
-     padding: 0;
-     margin: 0;
- } 
+.sButton{/*start-button*/
+    margin-left: 53px;
 }
 
 @media (min-width: 576px) {
