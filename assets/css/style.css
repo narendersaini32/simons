@@ -337,8 +337,19 @@ label {
             padding-right: 40px;
     }
 
-    .btnBlue {}
-
+    .btnBlue,
+    .btnGreen,
+    .btnRed,
+    .btnYellow{
+        width: 20px;
+        height: 20px;
+    }
+    
+    .top-row,
+    .middle-row,
+    bottom-row{
+        
+    }
 }
 
 
