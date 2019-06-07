@@ -7,9 +7,10 @@ body {
 
 /*---------------------Images*/
 
-.image1 {  
+.image1 {
     background: /*linear-gradient( rgba(0, 0, 0, 0.6),
-    rgba(0, 0, 0, 0.6)),*/ url("/assets/images/image1.jpg");
+    rgba(0, 0, 0, 0.6)),*/
+    url("/assets/images/image1.jpg");
     min-height: 100vh;
     margin-top: 0;
     position: relative;
@@ -36,7 +37,7 @@ body {
 
 /*----------------------Settings*/
 
-.section2.container{
+.section2.container {
     padding-top: 50px;
 }
 
@@ -173,36 +174,40 @@ body {
 }
 
 /*---------------------*/
+
 @supports (zoom:2) {
-  input[type=checkbox]{
+    input[type=checkbox] {
         zoom: 4;
-	 /*defines the size of the checkbox*/
-	}
+        /*defines the size of the checkbox*/
+    }
 }
+
 @supports not (zoom:2) {
-  input[type=checkbox]{
-		-webkit-transform: scale(2);
-		    -ms-transform: scale(2);
-		        transform: scale(2);
-		margin: 15px;
-	}
-}
-label{
-  /* fix vertical align issues */
-	display: inline-block;
-	vertical-align: top;
-	margin-top: 10px;
+    input[type=checkbox] {
+        -webkit-transform: scale(2);
+        -ms-transform: scale(2);
+        transform: scale(2);
+        margin: 15px;
+    }
 }
 
-#strict.toggle{
+label {
+    /* fix vertical align issues */
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 10px;
+}
+
+#strict.toggle {
     position: relative;
     top: 3px;
 }
 
-#on{
+#on {
     position: relative;
     top: 3px;
 }
+
 /*-------------push_button from samwebe.com*/
 
 .push_button {
@@ -230,7 +235,7 @@ label{
     -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, .5) inset, 0 1px 0 #FFF;
     box-shadow: 0 1px 2px rgba(0, 0, 0, .5) inset, 0 1px 0 #FFF;
 
-    
+
 }
 
 .push_button:active {
@@ -277,8 +282,10 @@ label{
 /*---------------https://www.solodev.com*/
 
 .ct-btn-scroll {
-    width: 49px;/*the size of the image*/
-    height: 49px;/*the size of the image*/
+    width: 49px;
+    /*the size of the image*/
+    height: 49px;
+    /*the size of the image*/
     position: absolute;
     left: 50%;
     top: 90%;
@@ -295,24 +302,28 @@ label{
 }
 
 /*----http://www.tipue.com/blog/css-pulse-buttons/*/
-@keyframes shadow-pulse
-{
-     0% {
-          box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.5);
-     }
-     100% {
-          box-shadow: 0 0 0 35px rgba(0, 0, 0, 0);
-     }
+
+@keyframes shadow-pulse {
+    0% {
+        box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 0 35px rgba(0, 0, 0, 0);
+    }
 }
 
-.ct-btn-scroll
-{
-     animation: shadow-pulse 2s infinite;
+.ct-btn-scroll {
+    animation: shadow-pulse 2s infinite;
 }
 
+/*--------------media queries*/
 
-@media only screen and (min-width: 320px) and (max-width: 823px) {
-
+@media (min-width:320px) {
+    /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+    
+    .buttonCollor{
+        
+    }
     .sButton {
         /*start-button*/
         margin-left: 53px;
@@ -323,13 +334,13 @@ label{
         border-left: 50px;
     }
     .fourButtons {
-        padding: 0;
+            padding-right: 40px;
     }
-    
-    .buttonCollor{
-        
-    }
+
+    .btnBlue {}
+
 }
+
 
 @media (min-width: 576px) {
     .sButton {
@@ -346,3 +357,5 @@ label{
         padding: 0;
     }
 }
+
+@media only screen and (min-width: 320px) and (max-width: 823px) {}
