@@ -37,7 +37,7 @@ body {
 
 /*----------------------Settings*/
 
-.section2.container {
+.section2 {
     padding-top: 50px;
 }
 
@@ -60,18 +60,6 @@ body {
     text-align: center;
 }
 
-/*.sButton {
-    width: 30%;
-    margin: 0 auto;
-    padding-left: 40px;*/
-    /*have a look on small screens*/
-
-
-/*.start {
-    width: 100%;
-    height: 30px;
-    text-align: center;
-}*/
 
 .gamebutton {
     width: 90px;
@@ -220,7 +208,7 @@ label {
     line-height: 43px;
     font-family: 'Press Start 2P', cursive;
     display: block;
-    margin: 30px;
+    /*margin: 30px;*/
 }
 
 .push_button:before {
@@ -281,6 +269,14 @@ label {
 
 /*---------------https://www.solodev.com*/
 
+.row.justify-content-center{
+    padding-top: 50px;
+    height: 100px;
+}
+.col-sm-4 .offset-sm-2{
+    
+}
+
 .ct-btn-scroll {
     width: 49px;
     /*the size of the image*/
@@ -322,7 +318,7 @@ label {
     /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
     
     .buttonCollor{
-        
+      padding-right: 40px;  
     }
     .sButton {
         /*start-button*/
@@ -333,9 +329,7 @@ label {
         margin: 0;
         border-left: 50px;
     }
-    .fourButtons {
-            padding-right: 40px;
-    }
+    
 
     .btnBlue,
     .btnGreen,
