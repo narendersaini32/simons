@@ -72,7 +72,7 @@ body {
 
 #btnBlue {
     background-color: blue;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
 }
 
 #btnGreen {
@@ -274,7 +274,8 @@ label {
     height: 100px;
 }
 .col-sm-4 .offset-sm-2{
-    
+    padding-left: 40px;
+    margin-left: 0;
 }
 
 .ct-btn-scroll {
@@ -318,7 +319,7 @@ label {
     /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
     
     .buttonCollor{
-      padding-right: 40px;  
+       
     }
     .sButton {
         /*start-button*/
