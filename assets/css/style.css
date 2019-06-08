@@ -31,9 +31,8 @@ body {
 }
 
 .container#meBaby {
-    height: 100%;
+   min-height: 100vh;
     min-width: 100%;
-    top: 50px;
 }
 
 /*----------------------Settings*/
