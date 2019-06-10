@@ -18,6 +18,10 @@ body {
     background-position: center top;
     background-size: cover;
     background-repeat: no-repeat;
+   /*-ms-transform: skewY(-10deg);
+     -webkit-transform: skewY(-20deg);
+     transform: skewY(-10deg);
+     z-index: 2;*/
 }
 
 .image1 h2 {

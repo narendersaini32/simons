@@ -7,6 +7,8 @@ $(document).ready(function() {
         //will hode button after click
         $('.ct-btn-scroll').hide(1000);
     });
+    
+    $('.carousel').carousel()
 });
 
 
