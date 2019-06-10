@@ -77,20 +77,10 @@ body {
     height: 100px;
 }
 
-/*=============================FONTS FOR THE SETTHINGS WORKDS*/
 
-.level h2 {
-    font-family: 'Press Start 2P', cursive;
-}
+/*=============================FONTS FOR THE SETTHINGS WORDS*/
 
-.score#turn {
-    font-family: 'Press Start 2P', cursive;
-    font-size: 20px;
-}
 
-.scoreName h2 {
-    font-family: 'Press Start 2P', cursive;
-}
 
 label {
     /* fix vertical align issues */
@@ -107,6 +97,25 @@ label {
 #on {
     position: relative;
     top: 3px;
+}
+
+.level h2 {
+    font-family: 'Press Start 2P', cursive;
+}
+
+.score#turn {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;
+    padding-left: 60px;
+}
+
+.scoreName h2 {
+    font-family: 'Press Start 2P', cursive;
+}
+
+.labeStyle {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 40px;
 }
 
 /*----------checkbox--------------*/
@@ -231,9 +240,6 @@ label {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
-
-
-
 /*-------------------------Sections*/
 
 .fourButtons {
@@ -267,18 +273,7 @@ label {
     justify-content: center;
 }
 
-
-.labeStyle {
-    font-family: 'Press Start 2P', cursive;
-    font-size: 40px;
-}
-
-.score#turn {
-    font-family: 'Press Start 2P', cursive;
-    font-size: 20px;
-    padding-left: 60px;
-}
-
+/*====================PULSE BUTTON========================*/
 /*---------------https://www.solodev.com*/
 
 
@@ -317,7 +312,7 @@ label {
     animation: shadow-pulse 2s infinite;
 }
 
-/*--------------media queries*/
+/*------------------------------------------------------------media queries*/
 
 @media (min-width:320px) {
     /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
