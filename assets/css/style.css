@@ -18,7 +18,7 @@ body {
     background-position: center top;
     background-size: cover;
     background-repeat: no-repeat;
-   /*-ms-transform: skewY(-10deg);
+    /*-ms-transform: skewY(-10deg);
      -webkit-transform: skewY(-20deg);
      transform: skewY(-10deg);
      z-index: 2;*/
@@ -35,13 +35,13 @@ body {
 }
 
 .container#meBaby {
-   min-height: 100vh;
+    min-height: 100vh;
     min-width: 100%;
 }
 
 /*====================PULSE BUTTON========================*/
-/*---------------https://www.solodev.com*/
 
+/*---------------https://www.solodev.com*/
 
 .ct-btn-scroll {
     width: 49px;
@@ -110,20 +110,20 @@ body {
     border-radius: 50%;
 }
 
-.col-sm-4 .offset-sm-2{/*start button*/
+.col-sm-4 .offset-sm-2 {
+    /*start button*/
     padding-left: 40px;
     margin-left: 0;
 }
 
-.row.justify-content-center{/*start button*/
+.row.justify-content-center {
+    /*start button*/
     padding-top: 50px;
     height: 100px;
 }
 
 
 /*=============================FONTS FOR THE SETTHINGS WORDS*/
-
-
 
 label {
     /* fix vertical align issues */
@@ -321,10 +321,60 @@ label {
 
 @media (min-width:320px) {
     /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
-    
-    .buttonCollor{
-       
+    .carousel {
+        /* position: relative; */
+        display: none;
     }
+    
+    #turn.score{
+         padding-right: 50px;
+    }
+    
+    .scoreName.col-sm-4{
+        padding-bottom: 20px;
+    }
+    
+    .col-sm-4.strict-style{
+         padding-bottom: 40px;
+    }
+
+    .container#meBaby {
+        min-height: 100vh;
+        min-width: 100%;
+    }
+
+    .labeStyle {
+        font-family: 'Press Start 2P', cursive;
+        font-size: 29px;
+        float: center;
+    }
+    .buttonCollor {}
+    
+    .potrait{
+        padding-top: 80px;
+    }
+
+    .col-sm-4.offset-sm-2 {
+        position: relative;
+        /* width: 100%; */
+        padding-left: 95px;
+    }
+    .gamebutton {
+        width: 60px;
+        height: 60px;
+        background-color: white;
+        border-radius: 50%;
+    }
+
+    .fourButtons {
+        height: 275px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
     .sButton {
         /*start-button*/
         margin-left: 53px;
@@ -334,20 +384,20 @@ label {
         margin: 0;
         border-left: 50px;
     }
-    
+
 
     .btnBlue,
     .btnGreen,
     .btnRed,
-    .btnYellow{
+    .btnYellow {
         width: 95%;
-    max-width: 95%;
+        max-width: 95%;
     }
-    
+
     .top-row,
     .middle-row,
-    bottom-row{
-        
+    bottom-row {
+        max-width: 300px;
     }
 }
 
