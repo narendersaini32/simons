@@ -15,4 +15,6 @@ On this project I am training my knowledge with JS.
 - Landing-page like game to introduce it for those who don't know what the game is like.
 - Three different sections 1st: Main, 2nd: parallax, 3rd: The game.
 
-### Fonts
+### Fonts:
+-> Acme.
+->Press+Start+2P.
