@@ -35,6 +35,45 @@ body {
     min-width: 100%;
 }
 
+/*====================PULSE BUTTON========================*/
+/*---------------https://www.solodev.com*/
+
+
+.ct-btn-scroll {
+    width: 49px;
+    /*the size of the image*/
+    height: 49px;
+    /*the size of the image*/
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    margin: 0;
+    padding: 0;
+    z-index: 9;
+    border-radius: 50%;
+    -webkit-transition: background-color 0.25s ease-in-out;
+    transition: background-color 0.25s ease-in-out;
+}
+
+.ct-btn-scroll:hover {
+    background-color: #FF4500;
+}
+
+/*----http://www.tipue.com/blog/css-pulse-buttons/*/
+
+@keyframes shadow-pulse {
+    0% {
+        box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 0 35px rgba(0, 0, 0, 0);
+    }
+}
+
+.ct-btn-scroll {
+    animation: shadow-pulse 2s infinite;
+}
+
 /*----------------------Settings*/
 
 .section2 {
@@ -273,44 +312,6 @@ label {
     justify-content: center;
 }
 
-/*====================PULSE BUTTON========================*/
-/*---------------https://www.solodev.com*/
-
-
-.ct-btn-scroll {
-    width: 49px;
-    /*the size of the image*/
-    height: 49px;
-    /*the size of the image*/
-    position: absolute;
-    left: 50%;
-    top: 90%;
-    margin: 0;
-    padding: 0;
-    z-index: 9;
-    border-radius: 50%;
-    -webkit-transition: background-color 0.25s ease-in-out;
-    transition: background-color 0.25s ease-in-out;
-}
-
-.ct-btn-scroll:hover {
-    background-color: #FF4500;
-}
-
-/*----http://www.tipue.com/blog/css-pulse-buttons/*/
-
-@keyframes shadow-pulse {
-    0% {
-        box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.5);
-    }
-    100% {
-        box-shadow: 0 0 0 35px rgba(0, 0, 0, 0);
-    }
-}
-
-.ct-btn-scroll {
-    animation: shadow-pulse 2s infinite;
-}
 
 /*------------------------------------------------------------media queries*/
 
