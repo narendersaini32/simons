@@ -406,10 +406,13 @@ label {
 
 
 @media only screen and (min-width: 576px) and (max-width: 1024px) {
-    
 
+    .scoreName,
+    .labeStyle {
+        font-size: 28px;
+    }
     .container#meBaby {
-       min-height: 100vh;
+        min-height: 100vh;
         min-width: 100%;
         margin: 0 0;
     }
@@ -443,9 +446,30 @@ label {
         background-color: white;
         border-radius: 50%;
     }
-    
+
 
     .potrait {
         padding-top: 200px;
+    }
+
+    .middle-row {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 15px auto;
+        width: 520px;
+    }
+
+    .push_button {
+        height: 66px;
+    }
+
+    .offset-sm-2 {
+        margin-left: 1.666667%;
+    }
+
+    .row.justify-content-center {
+        padding-top: 170px;
+        height: 100px;
     }
 }
