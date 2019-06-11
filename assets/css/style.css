@@ -405,7 +405,12 @@ label {
 }
 
 
-@media (max-width: 576px) {
+@media only screen and (min-width: 576px) and (max-width: 1024px) {
+    
+    .carousel {
+        display: none;
+    }
+
     .sButton {
         margin-left: 53px;
     }
