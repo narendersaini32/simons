@@ -320,26 +320,35 @@ label {
 /*------------------------------------------------------------media queries*/
 
 @media only screen and (min-width: 320px) and (max-width: 575px) {
-    
+
     .carousel {
         display: none;
     }
-    
-    #turn.score{
-         padding-right: 50px;
+
+    #turn.score {
+        padding-right: 50px;
     }
-    
-    .scoreName.col-sm-4{
+
+    .scoreName.col-sm-4 {
         padding-bottom: 20px;
     }
-    
-    .col-sm-4.strict-style{
-         padding-bottom: 40px;
+
+    .col-sm-4.strict-style {
+        padding-bottom: 40px;
     }
 
     .container#meBaby {
         min-height: 100vh;
         min-width: 100%;
+    }
+
+    .section2 {
+        padding-top: 4px;
+    }
+
+    .row.justify-content-center {
+        padding-top: 55px;
+        height: 100px;
     }
 
     .labeStyle {
@@ -348,9 +357,8 @@ label {
         float: center;
     }
     /*.buttonCollor {}*/
-    
-    .potrait{
-        padding-top: 80px;
+    .potrait {
+        padding-top: 38px;
     }
 
     .col-sm-4.offset-sm-2 {
@@ -410,4 +418,3 @@ label {
         padding: 0;
     }
 }
-
