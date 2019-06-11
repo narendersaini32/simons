@@ -52,7 +52,10 @@ turnOnButton.addEventListener('click', function(event) {
 
 startButton.addEventListener('click', function(event) {
   if (on || win) {
-    play(); //change the name of this function..
+    
+    play(); 
+    
+    clearColor();
   }
 });
 
@@ -240,3 +243,12 @@ function winGame() {
   win = true;
 }
 
+function avoidBug(){
+  
+}
+
+/*
+fix button bug on click
+fix iphone 5 media query
+add game rules and how to win
+*/
