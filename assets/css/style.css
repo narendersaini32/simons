@@ -495,7 +495,7 @@ label {
         position: relative;
         top: 7px;
     }
-    
+
     .scoreName,
     .labeStyle {
         font-size: 21px;
@@ -514,5 +514,16 @@ label {
     .push_button {
         height: 41px;
         width: 90px;
+    }
+
+    .potrait {
+        padding-top: 15px;
+    }
+
+    .gamebutton {
+        width: 60px;
+        height: 60px;
+        background-color: white;
+        border-radius: 50%;
     }
 }
