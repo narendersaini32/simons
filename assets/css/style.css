@@ -110,10 +110,9 @@ body {
     border-radius: 50%;
 }
 
-.col-sm-4 .offset-sm-2 {
+ .offset-sm-2{
     /*start button*/
-    margin-left: 0.666667%;
-    margin-left: 0;
+       margin-left: -0.333333%;
 }
 
 .row.justify-content-center {
@@ -122,8 +121,6 @@ body {
     height: 100px;
 }
 
-
-/*=============================FONTS FOR THE SETTHINGS WORDS*/
 
 label {
     /* fix vertical align issues */
@@ -141,6 +138,8 @@ label {
     position: relative;
     top: 3px;
 }
+
+/*================FONTS FOR THE SETTHINGS WORDS*/
 
 .level h2 {
     font-family: 'Press Start 2P', cursive;
@@ -545,3 +544,8 @@ label {
         overflow: hidden;
     }
 }
+
+/*
+you need to fix the iphone 5/se potrait media query
+and ipad pro.
+*/

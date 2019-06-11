@@ -215,9 +215,9 @@ function check() {
         flash = 0;
         playerOrder = [];
         good = true;
-        intervalId = setInterval(gameTurn, 800);
+        intervalId = setInterval(gameTurn, 100);
       }
-    }, 800);
+    }, 100);
 
     noise = false;
   }
