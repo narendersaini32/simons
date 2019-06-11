@@ -473,3 +473,22 @@ label {
         height: 100px;
     }
 }
+
+
+@media only screen and (min-height: 360px) and (max-height: 414px) {
+
+    .row.justify-content-center {
+        padding-top: 10px;
+        height: 100%;
+    }
+
+    .push_button {
+        height: 41px;
+        width: 90px;
+    }
+
+    .push_button {
+        height: 41px;
+        width: 90px;
+    }
+}
