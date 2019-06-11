@@ -112,7 +112,7 @@ body {
 
 .col-sm-4 .offset-sm-2 {
     /*start button*/
-    padding-left: 40px;
+    margin-left: 0.666667%;
     margin-left: 0;
 }
 
@@ -533,5 +533,15 @@ label {
         align-items: center;
         margin: 15px auto;
         width: 300px;
+    }
+
+    .fourButtons {
+        padding-bottom: 239px;
+    }
+
+    .container.potrait {
+        padding-top: 15px;
+        max-height: 260px;
+        overflow: hidden;
     }
 }
