@@ -477,6 +477,30 @@ label {
 
 @media only screen and (min-height: 360px) and (max-height: 414px) {
 
+    .section2 {
+        padding-top: 0;
+    }
+
+    input[type=checkbox] {
+        zoom: 2;
+        /* padding-top: 20px; */
+    }
+
+    #strict.toggle {
+        position: relative;
+        top: 7px;
+    }
+
+    #on {
+        position: relative;
+        top: 7px;
+    }
+    
+    .scoreName,
+    .labeStyle {
+        font-size: 21px;
+    }
+
     .row.justify-content-center {
         padding-top: 10px;
         height: 100%;
