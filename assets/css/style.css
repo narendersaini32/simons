@@ -192,7 +192,7 @@ label {
     text-decoration: none;
     line-height: 43px;
     font-family: 'Press Start 2P', cursive;
-    display: block;
+    /*display: block;*/
     /*margin: 30px;*/
 }
 
@@ -355,7 +355,7 @@ label {
 
     .col-sm-4.offset-sm-2 {
         position: relative;
-        padding-left: 95px;
+        /*padding-left: 95px;*/
     }
     .gamebutton {
         width: 60px;
