@@ -526,4 +526,12 @@ label {
         background-color: white;
         border-radius: 50%;
     }
+
+    .middle-row {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 15px auto;
+        width: 300px;
+    }
 }
