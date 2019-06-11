@@ -406,7 +406,13 @@ label {
 
 
 @media only screen and (min-width: 576px) and (max-width: 1024px) {
+    
 
+    .container#meBaby {
+       min-height: 100vh;
+        min-width: 100%;
+        margin: 0 0;
+    }
     .carousel {
         display: none;
     }
@@ -436,5 +442,10 @@ label {
         height: 130px;
         background-color: white;
         border-radius: 50%;
+    }
+    
+
+    .potrait {
+        padding-top: 200px;
     }
 }
