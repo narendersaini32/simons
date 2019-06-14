@@ -28,6 +28,8 @@ const gameButton = document.querySelector(".gameButton"); //button start (not us
 const strictButton = document.querySelector("#strict");
 const turnOnButton = document.querySelector("#on");
 
+
+//Setthings buttons
 strictButton.addEventListener('click', function(event) {
   if (strictButton.checked == true) {
     strict = true;
@@ -87,7 +89,7 @@ function gameTurn() {
   }
   if (compTurn) {
     clearColor();
-    setTimeout(function() {
+    setTimeout(() => {
       if (organization[flash] == 1) first();
       if (organization[flash] == 2) second();
       if (organization[flash] == 3) third();
@@ -119,6 +121,7 @@ function third() {
   }
   noise = true;
   btnYellow.style.backgroundColor = "yellow";
+  
 }
 
 function fourth() {
@@ -243,10 +246,11 @@ function winGame() {
   win = true;
 }
 
+
+
 function avoidBug(){
   
 }
-
 /*
 fix button bug on click
 fix iphone 5 media query
