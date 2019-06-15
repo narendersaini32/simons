@@ -8,6 +8,18 @@ body {
 
 /*---------------------Images*/
 
+h3{
+    font-family: 'Luckiest Guy', cursive;
+    color: #303030;
+    font-size: 40px;
+}
+
+p{
+    font-family: 'VT323', monospace;
+    color: #303030;
+    font-size: 30px;
+}
+
 .image1 {
     background: /*linear-gradient( rgba(0, 0, 0, 0.6),
     rgba(0, 0, 0, 0.6)),*/
