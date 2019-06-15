@@ -89,7 +89,7 @@ function gameTurn() {
   }
   if (compTurn) {
     clearColor();
-    setTimeout(() => {
+    setTimeout(function() {
       if (organization[flash] == 1) first();
       if (organization[flash] == 2) second();
       if (organization[flash] == 3) third();
@@ -121,7 +121,6 @@ function third() {
   }
   noise = true;
   btnYellow.style.backgroundColor = "yellow";
-  
 }
 
 function fourth() {
@@ -246,11 +245,45 @@ function winGame() {
   win = true;
 }
 
+// testing code
+
+btnBlue.addEventListener("click", function avoidBug(){
+  var playerTurn = 0;
+  if (playerTurn > 2){
+    btnBlue.disabled = true;
+  }else{
+    btnBlue.disabled = false;
+  }
+});
+
+btnGreen.addEventListener("click", function avoidBug(){
+  var playerTurn = 0;
+  if (playerTurn > 2){
+    btnBlue.disabled = true;
+  }else{
+    btnBlue.disabled = false;
+  }
+});
+
+btnRed.addEventListener("click", function avoidBug(){
+  var playerTurn = 0;
+  if (playerTurn > 2){
+    btnBlue.disabled = true;
+  }else{
+    btnBlue.disabled = false;
+  }
+});
+
+btnYellow.addEventListener("dblclick", function avoidBug(){
+  var playerTurn = 0;
+  if (playerTurn > 2){
+    btnBlue.disabled = true;
+  }else{
+    btnBlue.disabled = false;
+  }
+});
 
 
-function avoidBug(){
-  
-}
 /*
 fix button bug on click
 fix iphone 5 media query
