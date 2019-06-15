@@ -417,6 +417,7 @@ label {
 }
 
 
+
 @media only screen and (min-width: 576px) and (max-width: 1024px) {
     /*tablets*/
     .scoreName,
@@ -548,26 +549,7 @@ label {
 
     .container.potrait {
         padding-top: 15px;
-        max-height: 250px;
+        max-height: 255px;
         overflow: hidden;
     }
 }
-
-
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : landscape) {
-    .row.justify-content-center {
-        padding-top: 53px;
-        height: 123px;
-    }
-    .potrait {
-        padding-top: 36px;
-    }
-}
-
-/*
-you need to fix the iphone 5/se potrait media query
-and ipad pro.
-*/
