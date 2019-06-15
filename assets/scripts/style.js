@@ -1,14 +1,7 @@
 $(document).ready(function() {
-    //will scroll down on arrow down button click
-    $('.ct-btn-scroll').click(function() {
-        $('html,body').animate({
-            scrollTop: $("#meBaby").offset().top
-        }, 'slow');
-        //will hode button after click
-        $('.ct-btn-scroll').hide(1000);
-    });
     
-    $('.carousel').carousel()
+    
+   /* $('.carousel').carousel()*/
 });
 
 

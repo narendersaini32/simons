@@ -57,7 +57,6 @@ startButton.addEventListener('click', function(event) {
     
     play(); 
     
-    clearColor();
   }
 });
 
@@ -280,6 +279,23 @@ btnYellow.addEventListener("dblclick", function avoidBug(){
     btnBlue.disabled = true;
   }else{
     btnBlue.disabled = false;
+  }
+});
+
+window.addEventListener("keyup", event => {
+  let key = parseInt(event.keyCode);
+  let keyArray = [
+    [80, 1],
+    [76, 2],
+    [65, 3],
+    [89, 4]
+  ];
+  console.log(key);
+  for (let k in keyArray) {
+    if (keyArray[k][0] == key) {
+      addEventListener(keyArray[k][1]);
+      break;
+    }
   }
 });
 
