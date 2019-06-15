@@ -54,9 +54,7 @@ turnOnButton.addEventListener('click', function(event) {
 
 startButton.addEventListener('click', function(event) {
   if (on || win) {
-    
     play(); 
-    
   }
 });
 
@@ -227,9 +225,9 @@ function check() {
         flash = 0;
         playerOrder = [];
         good = true;
-        intervalId = setInterval(gameTurn, 100);
+        intervalId = setInterval(gameTurn, 800);
       }
-    }, 100);
+    }, 800);
 
     noise = false;
   }
@@ -252,58 +250,4 @@ function winGame() {
   win = true;
 }
 
-// TESTING CODE
-
-btnBlue.addEventListener("click", function avoidBug(){
-  var playerTurn = 0;
-  if (playerTurn > 2){
-    btnBlue.disabled = true;
-  }else{
-    btnBlue.disabled = false;
-  }
-});
-
-btnGreen.addEventListener("click", function avoidBug(){
-  var playerTurn = 0;
-  if (playerTurn > 2){
-    btnBlue.disabled = true;
-  }else{
-    btnBlue.disabled = false;
-  }
-});
-
-btnRed.addEventListener("click", function avoidBug(){
-  var playerTurn = 0;
-  if (playerTurn > 2){
-    btnBlue.disabled = true;
-  }else{
-    btnBlue.disabled = false;
-  }
-});
-
-btnYellow.addEventListener("dblclick", function avoidBug(){
-  var playerTurn = 0;
-  if (playerTurn > 2){
-    btnBlue.disabled = true;
-  }else{
-    btnBlue.disabled = false;
-  }
-});
-
-window.addEventListener("keyup", event => {
-  let key = parseInt(event.keyCode);
-  let keyArray = [
-    [80, 1],
-    [76, 2],
-    [65, 3],
-    [89, 4]
-  ];
-  console.log(key);
-  for (let k in keyArray) {
-    if (keyArray[k][0] == key) {
-      addEventListener(keyArray[k][1]);
-      break;
-    }
-  }
-});
 

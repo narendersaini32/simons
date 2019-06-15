@@ -1,5 +1,68 @@
 # Simons Memory Game
 
+
+## Table of contents
+
+
+## About 
+
+### Goal
+
+
+### Functionality 
+
+-
+-
+-
+
+### Initiation
+
+## UI / UX
+
+### Layout
+
+- 
+-
+-
+
+### Mobile Display
+
+- Put your comment about this device here
+
+### Tablet Display
+
+- Put your comment about this device here
+
+### Additional Note
+
+#### Color scheme
+
+## Audio Content
+
+## Technologies 
+
+- 
+
+## Testing
+
+-
+
+## Deployment 
+
+## Credits
+
+
+
+
+
+
+
+
+
+
+
+
+
 On this project I am training my knowledge with JS.
 
 ## References:

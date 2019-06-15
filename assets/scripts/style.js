@@ -1,12 +1,10 @@
-$(document).ready(function() {
-    
-    
-   /* $('.carousel').carousel()*/
-});
+//Style only.
 
 
 var change = document.getElementById("meBaby"); // add to the top
 
+
+//This function get eight different linear gradients in an array and display its as index randomly.
 function getRandomColor() {
     var letters = ['linear-gradient(120deg, #f6d365 0%, #fda085 100%)',
         'linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%)',
@@ -22,7 +20,10 @@ function getRandomColor() {
 
 }
 
+// Using the getRandomColor index its change the background colors.
 function changeColor() {
     change.style.background = getRandomColor();
 }
+
+//sets the interval time between each color.
 setInterval(changeColor, 10000);
