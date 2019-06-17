@@ -71,7 +71,6 @@ to continue the game from level-1 again.
 
 The strict checkbox is called into the code by its id and added into an event listener:
 
-#### Four playable buttons
 ```
 const strictButton = document.querySelector("#strict");
 ```
@@ -86,6 +85,47 @@ strictButton.addEventListener('click', function(event) {
 });
 ```
 The only way the ```strictButton``` is added is into the ```check()``` function to provide its fucntionality.
+
+#### Four playable buttons
+
+The four playable buttons of the Simon game is the place in which all the game logic is joined together. 
+All of the four button are displayed into the code by its ```id``` and displayed into a ```const``` within ```script.js```.
+In addition, the four buttons are followed by its colors variances as well as its sounds as displayed below:
+
+```
+//const based by each button.
+const btnBlue = document.querySelector("#btnBlue");//Button blue
+const btnGreen = document.querySelector("#btnGreen");//Button green
+const btnRed = document.querySelector("#btnRed");//Button red 
+const btnYellow = document.querySelector("#btnYellow");//Button yellow
+```
+```
+//variables for each color.
+let blueBtnAudio = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound1.mp3');//audio for button blue
+let redBtnAudio = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound2.mp3');//audio for button red 
+let yellowBtnAudio = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound3.mp3');//audio for button yellow
+let greenBtnAudio = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound4.mp3');//audio for button green
+```
+Moreover, with all the four colors declared within the code, an event listener is made for each button to 
+represent its effect into the game.
+```
+btnGreen.addEventListener('click', function(event) {
+  if (on) {
+    playerOrder.push(1);
+    check();
+    first();
+    if (!win) {
+      setTimeout(function() {
+        clearColor();
+      }, 300);
+    }
+  }
+});
+```
+Using the ```btnGreen``` as a example you can see its functionality. Using conditionals the event describes 
+the player order index to be used with the game loop, with the ```check()``` fucntion that gives the player choice verification
+as well as its own function called ```first()``` that all the other three buttons/colors have.
+
 
 ### Initiation
 
