@@ -29,7 +29,9 @@ const startButton = document.querySelector("#startButton");//Initiates the game 
 const strictButton = document.querySelector("#strict");//Triggers the strict mode.
 const turnOnButton = document.querySelector("#on");//Initiates the game.
 
-//Setthings buttons / event listeners
+
+// EVENT LISTENERS
+//Setthings buttons
 strictButton.addEventListener('click', function(event) {
   if (strictButton.checked == true) {
     strict = true;
@@ -111,7 +113,7 @@ btnBlue.addEventListener('click', function(event) {
 })
 
 
-//Loop sequences
+//FUNCTIONS AND LOOP SEQUENCES
 
 function play() {
   win = false;
@@ -122,7 +124,7 @@ function play() {
   turn = 1;
   turnCounter.innerHTML = 1;
   good = true;
-  for (var i = 0; i < 20; i++) {
+  for (var i = 0; i < 10; i++) {
     organization.push(Math.floor(Math.random() * 4) + 1);
   }
   compTurn = true;

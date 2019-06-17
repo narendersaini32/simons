@@ -3,8 +3,14 @@
 
 ## Table of contents
 
+DO AFTER ALL PARTS BE DONE.
 
 ## About 
+
+Project Milestone Two - Code Institute
+
+(Simon Game)[https://en.wikipedia.org/wiki/Simon_(game)] is a  memory game inspired by a classic eletronic game made by Ralph 
+
 
 ### Goal
 
