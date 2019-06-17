@@ -149,7 +149,11 @@ as soon as they are pressed the loop will begin on the four button and the ```Sc
 <img src="assets/images/README images/iphoneLandscape.gif" width="500">
 
 - Ipad Potrait
+
+<img src="assets/images/README images/ipadPotrait.gif" width="200">
 - iPad landscape
+
+<img src="assets/images/README images/ipadLandscape.gif" width="500">
 
 ### Mobile Display
 
