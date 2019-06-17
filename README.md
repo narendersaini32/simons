@@ -71,6 +71,7 @@ to continue the game from level-1 again.
 
 The strict checkbox is called into the code by its id and added into an event listener:
 
+#### Four playable buttons
 ```
 const strictButton = document.querySelector("#strict");
 ```
@@ -84,6 +85,7 @@ strictButton.addEventListener('click', function(event) {
   }
 });
 ```
+The only way the ```strictButton``` is added is into the ```check()``` function to provide its fucntionality.
 
 ### Initiation
 
