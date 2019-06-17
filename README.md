@@ -141,17 +141,19 @@ as soon as they are pressed the loop will begin on the four button and the ```Sc
 
 ### Layout
 
-- iPhone Potrait
+Iphone Potrait             |  Iphone Landscape
+:-------------------------:|:-------------------------:
+<img src="assets/images/README images/iphonePotrait.gif" width="200">  |  <img src="assets/images/README images/iphoneLandscape.gif" width="500">
 
-<img src="assets/images/README images/iphonePotrait.gif" width="200">
-- iPhone Landscape
 
-<img src="assets/images/README images/iphoneLandscape.gif" width="500">
+- iPhone Potrait/landscape
 
-- Ipad Potrait
+
+
+
+- Ipad Potrait/Landscape
 
 <img src="assets/images/README images/ipadPotrait.gif" width="200">
-- iPad landscape
 
 <img src="assets/images/README images/ipadLandscape.gif" width="500">
 
