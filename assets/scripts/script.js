@@ -71,7 +71,7 @@ btnGreen.addEventListener('click', function(event) {
       }, 300);
     }
   }
-})
+});
 
 btnRed.addEventListener('click', function(event) {
   if (on) {
@@ -84,7 +84,7 @@ btnRed.addEventListener('click', function(event) {
       }, 300);
     }
   }
-})
+});
 
 btnYellow.addEventListener('click', function(event) {
   if (on) {
@@ -97,7 +97,7 @@ btnYellow.addEventListener('click', function(event) {
       }, 300);
     }
   }
-})
+});
 
 btnBlue.addEventListener('click', function(event) {
   if (on) {
@@ -110,7 +110,7 @@ btnBlue.addEventListener('click', function(event) {
       }, 300);
     }
   }
-})
+});
 
 
 //FUNCTIONS AND LOOP SEQUENCES

@@ -132,16 +132,21 @@ of the event listeners, small button functions, loops as well as whether you los
 
 ### Initiation
 
-To play the game, players need to 1st press the ```Power``` checkbox [x]on the top-right hand side and after press the ```start``` button. 
+To play the game, players need to 1st press the ```Power``` checkbox on the top-right hand side and after press the ```start``` button. 
 as soon as they are pressed the loop will begin on the four button and the ```Score`` will initiate counting. 
 
 ## UI / UX
 
+
+
 ### Layout
 
-- 
--
--
+- iPhone Potrait
+
+<img src="assets/images/README images/iphonePotrait.gif" width="300">
+- iPhone Landscape
+- Ipad Potrait
+- iPad landscape
 
 ### Mobile Display
 
