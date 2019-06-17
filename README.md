@@ -106,7 +106,7 @@ let redBtnAudio = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound2.m
 let yellowBtnAudio = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound3.mp3');//audio for button yellow
 let greenBtnAudio = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound4.mp3');//audio for button green
 ```
-Moreover, with all the four colors declared within the code, an event listener is made for each button to 
+Moreover, with all the four buttons declared within the code, an event listener is made for each button to 
 represent its effect into the game.
 ```
 btnGreen.addEventListener('click', function(event) {
@@ -123,11 +123,17 @@ btnGreen.addEventListener('click', function(event) {
 });
 ```
 Using the ```btnGreen``` as a example you can see its functionality. Using conditionals the event describes 
-the player order index to be used with the game loop, with the ```check()``` fucntion that gives the player choice verification
-as well as its own function called ```first()``` that all the other three buttons/colors have.
+the player order index to be used with the game loop as ```1```, with the ```check()``` fucntion that gives the player choice verification
+as well as its own function called ```first()``` that all the other three buttons/colors have. The ```clearColor()``` function, 
+for instance, is the set of colors for each button in wich will display each button with its initial color.
 
+The other four function ```play()```, ```gameTurn()```, ```check()``` and ```win()``` are the main batchs that will manage all 
+of the event listeners, small button functions, loops as well as whether you lose or win. 
 
 ### Initiation
+
+To play the game, players need to 1st press the ```Power``` checkbox [x]on the top-right hand side and after press the ```start``` button. 
+as soon as they are pressed the loop will begin on the four button and the ```Score`` will initiate counting. 
 
 ## UI / UX
 
