@@ -135,20 +135,29 @@ of the event listeners, small button functions, loops as well as whether you los
 To play the game, players need to 1st press the ```Power``` checkbox on the top-right hand side and after press the ```start``` button. 
 as soon as they are pressed the loop will begin on the four button and the ```Score`` will initiate counting. 
 
-## UI / UX
-
-
-
+## UX
 ### Layout
 
-Iphone Potrait             |  Iphone Landscape
+The Simon game is a game that doesn't need more than a page, so I chose to only display the game in only one page (SPA).
+Therefore, as I aimed kids rather than adults, the game is much more colorful if compared with the majority of the Simon's 
+projects that are normally made. Also, the aplication is displayed with a carosel (only on desktops and Ipad Pro) in the first section, 
+with its normal game on the second section. In addition, I displayed a color scheme on the background of the game section that 
+changes its color every 20 seconds, to keep the player engaged with the game.
+### Mobile Display
+
+>This images represent the UI of iphone on potrait and landscape mode. 
+
+iPhone Potrait             |  iPhone Landscape
 :-------------------------:|:-------------------------:
 <img src="assets/images/README images/iphonePotrait.gif" width="200">  |  <img src="assets/images/README images/iphoneLandscape.gif" width="450">
 
 
-- Ipad Potrait/Landscape
+### Tablet Display
 
-Solarized dark             |  Solarized Ocean
+>This images represent the UI of iphone on potrait and landscape mode.
+
+
+iPad potrait            | iPad landscape
 :-------------------------:|:-------------------------:
 <img src="assets/images/README images/ipadPotrait.gif" width="250">  | <img src="assets/images/README images/ipadLandscape.gif" width="400">
 
@@ -156,17 +165,15 @@ Solarized dark             |  Solarized Ocean
 
 
 
-### Mobile Display
 
-- Put your comment about this device here
 
-### Tablet Display
 
-- Put your comment about this device here
 
 ### Additional Note
 
 #### Color scheme
+
+- code here
 
 ## Audio Content
 

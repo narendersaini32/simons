@@ -26,4 +26,4 @@ function changeColor() {
 }
 
 //sets the interval time between each color.
-setInterval(changeColor, 10000);
+setInterval(changeColor, 20000);
