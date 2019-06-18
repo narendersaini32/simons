@@ -150,7 +150,7 @@ Iphone Potrait             |  Iphone Landscape
 
 Solarized dark             |  Solarized Ocean
 :-------------------------:|:-------------------------:
-<img src="assets/images/README images/ipadPotrait.gif" width="300">  | <img src="assets/images/README images/ipadLandscape.gif" width="500">
+<img src="assets/images/README images/ipadPotrait.gif" width="200">  | <img src="assets/images/README images/ipadLandscape.gif" width="300">
 
 
 
