@@ -203,45 +203,57 @@ With this approach I could have a much better engaging game.
 
 #### Color scheme
 
+As mentioned before, this project Simons game has two different sections on desktop, 
+and only one on smart phones as well as in the majority of ipads. Therefore, 
+
 - Background colors:
-  - Carosel:
-   - ![#5270ff] Royal Blue, top sphere.
-   - ![#4da408] Olivedrab, left sphere.
-   - ![#e75454] Indianred, right sphere.
-   - ![#fcfe00] Yellow, bottom sphere.
-   - ![#79fb17] Lawgreen, first background.
-   - ![#7cfbe3] Aquamarine, second background.
-   - ![#e64242] Tomato, third background.
-   - ![#f8e961] Khari, fourth background.
+  - Carosel (first section):
+    - > ![#5270ff] Royal Blue, top sphere.
+    - > ![#4da408] Olivedrab, left sphere.
+    - > ![#e75454] Indianred, right sphere.
+    - > ![#fcfe00] Yellow, bottom sphere.
+    - > ![#79fb17] Lawgreen, first background.
+    - > ![#7cfbe3] Aquamarine, second background.
+    - > ![#e64242] Tomato, third background.
+    - > ![#f8e961] Khari, fourth background.
+  - Game (second section):
+    - letters[0] = [linear-gradient(120deg, #f6d365 0%, #fda085 100%)]
+    - letters[1] = [linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%)]
+    - letters[2] = [linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%)]
+    - letters[3] = [linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%)]
+    - letters[4] = [linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%)]
+    - letters[5] = [linear-gradient(to top, #0ba360 0%, #3cba92 100%)]
+    - letters[6] = [linear-gradient(to top, #00c6fb 0%, #005bea 100]
+    - letters[7] = [linear-gradient(15deg, #13547a 0%, #80d0c7 100%)]
 
 - Font colors:
-- Carosel
-   - ![#303030] darkslatergray.
-   - ```font-family: 'Luckiest Guy', cursive;``` for the heading.
-   - ```font-family: 'VT323', monospace;``` for the paragraph.
- - The game
-   - ![#21252a] darkslatergray (same name, different code).
-   - ![#ffffff] White button start.
-   - > ```font-family: 'Press Start 2P', cursive;```
-   - > Both have the same font style, but with a different size.
+  - Carosel:
+    - > ![#303030] darkslatergray.
+    - > ```font-family: 'Luckiest Guy', cursive;``` for the heading.
+    - > ```font-family: 'VT323', monospace;``` for the paragraph.
+  - The game:
+    - > ![#21252a] darkslatergray (same name, different code).
+    - > ![#ffffff] White button start.
+    - > ```font-family: 'Press Start 2P', cursive;```
+    - > Both have the same font style, but with a different size.
 
 - Four buttons:
-- Off state:
-  - > ![blue].
-  - > ![green].
-  - > ![red].
-  - > ![#FF9914] Dark tangerine.
-- On state:
-  - > ![darkblue]
-  - > ![darkgreen]
-  - > ![darkred]
-  - > ![goldenrod]
+  - Off state:
+    - > ![blue].
+    - > ![green].
+    - > ![red].
+    - > ![#FF9914] Dark tangerine.
+  - On state:
+    - > ![darkblue]
+    - > ![darkgreen]
+    - > ![darkred]
+    - > ![goldenrod]
 
-- On flash:
-  - > ![lightblue].
-  - > ![lightgreen].
-  - > ![tomato].
-  - > ![yellowd].
+  - On flash:
+    - > ![lightblue].
+    - > ![lightgreen].
+     - > ![tomato].
+    - > ![yellow].
 
 ## Audio Content
 
