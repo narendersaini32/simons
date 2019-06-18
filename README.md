@@ -351,10 +351,13 @@ If you need to test the responsiveness of the website yourself you can use the s
 The deployment of this project was done using Cloud9 IDE as well as it working directory and
 terminal.
 
-- Working directory:
-  - The deployment of this project wasn't directly keeped on the loc
-  - 
-<iframe frameborder="0" style="width:100%;height:464px;" src="https://www.draw.io/?lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1#G1La5IX3Xw5pj6HDCwNJH2rgv5Mwf_uTPp"></iframe>
+- Local repository:
+  - The deployment of this project was directly sent to the remote github repository.
+- Remote repository:
+  - As I was using the Cloud9 ide I did not neet to ```git fetch``` or ```git clone```
+    as even using other devices I could log into my C9 account and continue working on my project.
+  
+  <img src="/assets/images/README images/flowchart.PNG" width="500">
 
 
 ## Credits
