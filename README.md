@@ -145,7 +145,7 @@ with its normal game on the second section. In addition, I displayed a color sch
 changes its color every 20 seconds, to keep the player engaged with the game.
 ### Mobile Display
 
->This images represent the UI of iphone on potrait and landscape mode. 
+> This images represent the UI of iphone on potrait and landscape mode. 
 
 iPhone Potrait             |  iPhone Landscape
 :-------------------------:|:-------------------------:
@@ -154,7 +154,7 @@ iPhone Potrait             |  iPhone Landscape
 
 ### Tablet Display
 
->This images represent the UI of iphone on potrait and landscape mode.
+> This images represent the UI of iphone on potrait and landscape mode.
 
 
 iPad potrait            | iPad landscape
@@ -162,18 +162,56 @@ iPad potrait            | iPad landscape
 <img src="assets/images/README images/ipadPotrait.gif" width="250">  | <img src="assets/images/README images/ipadLandscape.gif" width="400">
 
 
-
-
-
-
-
-
-
 ### Additional Note
+
+The different colors that appears on the backround of the game is a set of eight different linear gradients.
+I used this set of colors within a function adapted from a very simple code I learned on YT.
+The normal approach on that code was simply to change the bacground color, but in this current project
+I changed to be more sofisticated adding linear gradient instead of simple colors. 
+
+```
+var change = document.getElementById("meBaby"); // add to the top
+
+//This function/object get eight different linear gradients in an array and display its as index randomly.
+
+function getRandomColor() {
+    var letters = [
+         'linear-gradient(120deg, #f6d365 0%, #fda085 100%)',
+        'linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%)',
+        'linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%)',
+        'linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%)',
+        'linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%)',
+        'linear-gradient(to top, #0ba360 0%, #3cba92 100%)',
+        'linear-gradient(to top, #00c6fb 0%, #005bea 100',
+        'linear-gradient(15deg, #13547a 0%, #80d0c7 100%)'
+    ];
+    var color = letters[Math.floor(Math.random() * letters.length)];
+    return color;
+}
+
+// Using the getRandomColor index its change the background colors.
+
+function changeColor() {
+    change.style.background = getRandomColor();
+}
+
+//sets the interval time between each color.
+setInterval(changeColor, 20000);//set to 20 seconds<<
+```
+With this approach I could have a much better engaging game.
 
 #### Color scheme
 
-- code here
+- Background colors:
+
+- Font colors:
+
+- Four buttons:
+
+- Normal state:
+
+-- On flash:
+
 
 ## Audio Content
 
