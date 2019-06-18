@@ -175,6 +175,7 @@ var change = document.getElementById("meBaby"); // add to the top
 //This function/object get eight different linear gradients in an array and display its as index randomly.
 
 function getRandomColor() {
+    //object with multiples colors as linear-gradients
     var letters = [
          'linear-gradient(120deg, #f6d365 0%, #fda085 100%)',
         'linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%)',
@@ -185,12 +186,12 @@ function getRandomColor() {
         'linear-gradient(to top, #00c6fb 0%, #005bea 100',
         'linear-gradient(15deg, #13547a 0%, #80d0c7 100%)'
     ];
+    //returns a random color from the letters object using their index.
     var color = letters[Math.floor(Math.random() * letters.length)];
     return color;
 }
 
 // Using the getRandomColor index its change the background colors.
-
 function changeColor() {
     change.style.background = getRandomColor();
 }
@@ -203,6 +204,15 @@ With this approach I could have a much better engaging game.
 #### Color scheme
 
 - Background colors:
+ - carosel:
+   - ![#5270ff] Royal Blue, top sphere.
+   - ![#4da408] Olivedrab, left sphere.
+   - ![]
+   - ![]
+   - ![]
+   - ![]
+   - ![]
+   - ![]
 
 - Font colors:
 
