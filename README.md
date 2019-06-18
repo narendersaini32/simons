@@ -205,32 +205,43 @@ With this approach I could have a much better engaging game.
 
 - Background colors:
   - Carosel:
-   > ![#5270ff] Royal Blue, top sphere.
-   > ![#4da408] Olivedrab, left sphere.
-   > ![#e75454] Indianred, right sphere.
-   > ![#fcfe00] Yellow, bottom sphere.
-   > ![#79fb17] Lawgreen, first background.
-   > ![#7cfbe3] Aquamarine, second background.
-   > ![#e64242] Tomato, third background.
-   > ![#f8e961] Khari, fourth background.
+   - ![#5270ff] Royal Blue, top sphere.
+   - ![#4da408] Olivedrab, left sphere.
+   - ![#e75454] Indianred, right sphere.
+   - ![#fcfe00] Yellow, bottom sphere.
+   - ![#79fb17] Lawgreen, first background.
+   - ![#7cfbe3] Aquamarine, second background.
+   - ![#e64242] Tomato, third background.
+   - ![#f8e961] Khari, fourth background.
 
 - Font colors:
 - Carosel
-   > ![#303030] darkslatergray.
-   > ```font-family: 'Luckiest Guy', cursive;``` for the heading.
-   > ```font-family: 'VT323', monospace;``` for the paragraph.
+   - ![#303030] darkslatergray.
+   - ```font-family: 'Luckiest Guy', cursive;``` for the heading.
+   - ```font-family: 'VT323', monospace;``` for the paragraph.
  - The game
-   > ![#21252a] darkslatergray (same name, different code).
-   > ![#ffffff] White button start.
-   > ```font-family: 'Press Start 2P', cursive;```
-   > Both have the same font style, but with a different size.
+   - ![#21252a] darkslatergray (same name, different code).
+   - ![#ffffff] White button start.
+   - > ```font-family: 'Press Start 2P', cursive;```
+   - > Both have the same font style, but with a different size.
 
 - Four buttons:
+- Off state:
+  - > ![blue].
+  - > ![green].
+  - > ![red].
+  - > ![#FF9914] Dark tangerine.
+- On state:
+  - > ![darkblue]
+  - > ![darkgreen]
+  - > ![darkred]
+  - > ![goldenrod]
 
-- Normal state:
-
--- On flash:
-
+- On flash:
+  - > ![lightblue].
+  - > ![lightgreen].
+  - > ![tomato].
+  - > ![yellowd].
 
 ## Audio Content
 
