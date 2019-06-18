@@ -295,9 +295,93 @@ let greenBtnAudio = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound4
 
 ## Testing
 
--
+The work was tested in many different real and virtual screens. 
+
+- Phones:
+
+   - Galaxy S5
+   - Pixel 2
+   - Pixel 2XL
+   - iPhone 5/SE
+   - iPhone 6/7/8
+   - iPhone 6/7/8 Plus (virtual and real device)
+   - iPhone X
+
+- Tablets:
+
+   - iPad
+   - iPad Pro
+ 
+- Desktops:
+
+   - ThinkPad x1 Carbon
+   
+- Television
+  
+   - 4k Television (real device)
+
+### How the website was tested?
+
+I used the Chrome developer tool and Responsinator.com to test the website on different screens and my iPhone 6 to know whether the outcomes were working. I tried different websites to try different screens, however not having the real outcome.
+I had some issues to fix such as @media queries with (max/min-device-width) that weren't allowing media queries to be accepted to these websites. Therefore, I changed these media queries from (max/min-device-width) to (max/min-width) and the changes I made worked well appearing all of the changes with no issues.
+
+If you need to test the responsiveness of the website yourself you can use the same tools I used:
+
+- > Chrome Developer Tools:
+    1. Click on the website with the right button;
+    2. Then click inspect;
+    3. Once the Web-developer tools appear, click Ctrl+Shift+M to test the webpage on different screens.
+
+- > Responsinator.com
+    1. follow the link responsinator.com;
+    2. copy the website link (URL) and paste within the field and click go.
+    3. The webpage will be displayed in different screens already not needing to change as same as GCDT.
+
+- Using different approaches and tools of testing.
+
+  - HTML
+    - [W3C html validator](https://validator.w3.org/)
+  - CSS
+    - [W3C css vaidator](https://jigsaw.w3.org/css-validator/)
+  - JavaScript
+    -[jshint](https://jshint.com/)
 
 ## Deployment 
+
+The deployment of this project was done using Cloud9 IDE as well as it working directory and
+terminal.
+
+- Working directory:
+  - The deployment of this project wasn't directly keeped on the loc
+  - 
+<div class="mxgraph" style="max-width:100%;border:1px solid transparent;" 
+data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;nav&quot;:true,
+&quot;resize&quot;:true,&quot;toolbar&quot;:&quot;zoom layers lightbox&quot;,
+&quot;edit&quot;:&quot;_blank&quot;,&quot;xml&quot;:&quot;&lt;mxfile modified=\
+&quot;2019-06-18T23:16:31.579Z\&quot; host=\&quot;www.draw.io\&quot; agent=\&quot;Mozilla/5.0 
+(Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36\&quot; 
+etag=\&quot;iatM0K0DsYJH02zUbpOA\&quot; version=\&quot;10.7.7\&quot; type=\&quot;google\&quot;&gt;&lt;diagram 
+name=\&quot;Page-1\&quot; id=\&quot;74e2e168-ea6b-b213-b513-2b3c1d86103e\&quot;&gt;
+3VrbcqM4EP0aPyYFCDA8xnHmUjtbNTWZ2pndNxlkUEUgVsixvV+/EkjmIoiJE+fmh0RqSU1z+vQF7Bm4zna
+fGSzSP2mMyMyx4t0MLGeOY4PQFf+kZF9L5r4SJAzHalMjuMX/ISW0lHSDY1R2NnJKCcdFVxjRPEcR78ggY3Tb
+3bampHvVAibIENxGkJjSXzjmqZLaltUsfEE4SdWlA08trGB0lzC6ydX1Zg5YV596OYNal9pfpjCm25YI3MzANa
+OU16Nsd42IxFbDVp/7NLJ6sJuhnE85MJ8jPwrnazv0YxgE4EJpuIdko7C4IRiWQvSdCVNnjg+zYgYW+aqU/9Rd8L
+1GrtzijMBczBYpz4gQ2mIYpZjE3+CebqRVJRco6dlCzBhXFBDWgkUFH5IGytkBITkhcIXI4oDxNSWUiaWcVhcsOaN
+3SAsF9Fb1OaxoV0qL1piQ1k7lJCGnOf8EM0wkc/9CLIY5VGJlY6CmQ9eBBCe5kEUCfsQO+LT9oQFGjKNdS6T88xnRDH
+G2F1vUqh/WJ1QouYo524aXvqeUpi1KuppiUMVCctDc8EEMFCUm0sMx6PGNirCZSAPD1SY8o4Q8jpcCyDEBsufWAEDWOQ
+AKDIBEyBDJ85UYJLy66VogSdRBzf93Q/XCRVnBdCU2hMWuWdNKflF2h/NE5ljMRAqk0u5ar7C5Vt29nBC3TOj5q4k56ad
+tijm6LWAkV7cixffc+ISQDJwV8P0pIRl7KIjdySE5IfRG2Tw5FoHXiUXfM6lmDVDNfwam3Vhf/8j++br8we6XWwemP4Mv+
+4FsbXgW5fGVrIiNT1qeFNCw/W/pyUtPT/9ury13ys31bK9nO8xbx8TscEqMm0Nyos/UlqHYqLzHHVTSDYvQw3tEaknQmJ5
+g2Kstv3kDbtMyhgjk+L5r95Av1RW+U1xFtiKNTj66FwI9NtR3pw61a3VPj2112We7PUU1BIaiilmHu34C2YbY1sttCZYGwz
+gWfy8nZR4RebxLypGgnEKV0cAN7Q50jmUWiaEa0XfVs5QI8IZrqF7tcXaopvovVlOnEO9ZiuqtxLauqgJO+C4KauyvfG9SQ
+RUNrhNFZy2o4LFEA12evXpBNWPzZQrqKcURvGZRC7qOMwJ/alHr6bEd71w1zcDPfft5GIA3lYfNp7/z5GHlB8HRgr6LJOxHA
+VqtJz3VQBSsz5uE3Uez7I0lYf0W8HijWWzK9MQukyFBQriqNkiPFzLFVHfiLWbeUmK/4bQmanVAu4KgtVQl4cWCpldKzKnkU
+ynoJRqIn3KyvHBP7mbdBx0W9LOC6bGhrPAcb4SGHTaUGD7Sc6gKqQefQ0dc9irlGITvrxx7Bod+oIxydGo97ne/QYSq7tdI3
+qvAc71zVXA3fMUKPhisJs4fK1a9CbHqfYRYnYeXvRdC/QR/5hdC/gu1gzoPvJ9+8JBSjj+U67T0pH7wse3FCP9H+sGBlPWi/W
+A4tR2MaJbJQf87yvO9hjzSWDu95D8A5bleOw4iOT+e+wXtCzlcE7RTRWDRqgcRgWWJoy5UY9/cjH/7MyGxj0D7Mjna9tyu5059
+ae+71sOKRnK0wBvuW9vU48mowa49bHDDllrjxAIgps2PEOrtzS89wM3/&lt;/diagram&gt;&lt;/mxfile&gt;&quot;}"></div>
+<script type="text/javascript" src="https://www.draw.io/js/viewer.min.js"></script>
+
 
 ## Credits
 

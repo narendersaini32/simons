@@ -266,22 +266,22 @@ label {
 /*-----------------------button collors*/
 
 #btnBlue {
-    /*background-color: blue;*/
+    background-color: blue;
     padding-bottom: 40px;
 }
 
 #btnGreen {
-    /*background-color: green;*/
+    background-color: green;
     padding-right: 40px;
 }
 
 #btnRed {
-    /*background-color: red;*/
+    background-color: red;
     padding-left: 40px;
 }
 
 #btnYellow {
-    /*background-color: #FF9914;*/
+    background-color: #FF9914;
 }
 
 /*--Samuel Thornton --BOX-SHADOW DESIGN FOUR BUTTONS*/
