@@ -356,8 +356,10 @@ terminal.
 - Remote repository:
   - As I was using the Cloud9 ide I did not neet to ```git fetch``` or ```git clone```
     as even using other devices I could log into my C9 account and continue working on my project.
+
+
   
-  <img src="/assets/images/README images/flowchart.PNG" width="500">
+  <img src="assets/images/README images/flowchart.PNG" width="800">
 
 
 ## Credits
