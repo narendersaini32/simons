@@ -204,17 +204,26 @@ With this approach I could have a much better engaging game.
 #### Color scheme
 
 - Background colors:
- - carosel:
+  - Carosel:
    - ![#5270ff] Royal Blue, top sphere.
    - ![#4da408] Olivedrab, left sphere.
-   - ![]
-   - ![]
-   - ![]
-   - ![]
-   - ![]
-   - ![]
+   - ![#e75454] Indianred, right sphere.
+   - ![#fcfe00] Yellow, bottom sphere.
+   - ![#79fb17] Lawgreen, first background.
+   - ![#7cfbe3] Aquamarine, second background.
+   - ![#e64242] Tomato, third background.
+   - ![#f8e961] Khari, fourth background.
 
 - Font colors:
+- Carosel
+ - ![#303030] darkslatergray.
+ - ```font-family: 'Luckiest Guy', cursive;``` for the heading.
+ - ```font-family: 'VT323', monospace;``` for the paragraph.
+ - The game
+ - ![#21252a] darkslatergray (same name, different code).
+ - ![#ffffff] White button start.
+ - ```font-family: 'Press Start 2P', cursive;```
+ - Both have the same font style, but with a different size.
 
 - Four buttons:
 
