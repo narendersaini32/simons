@@ -217,14 +217,14 @@ and only one on smart phones as well as in the majority of ipads. Therefore,
     - > ![#e64242] Tomato, third background.
     - > ![#f8e961] Khari, fourth background.
   - Game (second section):
-    - letters[0] = [linear-gradient(120deg, #f6d365 0%, #fda085 100%)]
-    - letters[1] = [linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%)]
-    - letters[2] = [linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%)]
-    - letters[3] = [linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%)]
-    - letters[4] = [linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%)]
-    - letters[5] = [linear-gradient(to top, #0ba360 0%, #3cba92 100%)]
-    - letters[6] = [linear-gradient(to top, #00c6fb 0%, #005bea 100]
-    - letters[7] = [linear-gradient(15deg, #13547a 0%, #80d0c7 100%)]
+    - > letters[0] = [linear-gradient(120deg, #f6d365 0%, #fda085 100%)]
+    - > letters[1] = [linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%)]
+    - > letters[2] = [linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%)]
+    - > letters[3] = [linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%)]
+    - > letters[4] = [linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%)]
+    - > letters[5] = [linear-gradient(to top, #0ba360 0%, #3cba92 100%)]
+    - > letters[6] = [linear-gradient(to top, #00c6fb 0%, #005bea 100]
+    - > letters[7] = [linear-gradient(15deg, #13547a 0%, #80d0c7 100%)]
 
 - Font colors:
   - Carosel:
@@ -252,7 +252,7 @@ and only one on smart phones as well as in the majority of ipads. Therefore,
   - On flash:
     - > ![lightblue].
     - > ![lightgreen].
-     - > ![tomato].
+    - > ![tomato].
     - > ![yellow].
 
 ## Audio Content
