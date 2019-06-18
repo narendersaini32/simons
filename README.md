@@ -257,9 +257,41 @@ and only one on smart phones as well as in the majority of ipads. Therefore,
 
 ## Audio Content
 
+The are four different audios used in the game in wich are used 
+when each of the four buttons is triggered whether by the CPU or players.
+Therefore, each of the buttons are assigned to a variable then used in different 
+functions to give its own functionality.
+
+```
+let blueBtnAudio = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound1.mp3');//audio for button blue
+let redBtnAudio = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound2.mp3');//audio for button red 
+let yellowBtnAudio = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound3.mp3');//audio for button yellow
+let greenBtnAudio = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound4.mp3');//audio for button green
+```
+
 ## Technologies 
 
-- 
+- The technologies used to develop this application are
+
+- [HTML](https://www.w3.org/TR/html5/)
+   - HTML is the World Wide Web’s core markup language. Used to structurate a website.
+  
+- [CSS](https://www.w3.org/Style/CSS/)
+  - Cascading Style Sheets (CSS) is a simple mechanism for adding style 
+  - (e.g., fonts, colors, spacing) to Web documents.
+  
+- [Bootstrap](https://getbootstrap.com/)
+  - Bootstrap is a free and open-source CSS framework directed at responsive,
+    mobile-first front-end web development. It contains CSS- and JavaScript-baseddesign templates for 
+    typography, forms, buttons, navigation and other interface components.
+
+- [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+  - Alongside HTML and CSS, JavaScript is one of the core technologies of the World Wide Web.
+    JavaScript enables interactive web pages and is an essential part of web applications.
+
+- [Google fonts]()
+  - launched in 2010 Google Web Fonts, Google Fonts is a collection of interactive 
+    application programming interfaces that allow users to use web fonts on their website.
 
 ## Testing
 
