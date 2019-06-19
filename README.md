@@ -351,16 +351,34 @@ If you need to test the responsiveness of the website yourself you can use the s
 The deployment of this project was done using Cloud9 IDE as well as it working directory and
 terminal.
 
+### steps I used to deploy.
+
+1. Create a workspace on Cloud9 environment.
+2. Creat all the files needed for the project.
+3. link all the files to `index.html`.
+4. Creat a repo on github.
+5. Link the github repo to the working directory.
+   1. Commands:
+      1. Initialize the local directory as a Git repository `git init`
+      2. Add the files in myyour new local repository `git add .`
+      3. Commit the files that I've staged in my local repository `git commit -m "First commit"`
+      4. Sets the new remote `$ git remote add origin remote repository URL`
+      2. Verifies the new remote URL `git remote -v`
+      3. Pushes the changes in my local repository `git push origin master`
+
+Once the remote repo was already linked to my working directory, the routine I did to track the 
+project groth are as follows:
+
 - Local repository:
-  - The deployment of this project was directly sent to the remote github repository.
+  - The deployment of the project was directly sent to the remote github repository.
+  
+  </br>
+  <img src="assets/images/README images/flowchart.PNG" width="800">
+  </br>
+
 - Remote repository:
   - As I was using the Cloud9 ide I did not neet to ```git fetch``` or ```git clone```
     as even using other devices I could log into my C9 account and continue working on my project.
-
-
-  
-  <img src="assets/images/README images/flowchart.PNG" width="800">
-
 
 ## Credits
 
