@@ -6,7 +6,11 @@ body {
     font-family: sans-serif;
 }
 
-/*---------------------Images*/
+/*===================\"\"\+|||+/"/"/======================*/
+/*                                                        */
+/*               HEADINGS and PARGRAPHS                   */
+/*                                                        */
+/*=====================/"/=/\=\"\=========================*/
 
 h3 {
     font-family: 'Luckiest Guy', cursive;
@@ -37,6 +41,12 @@ p {
      z-index: 2;*/
 }
 
+/*===================\"\"\+|||+/"/"/======================*/
+/*                                                        */
+/*                . - +  IMAGES  + - .                    */
+/*                                                        */
+/*=====================/"/=/\=\"\=========================*/
+
 .image1 h2 {
     font-size: 3rem;
     margin: 0;
@@ -47,51 +57,11 @@ p {
     color: #ffff00;
 }
 
-.container#meBaby {
-    min-height: 100vh;
-    min-width: 100%;
-}
-
-/*====================PULSE BUTTON========================*/
-
-/*---------------https://www.solodev.com*/
-
-.ct-btn-scroll {
-    width: 49px;
-    /*the size of the image*/
-    height: 49px;
-    /*the size of the image*/
-    position: absolute;
-    left: 50%;
-    top: 90%;
-    margin: 0;
-    padding: 0;
-    z-index: 9;
-    border-radius: 50%;
-    -webkit-transition: background-color 0.25s ease-in-out;
-    transition: background-color 0.25s ease-in-out;
-}
-
-.ct-btn-scroll:hover {
-    background-color: #FF4500;
-}
-
-/*----http://www.tipue.com/blog/css-pulse-buttons/*/
-
-@keyframes shadow-pulse {
-    0% {
-        box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.5);
-    }
-    100% {
-        box-shadow: 0 0 0 35px rgba(0, 0, 0, 0);
-    }
-}
-
-.ct-btn-scroll {
-    animation: shadow-pulse 2s infinite;
-}
-
-/*----------------------Settings*/
+/*===================\"\"\+|||+/"/"/======================*/
+/*                                                        */
+/*                  . - + SETTINGS + - .                  */
+/*                                                        */
+/*=====================/"/=/\=\"\=========================*/
 
 .section2 {
     padding-top: 50px;
@@ -152,7 +122,11 @@ label {
     top: 3px;
 }
 
-/*================FONTS FOR THE SETTHINGS WORDS*/
+/*===================\"\"\+|||+/"/"/======================*/
+/*                                                        */
+/*      . - + FONTS FOR THE SETTHINGS WORDS + - .         */
+/*                                                        */
+/*=====================/"/=/\=\"\=========================*/
 
 .level h2 {
     font-family: 'Press Start 2P', cursive;
@@ -173,7 +147,11 @@ label {
     font-size: 40px;
 }
 
-/*----------checkbox--------------*/
+/*===================\"\"\+|||+/"/"/======================*/
+/*                                                        */
+/*               . - + CHECKBOXES + - .                  */
+/*                                                        */
+/*=====================/"/=/\=\"\=========================*/
 
 @supports (zoom:2) {
     input[type=checkbox] {
@@ -192,8 +170,12 @@ label {
 }
 
 
+/*===================\"\"\+|||+/"/"/======================*/
+/*                                                        */
+/*                . - + START BUTTON + - .                */
+/*                                                        */
+/*=====================/"/=/\=\"\=========================*/
 
-/*-------------push_button from samwebe.com*/
 
 .push_button {
     position: relative;
@@ -263,7 +245,12 @@ label {
     background-image: linear-gradient(top, #D25068, #F66C7B);
 }
 
-/*-----------------------button collors*/
+
+/*===================\"\"\+|||+/"/"/======================*/
+/*                                                        */
+/*              . - + BUTTON COLOR + - .                  */
+/*                                                        */
+/*=====================/"/=/\=\"\=========================*/
 
 #btnBlue {
     background-color: blue;
@@ -284,7 +271,12 @@ label {
     background-color: #FF9914;
 }
 
-/*--Samuel Thornton --BOX-SHADOW DESIGN FOUR BUTTONS*/
+/*===================\"\"\+|||+/"/"/======================*/
+/*                                                        */
+/*         . - + BOX-SHADOW FOUR BUTTONS + - .            */
+/*                                                        */
+/*=====================/"/=/\=\"\=========================*/
+
 
 .card-1 {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -295,7 +287,16 @@ label {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
-/*-------------------------Sections*/
+/*===================\"\"\+|||+/"/"/======================*/
+/*                                                        */
+/*                 . - + SECTIONS + - .                   */
+/*                                                        */
+/*=====================/"/=/\=\"\=========================*/
+
+.container#meBaby {
+    min-height: 100vh;
+    min-width: 100%;
+}
 
 .fourButtons {
     height: 500px;
@@ -328,8 +329,11 @@ label {
     justify-content: center;
 }
 
-
-/*------------------------------------------------------------media queries*/
+/*===================\"\"\+|||+/"/"/======================*/
+/*                                                        */
+/*         +   . - + MEDIA QUERIES + - .  +               */
+/*              * -               - *                     */
+/*=====================/"/=/\=\"\=========================*/
 
 @media only screen and (min-width: 320px) and (max-width: 575px) {
     /*smart phomes potrait only*/
@@ -416,8 +420,6 @@ label {
     }
 }
 
-
-
 @media only screen and (min-width: 576px) and (max-width: 1024px) {
     /*tablets*/
     .scoreName,
@@ -486,7 +488,6 @@ label {
         height: 100px;
     }
 }
-
 
 @media only screen and (min-height: 360px) and (max-height: 414px) {
     /*smart phones landscape only*/

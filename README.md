@@ -410,7 +410,7 @@ project groth are as follows:
 2. [Danpurdy](https://www.danpurdy.co.uk/tutorial/simon-says-game-in-jquery-tutorial/) to explain the game logics.
 3. [W. Kałużny](https://medium.com/front-end-weekly/create-simon-game-in-javascript-d53b474a7416) For the UX.
 4. [sanwebe](https://www.sanwebe.com/2014/02/css3-buttons-examples-with-effects-animations) For the start button.
-5. [Samuel Thornton](https://codepen.io/sdthornton/pen/wBZdXq) For the Hover effect.
+5. [Samuel Thornton](https://codepen.io/sdthornton/pen/wBZdXq) For the box-shadow effects.
 
 This project was created by [Elias Prado](https://github.com/EliasOPrado).
 
