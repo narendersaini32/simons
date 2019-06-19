@@ -337,6 +337,12 @@ If you need to test the responsiveness of the website yourself you can use the s
   - JavaScript
     -[jshint](https://jshint.com/)
 
+### Unfixed bugs
+
+ The game has a small bug in which so far I could not figure out how to fix. 
+ If you press any of the four buttons and the start button more than once they begin flashing randomly,
+ outside of the game logic needing to reload the page.
+
 ## Deployment 
 
 The deployment of this project was done using Cloud9 IDE as well as it working directory and
