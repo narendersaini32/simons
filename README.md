@@ -1,25 +1,20 @@
 # Simons Memory Game
 
-
-## Table of contents
-
-DO AFTER ALL PARTS BE DONE.
-
 ## About 
 
 Project Milestone Two - Code Institute
 
 [Simon Game](https://en.wikipedia.org/wiki/Simon_(game)) is a  memory game inspired by a classic eletronic game made by Ralph H.
 Composed with four playable buttons with different colors (red, green, blue and yellow), players have to follow a set of different
-flash ramdom crescent sequence in order to win. 
+ramdom crescent flash sequence to win. 
 
 ### Goal
 
-The main goal of this project is to reproduce the same logic, layout and patterns the Simon Game has with Javascript.
-Being suitable to be played on the internet.
+The main goal of this project is to reproduce the same logic, layout and patterns of the Simon Game using HTM, CSS and JavaScript.
+With the main purpose to be suitable to be played on the internet.
 
 ### Functionality 
-The game layout is composed by two different sections settings and the four playable buttons. 
+The game layout is composed by two different sections - settings and the four playable buttons. 
 Where the settings are composed by **Score Counter**, **Strict checkbox** and **Power Checkbox**. 
 The four playable buttons are composed by four colors **red**, **blue**, **yellow** and **green** 
 in which displays a brighter color in conjunction with a sound.
@@ -27,13 +22,13 @@ in which displays a brighter color in conjunction with a sound.
 #### Settings
 
 The functionality of the three elements of settings are correlated each other as well as with the four playable buttons.
-For instance, all of them are initiated being called into the code by its id with a query selector. 
+For instance, all of them are initiated being called into the code by its `id` using a query selector. 
 
  **Start Button** 
 ```
 const startButton = document.querySelector("#startButton");
 ```
-and added its ```const``` into a event listener as a result: 
+and add its ```const``` into a event listener: 
 ```
 startButton.addEventListener('click', function(event) {
   if (on || win) {
@@ -65,11 +60,11 @@ in which begins to increase in number based on turns made by players success in 
 **Strict Checkbox**
 
 The strict checkbox is the element in which doesn't allow players repeat the same level again multiples times. 
-For instance, if a players is on the level 7 in the game and miss a sequence button he can repeat the same level, 
-however, with the strict checkbox activated the player will not be able to play on the same level again having 
-to continue the game from level-1 again.
+For instance, if a players is on the level 7 in the game and miss a sequence button, he or she can repeat the 
+same level if the strict checkbox is unchecked.However, with the strict checkbox activated, if the player miss
+a sequence the same will not be able to play on the same level again having to continue the game from level-1 again.
 
-The strict checkbox is called into the code by its id and added into an event listener:
+The strict checkbox is called into the code by its `id` and added into an event listener:
 
 ```
 const strictButton = document.querySelector("#strict");
@@ -84,11 +79,12 @@ strictButton.addEventListener('click', function(event) {
   }
 });
 ```
-The only way the ```strictButton``` is added is into the ```check()``` function to provide its fucntionality.
+The only time the ```strictButton```and event-listener were added in the code was inserting it into the 
+```check()``` function to provide its fucntionality in the application.
 
 #### Four playable buttons
 
-The four playable buttons of the Simon game is the place in which all the game logic is joined together. 
+The four playable buttons of the Simon game are the places in which all the game logic is joined together. 
 All of the four button are displayed into the code by its ```id``` and displayed into a ```const``` within ```script.js```.
 In addition, the four buttons are followed by its colors variances as well as its sounds as displayed below:
 
@@ -125,24 +121,25 @@ btnGreen.addEventListener('click', function(event) {
 Using the ```btnGreen``` as a example you can see its functionality. Using conditionals the event describes 
 the player order index to be used with the game loop as ```1```, with the ```check()``` fucntion that gives the player choice verification
 as well as its own function called ```first()``` that all the other three buttons/colors have. The ```clearColor()``` function, 
-for instance, is the set of colors for each button in wich will display each button with its initial color.
+for instance, is the set of colors for each button in wich will display each button with its initial color after the power checkbox is clicked.
 
 The other four function ```play()```, ```gameTurn()```, ```check()``` and ```win()``` are the main batchs that will manage all 
 of the event listeners, small button functions, loops as well as whether you lose or win. 
 
 ### Initiation
 
-To play the game, players need to 1st press the ```Power``` checkbox on the top-right hand side and after press the ```start``` button. 
-as soon as they are pressed the loop will begin on the four button and the ```Score`` will initiate counting. 
+To play the game, players need to 1st press the ```Power``` checkbox on the top-right hand side, after press the ```start``` button. 
+Then, as soon as they are pressed the loop will begin on the four button and the ```Score`` will initiate counting. 
 
 ## UX
 ### Layout
 
-The Simon game is a game that doesn't need more than a page, so I chose to only display the game in only one page (SPA).
+The Simon game is a game that doesn't need more than a page, so I chose to only display the game as a single page application (SPA).
 Therefore, as I aimed kids rather than adults, the game is much more colorful if compared with the majority of the Simon's 
 projects that are normally made. Also, the aplication is displayed with a carosel (only on desktops and Ipad Pro) in the first section, 
-with its normal game on the second section. In addition, I displayed a color scheme on the background of the game section that 
+with its normal game on the second section. I displayed a color scheme on the background of the game section that 
 changes its color every 20 seconds, to keep the player engaged with the game.
+
 ### Mobile Display
 
 > This images represent the UI of iphone on potrait and landscape mode. 
@@ -204,60 +201,61 @@ With this approach I could have a much better engaging game.
 #### Color scheme
 
 As mentioned before, this project Simons game has two different sections on desktop, 
-and only one on smart phones as well as in the majority of ipads. Therefore, 
+and only one on smart phones as well as in the majority of ipads. Therefore, follows 
+the color scheme for all sections, fonts and elements of the game:
 
-- Background colors:
-  - Carosel (first section):
-    - > ![#5270ff] Royal Blue, top sphere.
-    - > ![#4da408] Olivedrab, left sphere.
-    - > ![#e75454] Indianred, right sphere.
-    - > ![#fcfe00] Yellow, bottom sphere.
-    - > ![#79fb17] Lawgreen, first background.
-    - > ![#7cfbe3] Aquamarine, second background.
-    - > ![#e64242] Tomato, third background.
-    - > ![#f8e961] Khari, fourth background.
-  - Game (second section):
-    - > letters[0] = [linear-gradient(120deg, #f6d365 0%, #fda085 100%)]
-    - > letters[1] = [linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%)]
-    - > letters[2] = [linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%)]
-    - > letters[3] = [linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%)]
-    - > letters[4] = [linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%)]
-    - > letters[5] = [linear-gradient(to top, #0ba360 0%, #3cba92 100%)]
-    - > letters[6] = [linear-gradient(to top, #00c6fb 0%, #005bea 100]
-    - > letters[7] = [linear-gradient(15deg, #13547a 0%, #80d0c7 100%)]
+1. Background colors:
+   1. Carosel (first section):
+      1. `#5270ff` Royal Blue, top sphere.
+      2. `#4da408` Olivedrab, left sphere.
+      3. `#e75454` Indianred, right sphere.
+      4. `#fcfe00` Yellow, bottom sphere.
+      5. `#79fb17` Lawgreen, first background.
+      6. `#7cfbe3` Aquamarine, second background.
+      7. `#e64242` Tomato, third background.
+      8. `#f8e961` Khari, fourth background.
+   2. Game (second section):
+      1. letters[0] = `linear-gradient(120deg, #f6d365 0%, #fda085 100%)`
+      2. letters[1] = `linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%)`
+      3. letters[2] = `linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%)`
+      4. letters[3] = `linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%)`
+      5. letters[4] = `linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%)`
+      6. letters[5] = `linear-gradient(to top, #0ba360 0%, #3cba92 100%)`
+      7. letters[6] = `linear-gradient(to top, #00c6fb 0%, #005bea 100`
+      8. letters[7] = `linear-gradient(15deg, #13547a 0%, #80d0c7 100%)`
 
-- Font colors:
-  - Carosel:
-    - > ![#303030] darkslatergray.
-    - > ```font-family: 'Luckiest Guy', cursive;``` for the heading.
-    - > ```font-family: 'VT323', monospace;``` for the paragraph.
-  - The game:
-    - > ![#21252a] darkslatergray (same name, different code).
-    - > ![#ffffff] White button start.
-    - > ```font-family: 'Press Start 2P', cursive;```
-    - > Both have the same font style, but with a different size.
+2. Font colors:
+   1. Carosel:
+      1. `#303030` darkslatergray.
+      2. ```font-family: 'Luckiest Guy', cursive;``` for the heading.
+      3. ```font-family: 'VT323', monospace;``` for the paragraph.
+   2. The game:
+      1. `#21252a` darkslatergray (same name, different code).
+      2. `#ffffff` White button start.
+      3. ```font-family: 'Press Start 2P', cursive;```
+      4. Both have the same font style, but with a different size.
 
-- Four buttons:
-  - Off state:
-    - > ![blue].
-    - > ![green].
-    - > ![red].
-    - > ![#FF9914] Dark tangerine.
-  - On state:
-    - > ![darkblue]
-    - > ![darkgreen]
-    - > ![darkred]
-    - > ![goldenrod]
+3. Four buttons colors:
+   1. Off state:
+       1. `blue`
+       2. `green`.
+       3. `red`.
+       4. `#FF9914` Dark tangerine.
+   2. On state:
+       1. `darkblue`
+       2. `darkgreen`
+       3. `darkred`
+       4. `goldenrod`
 
-  - On flash:
-    - > ![lightblue].
-    - > ![lightgreen].
-    - > ![tomato].
-    - > ![yellow].
+   4. On flash:
+      1. `lightblue`.
+      2. `lightgreen`.
+      3. `tomato`.
+      4. `yellow`.
 
 ## Audio Content
 
-The are four different audios used in the game in wich are used 
+There are four different audios used in the game in wich are used 
 when each of the four buttons is triggered whether by the CPU or players.
 Therefore, each of the buttons are assigned to a variable then used in different 
 functions to give its own functionality.
@@ -290,7 +288,7 @@ let greenBtnAudio = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound4
     JavaScript enables interactive web pages and is an essential part of web applications.
 
 - [Google fonts]()
-  - launched in 2010 Google Web Fonts, Google Fonts is a collection of interactive 
+  - Google Fonts is a collection of interactive 
     application programming interfaces that allow users to use web fonts on their website.
 
 ## Testing
@@ -298,27 +296,20 @@ let greenBtnAudio = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound4
 The work was tested in many different real and virtual screens. 
 
 - Phones:
-
-   - Galaxy S5
+  - Galaxy S5
    - Pixel 2
    - Pixel 2XL
    - iPhone 5/SE
    - iPhone 6/7/8
    - iPhone 6/7/8 Plus (virtual and real device)
    - iPhone X
-
 - Tablets:
-
-   - iPad
-   - iPad Pro
- 
+  - iPad
+  - iPad Pro
 - Desktops:
-
-   - ThinkPad x1 Carbon
-   
+  - ThinkPad x1 Carbon
 - Television
-  
-   - 4k Television (real device)
+  - 4k Television (real device)
 
 ### How the website was tested?
 
@@ -327,12 +318,12 @@ I had some issues to fix such as @media queries with (max/min-device-width) that
 
 If you need to test the responsiveness of the website yourself you can use the same tools I used:
 
-- > Chrome Developer Tools:
+-  Chrome Developer Tools:
     1. Click on the website with the right button;
     2. Then click inspect;
     3. Once the Web-developer tools appear, click Ctrl+Shift+M to test the webpage on different screens.
 
-- > Responsinator.com
+-  Responsinator.com
     1. follow the link responsinator.com;
     2. copy the website link (URL) and paste within the field and click go.
     3. The webpage will be displayed in different screens already not needing to change as same as GCDT.
@@ -354,19 +345,19 @@ terminal.
 ### steps I used to deploy.
 
 1. Create a workspace on Cloud9 environment.
-2. Creat all the files needed for the project.
-3. link all the files to `index.html`.
-4. Creat a repo on github.
+2. Create all the files and folders needed for the project.
+3. Link all the files to `index.html`.
+4. Create a repo on github.
 5. Link the github repo to the working directory.
    1. Commands:
       1. Initialize the local directory as a Git repository `git init`
-      2. Add the files in myyour new local repository `git add .`
+      2. Add the files in my new local repository `git add .`
       3. Commit the files that I've staged in my local repository `git commit -m "First commit"`
-      4. Sets the new remote `$ git remote add origin remote repository URL`
+      4. Sets the new remote `git remote add origin remote repository URL`
       2. Verifies the new remote URL `git remote -v`
       3. Pushes the changes in my local repository `git push origin master`
 
-Once the remote repo was already linked to my working directory, the routine I did to track the 
+NOTE: Once the remote repo was already linked to my working directory, the routine I did to track the 
 project groth are as follows:
 
 - Local repository:
@@ -377,16 +368,13 @@ project groth are as follows:
   </br>
 
 - Remote repository:
-  - As I was using the Cloud9 ide I did not neet to ```git fetch``` or ```git clone```
-    as even using other devices I could log into my C9 account and continue working on my project.
+  - As I was using the Cloud9 ide I did not neet to ```git fetch``` or ```git clone```,
+    even using other devices, I could log into my C9 account and continue working on my project.
 
 ## Credits
 
-On this project I am training my knowledge with JS.
-
-## References:
-
  This project had inspiration from:
+ 
 1. [Wojciech Kałużny](https://codepen.io/mrkaluzny/full/pbVxxd/).
 2. [Danpurdy](https://www.danpurdy.co.uk/tutorial/simon-says-game-in-jquery-tutorial/) to explain the game logics.
 3. [W. Kałużny](https://medium.com/front-end-weekly/create-simon-game-in-javascript-d53b474a7416) For the UX.
