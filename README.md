@@ -1,28 +1,29 @@
 # Simons Memory Game
 
-## Table of content
+## Table of contents
+<!--ts-->
 
 1. [About](#about)
    1. [Goal](#Goal)
    2. [Functionality](#Functionality)
    3. [Settings](#Settings)
-   4. [Four playable buttons](#Four playable buttons)
+   4. [Four playable buttons](#Four)
    5. [Initiation](#Initiation)
 2. [UX](#UX)
    1. [Layout](#Layout)
-   2. [Mobile Display](#Mobile Display)
-   3. [Tablet Display](#Tablet Display)
-   4. [Additional Note](#Additional Note)
-   5. [Color scheme](#Color scheme)
-   6. [Audio Content](#Audio Content)
+   2. [Mobile Display](#Mobile)
+   3. [Tablet Display](#Tablet )
+   4. [Additional Note](#Additional )
+   5. [Color scheme](#Color )
+   6. [Audio Content](#Audio )
 3. [Technologies](#Technologies)
 4. [Testing](#Testing)
-   1. [How the website was tested?](#How the website was tested?)
-   2. [Unfixed bugs](#Unfixed bugs)
+   1. [How the website was tested?](#How )
+   2. [Unfixed bugs](#Unfixed)
 5. [Deployment](#Deployment)
-   1. [Steps I used to deploy](#Steps I used to deploy)
+   1. [Steps I used to deploy](#Steps )
 6. [Credits](#Credits)
- 
+ <!--te-->
 
 ## About 
 
