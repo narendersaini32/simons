@@ -18,7 +18,7 @@
    6. [Audio Content](#Audio-Content)
 3. [Technologies](#Technologies)
 4. [Testing](#Testing)
-   1. [How the website was tested?](#How-the-website-was-tested?)
+   1. [How the website was tested?](#How-the-website-was-tested)
    2. [Unfixed bugs](#Unfixed-bugs)
 5. [Deployment](#Deployment)
    1. [Steps I used to deploy](#Steps-I-used-to-deploy)
