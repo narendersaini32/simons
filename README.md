@@ -1,5 +1,29 @@
 # Simons Memory Game
 
+## Table of content
+
+1. [About](#about)
+   1. [Goal](#Goal)
+   2. [Functionality](#Functionality)
+   3. [Settings](#Settings)
+   4. [Four playable buttons](#Four playable buttons)
+   5. [Initiation](#Initiation)
+2. [UX](#UX)
+   1. [Layout](#Layout)
+   2. [Mobile Display](#Mobile Display)
+   3. [Tablet Display](#Tablet Display)
+   4. [Additional Note](#Additional Note)
+   5. [Color scheme](#Color scheme)
+   6. [Audio Content](#Audio Content)
+3. [Technologies](#Technologies)
+4. [Testing](#Testing)
+   1. [How the website was tested?](#How the website was tested?)
+   2. [Unfixed bugs](#Unfixed bugs)
+5. [Deployment](#Deployment)
+   1. [Steps I used to deploy](#Steps I used to deploy)
+6. [Credits](#Credits)
+ 
+
 ## About 
 
 Project Milestone Two - Code Institute
@@ -198,7 +222,7 @@ setInterval(changeColor, 20000);//set to 20 seconds<<
 ```
 With this approach I could have a much better engaging game.
 
-#### Color scheme
+### Color scheme
 
 As mentioned before, this project Simons game has two different sections on desktop, 
 and only one on smart phones as well as in the majority of ipads. Therefore, follows 
@@ -253,7 +277,7 @@ the color scheme for all sections, fonts and elements of the game:
       3. `tomato`.
       4. `yellow`.
 
-## Audio Content
+### Audio Content
 
 There are four different audios used in the game in wich are used 
 when each of the four buttons is triggered whether by the CPU or players.
@@ -348,7 +372,7 @@ If you need to test the responsiveness of the website yourself you can use the s
 The deployment of this project was done using Cloud9 IDE as well as it working directory and
 terminal.
 
-### steps I used to deploy.
+### Steps I used to deploy
 
 1. Create a workspace on Cloud9 environment.
 2. Create all the files and folders needed for the project.
