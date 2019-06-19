@@ -373,7 +373,7 @@ project groth are as follows:
   - The deployment of the project was directly sent to the remote github repository.
   
   </br>
-  <img src="assets/images/README images/flowchart.PNG" width="800">
+  <img src="assets/images/README images/flowchart.PNG" width="650">
   </br>
 
 - Remote repository:
@@ -382,33 +382,17 @@ project groth are as follows:
 
 ## Credits
 
-
-
-
-
-
-
-
-
-
-
-
-
 On this project I am training my knowledge with JS.
 
 ## References:
 
-- This project had inspiration from [Wojciech Kałużny](https://codepen.io/mrkaluzny/full/pbVxxd/).
-- https://www.danpurdy.co.uk/tutorial/simon-says-game-in-jquery-tutorial/
-- https://medium.com/front-end-weekly/create-simon-game-in-javascript-d53b474a7416
-- https://www.sanwebe.com/2014/02/css3-buttons-examples-with-effects-animations (for the "start" button).
-- https://codepen.io/sdthornton/pen/wBZdXq Samuel Thornton (for the rover effect on buttons).
+ This project had inspiration from:
+1. [Wojciech Kałużny](https://codepen.io/mrkaluzny/full/pbVxxd/).
+2. [Danpurdy](https://www.danpurdy.co.uk/tutorial/simon-says-game-in-jquery-tutorial/) to explain the game logics.
+3. [W. Kałużny](https://medium.com/front-end-weekly/create-simon-game-in-javascript-d53b474a7416) For the UX.
+4. [sanwebe](https://www.sanwebe.com/2014/02/css3-buttons-examples-with-effects-animations) For the start button.
+5. [Samuel Thornton](https://codepen.io/sdthornton/pen/wBZdXq) For the Hover effect.
 
-## Bringing Simons Game to another level.
+This project was created by [Elias Prado](https://github.com/EliasOPrado).
 
-- Landing-page like game to introduce it for those who don't know what the game is like.
-- Three different sections 1st: Main, 2nd: parallax, 3rd: The game.
 
-### Fonts:
--> Acme.
-->Press+Start+2P.
