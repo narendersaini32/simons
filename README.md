@@ -36,7 +36,9 @@ ramdom crescent flash sequence to win.
 ### Goal
 
 The main goal of this project is to reproduce the same logic, layout and patterns of the Simon Game using HTM, CSS and JavaScript.
-With the main purpose to be suitable to be played on the internet.
+With the main purpose to be suitable to be played on the internet. The main purpose of this game is aiming 
+directly kids as the majority players, so a considerable range of colors is used in this project
+to match the targeted public.
 
 ### Functionality 
 The game layout is composed by two different sections - settings and the four playable buttons. 
