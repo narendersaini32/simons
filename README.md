@@ -37,7 +37,7 @@ ramdom crescent flash sequence to win.
 
 The main goal of this project is to reproduce the same logic, layout and patterns of the Simon Game using HTM, CSS and JavaScript.
 With the main purpose to be suitable to be played on the internet. The main purpose of this game is aiming 
-directluy kids as the majority players, so a considerable range of colors is used in this project
+directly kids as the majority players, so a considerable range of colors is used in this project
 to match the targeted public.
 
 ### Functionality 
@@ -161,7 +161,7 @@ Then, as soon as they are pressed the loop will begin on the four button and the
 ## UX
 ### Layout
 
-The Simon game is a game that doesn't need more than a page. So, chose to only display the game as a single page application (SPA).
+The Simon game is a game that doesn't need more than a page, so I chose to only display the game as a single page application (SPA).
 Therefore, as I aimed kids rather than adults, the game is much more colorful if compared with the majority of the Simon's 
 projects that are normally made. Also, the aplication is displayed with a carosel (only on desktops and Ipad Pro) in the first section, 
 with its normal game on the second section. I displayed a color scheme on the background of the game section that 
