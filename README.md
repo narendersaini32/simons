@@ -33,6 +33,131 @@ Project Milestone Two - Code Institute
 Composed with four playable buttons with different colors (red, green, blue and yellow), players have to follow a set of different
 ramdom crescent flash sequence to win. 
 
+
+## UX
+### Layout
+
+The Simon game is a game that doesn't need more than a page, so I chose to only display the game as a single page application (SPA).
+Therefore, as I aimed kids rather than adults, the game is much more colorful if compared with the majority of the Simon's 
+projects that are normally made. Also, the aplication is displayed with a carosel (only on desktops and Ipad Pro) in the first section, 
+with its normal game on the second section. I displayed a color scheme on the background of the game section that 
+changes its color every 20 seconds, to keep the player engaged with the game.
+
+### Mobile Display
+
+> This images represent the UI of iphone on potrait and landscape mode. 
+
+iPhone Potrait             |  iPhone Landscape
+:-------------------------:|:-------------------------:
+<img src="assets/images/README images/iphonePotrait.gif" width="200">  |  <img src="assets/images/README images/iphoneLandscape.gif" width="450">
+
+
+### Tablet Display
+
+> This images represent the UI of iphone on potrait and landscape mode.
+
+
+iPad potrait            | iPad landscape
+:-------------------------:|:-------------------------:
+<img src="assets/images/README images/ipadPotrait.gif" width="250">  | <img src="assets/images/README images/ipadLandscape.gif" width="400">
+
+
+
+### Color scheme
+Here the colors will be defined and explained how they are displayed with the usage of `JavaScript` and `CSS`. Therefore, follows the color scheme for all sections, fonts and elements of the game:
+
+1. Background colors:
+
+In this section the following background colors will be displayed as array values. Therefore, these are the value for each color in sequence from the `adtional note` below.
+      1. letters[0] = `linear-gradient(120deg, #f6d365 0%, #fda085 100%)`
+      2. letters[1] = `linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%)`
+      3. letters[2] = `linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%)`
+      4. letters[3] = `linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%)`
+      5. letters[4] = `linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%)`
+      6. letters[5] = `linear-gradient(to top, #0ba360 0%, #3cba92 100%)`
+      7. letters[6] = `linear-gradient(to top, #00c6fb 0%, #005bea 100`
+      8. letters[7] = `linear-gradient(15deg, #13547a 0%, #80d0c7 100%)`
+      
+#### Additional Note
+
+The different colors that appears on the backround of the game is a set of eight different linear gradients.
+I used this set of colors within a function adapted from a very simple code I learned on YT.
+The normal approach on that code was simply to change the bacground color, but in this current project
+I changed to be more sofisticated adding linear gradient instead of simple colors. 
+
+```
+var change = document.getElementById("meBaby"); // add to the top
+
+//This function/object get eight different linear gradients in an array and display its as index randomly.
+
+function getRandomColor() {
+    //object with multiples colors as linear-gradients
+    var letters = [
+        'linear-gradient(120deg, #f6d365 0%, #fda085 100%)',
+        'linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%)',
+        'linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%)',
+        'linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%)',
+        'linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%)',
+        'linear-gradient(to top, #0ba360 0%, #3cba92 100%)',
+        'linear-gradient(to top, #00c6fb 0%, #005bea 100',
+        'linear-gradient(15deg, #13547a 0%, #80d0c7 100%)'
+    ];
+    //returns a random color from the letters object using their index.
+    var color = letters[Math.floor(Math.random() * letters.length)];
+    return color;
+}
+
+// Using the getRandomColor index its change the background colors.
+function changeColor() {
+    change.style.background = getRandomColor();
+}
+
+//sets the interval time between each color.
+setInterval(changeColor, 20000);//set to 20 seconds<<
+```
+With this approach I could have a much better engaging game.
+
+2. Font colors:
+   1. The game:
+   
+      1. Darkslatergray (same name, different code): ![#1252a](https://via.placeholder.com/15/1252a/000000?text=+) `#1252a`.
+      2. White button start: ![#ffffff](https://via.placeholder.com/15/ffffff/000000?text=+) `#ffffff`.
+      3. ```font-family: 'Press Start 2P', cursive;```
+      4. Both have the same font style, but with a different size.
+
+3. Four buttons colors:
+   1. Off state:
+       1. Blue: ![#0000FF](https://via.placeholder.com/15/0000FF/000000?text=+) `blue`.
+       2. Green: ![#008000](https://via.placeholder.com/15/008000/000000?text=+) `yellow`.
+       3. Red: ![#FF0000](https://via.placeholder.com/15/FF0000/000000?text=+) `red`.
+       4. Dark tangerine: ![#FF9914](https://via.placeholder.com/15/FF9914/000000?text=+) `#FF9914`.
+   2. On state:
+       1. Dark blue: ![#00008B](https://via.placeholder.com/15/00008B/000000?text=+) `darkblue`.
+       2. Dark Green: ![#006400](https://via.placeholder.com/15/006400/000000?text=+) `darkgreen`.
+       3. Dark red: ![#8b0000](https://via.placeholder.com/15/8b0000/000000?text=+) `darkred`.
+       4. Golden Rod: ![#daa520](https://via.placeholder.com/15/daa520/000000?text=+) `goldenrod`.
+
+   4. On flash:
+      1. Light Blue: ![#add8e6](https://via.placeholder.com/15/add8e6/000000?text=+) `lightblue`.
+      2. Light Green: ![#90EE90](https://via.placeholder.com/15/90EE90/000000?text=+) `lightgreen`.
+      3. Tomato: ![#ff6347](https://via.placeholder.com/15/ff6347/000000?text=+) `tomato`.
+      4. Yellow: ![#FFFF00](https://via.placeholder.com/15/FFFF00/000000?text=+) `yellow`.
+
+### Audio Content
+
+There are four different audios used in the game in wich are used 
+when each of the four buttons is triggered whether by the CPU or players.
+Therefore, each of the buttons are assigned to a variable then used in different 
+functions to give its own functionality.
+
+```
+let blueBtnAudio = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound1.mp3');//audio for button blue
+let redBtnAudio = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound2.mp3');//audio for button red 
+let yellowBtnAudio = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound3.mp3');//audio for button yellow
+let greenBtnAudio = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound4.mp3');//audio for button green
+```
+
+
 ### Goal
 
 The main goal of this project is to reproduce the same logic, layout and patterns of the Simon Game using HTM, CSS and JavaScript.
@@ -158,141 +283,7 @@ of the event listeners, small button functions, loops as well as whether you los
 To play the game, players need to 1st press the ```Power``` checkbox on the top-right hand side, after press the ```start``` button. 
 Then, as soon as they are pressed the loop will begin on the four button and the ```Score`` will initiate counting. 
 
-## UX
-### Layout
 
-The Simon game is a game that doesn't need more than a page, so I chose to only display the game as a single page application (SPA).
-Therefore, as I aimed kids rather than adults, the game is much more colorful if compared with the majority of the Simon's 
-projects that are normally made. Also, the aplication is displayed with a carosel (only on desktops and Ipad Pro) in the first section, 
-with its normal game on the second section. I displayed a color scheme on the background of the game section that 
-changes its color every 20 seconds, to keep the player engaged with the game.
-
-### Mobile Display
-
-> This images represent the UI of iphone on potrait and landscape mode. 
-
-iPhone Potrait             |  iPhone Landscape
-:-------------------------:|:-------------------------:
-<img src="assets/images/README images/iphonePotrait.gif" width="200">  |  <img src="assets/images/README images/iphoneLandscape.gif" width="450">
-
-
-### Tablet Display
-
-> This images represent the UI of iphone on potrait and landscape mode.
-
-
-iPad potrait            | iPad landscape
-:-------------------------:|:-------------------------:
-<img src="assets/images/README images/ipadPotrait.gif" width="250">  | <img src="assets/images/README images/ipadLandscape.gif" width="400">
-
-
-### Additional Note
-
-The different colors that appears on the backround of the game is a set of eight different linear gradients.
-I used this set of colors within a function adapted from a very simple code I learned on YT.
-The normal approach on that code was simply to change the bacground color, but in this current project
-I changed to be more sofisticated adding linear gradient instead of simple colors. 
-
-```
-var change = document.getElementById("meBaby"); // add to the top
-
-//This function/object get eight different linear gradients in an array and display its as index randomly.
-
-function getRandomColor() {
-    //object with multiples colors as linear-gradients
-    var letters = [
-         'linear-gradient(120deg, #f6d365 0%, #fda085 100%)',
-        'linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%)',
-        'linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%)',
-        'linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%)',
-        'linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%)',
-        'linear-gradient(to top, #0ba360 0%, #3cba92 100%)',
-        'linear-gradient(to top, #00c6fb 0%, #005bea 100',
-        'linear-gradient(15deg, #13547a 0%, #80d0c7 100%)'
-    ];
-    //returns a random color from the letters object using their index.
-    var color = letters[Math.floor(Math.random() * letters.length)];
-    return color;
-}
-
-// Using the getRandomColor index its change the background colors.
-function changeColor() {
-    change.style.background = getRandomColor();
-}
-
-//sets the interval time between each color.
-setInterval(changeColor, 20000);//set to 20 seconds<<
-```
-With this approach I could have a much better engaging game.
-
-### Color scheme
-
-As mentioned before, this project Simons game has two different sections on desktop, 
-and only one on smart phones as well as in the majority of ipads. Therefore, follows 
-the color scheme for all sections, fonts and elements of the game:
-
-1. Background colors:
-   1. Carosel (first section):
-      1. `#5270ff` Royal Blue, top sphere.
-      2. `#4da408` Olivedrab, left sphere.
-      3. `#e75454` Indianred, right sphere.
-      4. `#fcfe00` Yellow, bottom sphere.
-      5. `#79fb17` Lawgreen, first background.
-      6. `#7cfbe3` Aquamarine, second background.
-      7. `#e64242` Tomato, third background.
-      8. `#f8e961` Khari, fourth background.
-   2. Game (second section):
-      1. letters[0] = `linear-gradient(120deg, #f6d365 0%, #fda085 100%)`
-      2. letters[1] = `linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%)`
-      3. letters[2] = `linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%)`
-      4. letters[3] = `linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%)`
-      5. letters[4] = `linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%)`
-      6. letters[5] = `linear-gradient(to top, #0ba360 0%, #3cba92 100%)`
-      7. letters[6] = `linear-gradient(to top, #00c6fb 0%, #005bea 100`
-      8. letters[7] = `linear-gradient(15deg, #13547a 0%, #80d0c7 100%)`
-
-2. Font colors:
-   1. Carosel:
-      1. `#303030` darkslatergray.
-      2. ```font-family: 'Luckiest Guy', cursive;``` for the heading.
-      3. ```font-family: 'VT323', monospace;``` for the paragraph.
-   2. The game:
-      1. `#21252a` darkslatergray (same name, different code).
-      2. `#ffffff` White button start.
-      3. ```font-family: 'Press Start 2P', cursive;```
-      4. Both have the same font style, but with a different size.
-
-3. Four buttons colors:
-   1. Off state:
-       1. `blue`
-       2. `green`.
-       3. `red`.
-       4. `#FF9914` Dark tangerine.
-   2. On state:
-       1. `darkblue`
-       2. `darkgreen`
-       3. `darkred`
-       4. `goldenrod`
-
-   4. On flash:
-      1. `lightblue`.
-      2. `lightgreen`.
-      3. `tomato`.
-      4. `yellow`.
-
-### Audio Content
-
-There are four different audios used in the game in wich are used 
-when each of the four buttons is triggered whether by the CPU or players.
-Therefore, each of the buttons are assigned to a variable then used in different 
-functions to give its own functionality.
-
-```
-let blueBtnAudio = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound1.mp3');//audio for button blue
-let redBtnAudio = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound2.mp3');//audio for button red 
-let yellowBtnAudio = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound3.mp3');//audio for button yellow
-let greenBtnAudio = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound4.mp3');//audio for button green
-```
 
 ## Technologies 
 
