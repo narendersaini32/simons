@@ -153,6 +153,14 @@ With this approach I could have a much better engaging game.
       3. Tomato: ![#ff6347](https://via.placeholder.com/15/ff6347/000000?text=+) `tomato`.
       4. Yellow: ![#FFFF00](https://via.placeholder.com/15/FFFF00/000000?text=+) `yellow`.
       
+### Wireframes 
+
+The wireframes developed for this project was only taken three types of devices, desktop, tablet and mobile. In addition, the tool used to develop this wireframes was Balsamiq giving the ability to a rapid design.
+
+- [Mobile devices](assets/images/README images/simons_mobile.png)
+- [Tablet devices](assets/images/README images/simons_tablet.png)
+- [Desktop devices](assets/images/README images/simons_desktop.png)
+      
 
 ## Features
 
@@ -171,8 +179,11 @@ let greenBtnAudio = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound4
 ```
 
 ### Functionality 
+
 The game layout is composed by two different sections:
+
   - settings and the four playable buttons. 
+  
   
 Where the settings are composed by:
   - **Score Counter**, 
@@ -180,13 +191,20 @@ Where the settings are composed by:
   - **Power Checkbox**. 
   
 The four playable buttons are composed by four colors:
-  - **red**, **blue**, 
+  - **red**,
+  - **blue**, 
   - **yellow**,
   - **green**.
+
   
-in which displays a brighter color in conjunction with a sound.
+In which displays a brighter color in conjunction with a sound.
 
 ### Settings
+
+
+ <p align="center">
+<img src="assets/images/README images/settings.png" width="">
+</p>
 
 The functionality of the three elements of settings are correlated each other as well as with the four playable buttons.
 For instance, all of them are initiated being called into the code by its `id` using a query selector. 
@@ -203,7 +221,7 @@ startButton.addEventListener('click', function(event) {
   }
 });
 ```
-  - **Power Checkbox** and **Score** 
+#### Power Checkbox and Score 
 
 As mentioned before, the correlation in the settings section is between the power button ```turnOnButton``` 
 and score ```turnCounter```.
@@ -224,7 +242,7 @@ turnOnButton.addEventListener('click', function(event) {
 As soon as the Power checkbox is clicked the Score element into the section initiates with a ```-``` 
 in which begins to increase in number based on turns made by players success in the game.
 
-  - **Strict Checkbox**
+####  Strict Checkbox
 
 The strict checkbox is the element in which doesn't allow players repeat the same level again multiples times. 
 For instance, if a players is on the level 7 in the game and miss a sequence button, he or she can repeat the 
@@ -250,6 +268,11 @@ The only time the ```strictButton```and event-listener were added in the code wa
 ```check()``` function to provide its fucntionality in the application.
 
 ### Four playable buttons
+
+  <p align="center">
+<img src="assets/images/README images/four_buttons.png" width="">
+</p>
+
 
 The four playable buttons of the Simon game are the places in which all the game logic is joined together. 
 All of the four button are displayed into the code by its ```id``` and displayed into a ```const``` within ```script.js```.
@@ -295,7 +318,7 @@ of the event listeners, small button functions, loops as well as whether you los
 
 ### Initiation
 
-To play the game, players need to 1st press the ```Power``` checkbox on the top-right hand side, after press the ```start``` button. 
+To play the game, players need to 1st press the ```Power``` checkbox on the right, after press the ```start``` button. 
 Then, as soon as they are pressed the loop will begin on the four button and the ```Score`` will initiate counting. 
 
 
@@ -340,7 +363,8 @@ The work was tested in many different real and virtual screens.
   - iPad
   - iPad Pro
 - Desktops:
-  - ThinkPad x1 Carbon
+  - ThinkPad x1 Carbon (real device)
+  - Macbook Pro 13" (real device)
 - Television
   - 4k Television (real device)
 
