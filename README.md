@@ -4,25 +4,29 @@
 <!--ts-->
 
 1. [About](#about)
-   1. [Goal](#Goal)
-   2. [Functionality](#Functionality)
-   3. [Settings](#Settings)
-   4. [Four playable buttons](#Four-playable-buttons)
-   5. [Initiation](#Initiation)
 2. [UX](#UX)
-   1. [Layout](#Layout)
-   2. [Mobile Display](#Mobile-Display)
-   3. [Tablet Display](#Tablet-Display)
-   4. [Additional Note](#Additional-Note)
+   1. [Goal](#Goal)
+   2. [Layout](#Layout)
+   3. [Mobile Display](#Mobile-Display)
+   4. [Tablet Display](#Tablet-Display)
    5. [Color scheme](#Color-scheme)
-   6. [Audio Content](#Audio-Content)
-3. [Technologies](#Technologies)
-4. [Testing](#Testing)
+      1. [Additional Note](#Additional-Note)
+3. [Wireframes](#Wireframes)
+4. [Features](#Features)
+   1. [Audio Content](#Audio-Content)
+   2. [Functionality](#Functionality)
+      1. [Settings](#Settings)
+      2. [Power Checkbox and Score](#Power-Checkbox-and-Score)
+      3. [Strict Checkbox](#Strict-Checkbox)
+      4. [Four playable buttons](#Four-playable-buttons)
+5. [Initiation](#Initiation)
+6. [Technologies](#Technologies)
+7. [Testing](#Testing)
    1. [How the website was tested?](#How-the-website-was-tested)
    2. [Unfixed bugs](#Unfixed-bugs)
-5. [Deployment](#Deployment)
+8. [Deployment](#Deployment)
    1. [Steps I used to deploy](#Steps-I-used-to-deploy)
-6. [Credits](#Credits)
+9. [Credits](#Credits)
  <!--te-->
 
 ## About 
@@ -181,9 +185,7 @@ let greenBtnAudio = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound4
 ### Functionality 
 
 The game layout is composed by two different sections:
-
   - settings and the four playable buttons. 
-  
   
 Where the settings are composed by:
   - **Score Counter**, 
@@ -199,7 +201,7 @@ The four playable buttons are composed by four colors:
   
 In which displays a brighter color in conjunction with a sound.
 
-### Settings
+#### Settings
 
 
  <p align="center">
@@ -225,6 +227,21 @@ startButton.addEventListener('click', function(event) {
 
 As mentioned before, the correlation in the settings section is between the power button ```turnOnButton``` 
 and score ```turnCounter```.
+
+
+- Power checkbox with no score as in `turnCounter.innerHTML = "-";`
+
+ <p align="center">
+<img src="assets/images/README images/non_scored_power.png" width="">
+</p>
+
+
+- Output of `turnCounter` will represent the level the player is also displaying a `NO` output if a mistake is done while following the game sequence.
+
+ <p align="center">
+<img src="assets/images/README images/scored_power.png" width="">
+</p>
+
 ```
 turnOnButton.addEventListener('click', function(event) {
   if (turnOnButton.checked == true) {
@@ -243,6 +260,10 @@ As soon as the Power checkbox is clicked the Score element into the section init
 in which begins to increase in number based on turns made by players success in the game.
 
 ####  Strict Checkbox
+
+ <p align="center">
+<img src="assets/images/README images/strict_button.png" width="30%">
+</p>
 
 The strict checkbox is the element in which doesn't allow players repeat the same level again multiples times. 
 For instance, if a players is on the level 7 in the game and miss a sequence button, he or she can repeat the 
@@ -267,16 +288,16 @@ strictButton.addEventListener('click', function(event) {
 The only time the ```strictButton```and event-listener were added in the code was inserting it into the 
 ```check()``` function to provide its fucntionality in the application.
 
-### Four playable buttons
-
-  <p align="center">
-<img src="assets/images/README images/four_buttons.png" width="">
-</p>
-
+#### Four playable buttons
 
 The four playable buttons of the Simon game are the places in which all the game logic is joined together. 
 All of the four button are displayed into the code by its ```id``` and displayed into a ```const``` within ```script.js```.
 In addition, the four buttons are followed by its colors variances as well as its sounds as displayed below:
+
+ <p align="center">
+<img src="assets/images/README images/four_buttons.png" width="30%">
+</p>
+
 
 ```
 //const based by each button.
