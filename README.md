@@ -161,9 +161,9 @@ With this approach I could have a much better engaging game.
 
 The wireframes developed for this project was only taken three types of devices, desktop, tablet and mobile. In addition, the tool used to develop this wireframes was Balsamiq giving the ability to a rapid design.
 
-    - [Mobile devices](assets/images/wireframes/simons_mobile.png)
-    - [Tablet devices](assets/images/wireframes/simons_tablet.png)
-    - [Desktop devices](assets/images/wireframes/simons_desktop.png)
+    - ![Mobile devices](assets/images/wireframes/simons_mobile.png)
+    - ![Tablet devices](assets/images/wireframes/simons_tablet.png)
+    - ![Desktop devices](assets/images/wireframes/simons_desktop.png)
       
 
 ## Features
