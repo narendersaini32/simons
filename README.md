@@ -35,13 +35,21 @@ ramdom crescent flash sequence to win.
 
 
 ## UX
+
+
+### Goal
+
+The main goal of this project is to reproduce the same logic, layout and patterns of the Simon Game using HTM, CSS and JavaScript.
+With the main purpose to be suitable to be played on the internet. The main purpose of this game is aiming 
+directly kids as the majority players, so a considerable range of colors is used in this project
+to match the targeted public.
+
 ### Layout
 
 The Simon game is a game that doesn't need more than a page, so I chose to only display the game as a single page application (SPA).
 Therefore, as I aimed kids rather than adults, the game is much more colorful if compared with the majority of the Simon's 
-projects that are normally made. Also, the aplication is displayed with a carosel (only on desktops and Ipad Pro) in the first section, 
-with its normal game on the second section. I displayed a color scheme on the background of the game section that 
-changes its color every 20 seconds, to keep the player engaged with the game.
+projects that are normally made. Also, I displayed a color scheme on the background of the game section that 
+changes its color every 20 seconds.
 
 ### Mobile Display
 
@@ -68,15 +76,17 @@ Here the colors will be defined and explained how they are displayed with the us
 
 1. Background colors:
 
+   1. letters[0] = `linear-gradient(120deg, #f6d365 0%, #fda085 100%)`
+   2. letters[1] = `linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%)`
+   3. letters[2] = `linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%)`
+   4. letters[3] = `linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%)`
+   5. letters[4] = `linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%)`
+   6. letters[5] = `linear-gradient(to top, #0ba360 0%, #3cba92 100%)`
+   7. letters[6] = `linear-gradient(to top, #00c6fb 0%, #005bea 100`
+   8. letters[7] = `linear-gradient(15deg, #13547a 0%, #80d0c7 100%)`
+
 In this section the following background colors will be displayed as array values. Therefore, these are the value for each color in sequence from the `adtional note` below.
-      1. letters[0] = `linear-gradient(120deg, #f6d365 0%, #fda085 100%)`
-      2. letters[1] = `linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%)`
-      3. letters[2] = `linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%)`
-      4. letters[3] = `linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%)`
-      5. letters[4] = `linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%)`
-      6. letters[5] = `linear-gradient(to top, #0ba360 0%, #3cba92 100%)`
-      7. letters[6] = `linear-gradient(to top, #00c6fb 0%, #005bea 100`
-      8. letters[7] = `linear-gradient(15deg, #13547a 0%, #80d0c7 100%)`
+      
       
 #### Additional Note
 
@@ -126,12 +136,12 @@ With this approach I could have a much better engaging game.
       4. Both have the same font style, but with a different size.
 
 3. Four buttons colors:
-   1. Off state:
+   1. On state:
        1. Blue: ![#0000FF](https://via.placeholder.com/15/0000FF/000000?text=+) `blue`.
        2. Green: ![#008000](https://via.placeholder.com/15/008000/000000?text=+) `yellow`.
        3. Red: ![#FF0000](https://via.placeholder.com/15/FF0000/000000?text=+) `red`.
        4. Dark tangerine: ![#FF9914](https://via.placeholder.com/15/FF9914/000000?text=+) `#FF9914`.
-   2. On state:
+   2. Off state:
        1. Dark blue: ![#00008B](https://via.placeholder.com/15/00008B/000000?text=+) `darkblue`.
        2. Dark Green: ![#006400](https://via.placeholder.com/15/006400/000000?text=+) `darkgreen`.
        3. Dark red: ![#8b0000](https://via.placeholder.com/15/8b0000/000000?text=+) `darkred`.
@@ -142,10 +152,13 @@ With this approach I could have a much better engaging game.
       2. Light Green: ![#90EE90](https://via.placeholder.com/15/90EE90/000000?text=+) `lightgreen`.
       3. Tomato: ![#ff6347](https://via.placeholder.com/15/ff6347/000000?text=+) `tomato`.
       4. Yellow: ![#FFFF00](https://via.placeholder.com/15/FFFF00/000000?text=+) `yellow`.
+      
+
+## Features
 
 ### Audio Content
 
-There are four different audios used in the game in wich are used 
+There are four different audios used in the game that are used 
 when each of the four buttons is triggered whether by the CPU or players.
 Therefore, each of the buttons are assigned to a variable then used in different 
 functions to give its own functionality.
@@ -157,21 +170,23 @@ let yellowBtnAudio = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound
 let greenBtnAudio = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound4.mp3');//audio for button green
 ```
 
-
-### Goal
-
-The main goal of this project is to reproduce the same logic, layout and patterns of the Simon Game using HTM, CSS and JavaScript.
-With the main purpose to be suitable to be played on the internet. The main purpose of this game is aiming 
-directly kids as the majority players, so a considerable range of colors is used in this project
-to match the targeted public.
-
 ### Functionality 
-The game layout is composed by two different sections - settings and the four playable buttons. 
-Where the settings are composed by **Score Counter**, **Strict checkbox** and **Power Checkbox**. 
-The four playable buttons are composed by four colors **red**, **blue**, **yellow** and **green** 
+The game layout is composed by two different sections:
+  - settings and the four playable buttons. 
+  
+Where the settings are composed by:
+  - **Score Counter**, 
+  - **Strict checkbox**,
+  - **Power Checkbox**. 
+  
+The four playable buttons are composed by four colors:
+  - **red**, **blue**, 
+  - **yellow**,
+  - **green**.
+  
 in which displays a brighter color in conjunction with a sound.
 
-#### Settings
+### Settings
 
 The functionality of the three elements of settings are correlated each other as well as with the four playable buttons.
 For instance, all of them are initiated being called into the code by its `id` using a query selector. 
@@ -188,7 +203,7 @@ startButton.addEventListener('click', function(event) {
   }
 });
 ```
-**Power Checkbox** and **Score** 
+  - **Power Checkbox** and **Score** 
 
 As mentioned before, the correlation in the settings section is between the power button ```turnOnButton``` 
 and score ```turnCounter```.
@@ -209,7 +224,7 @@ turnOnButton.addEventListener('click', function(event) {
 As soon as the Power checkbox is clicked the Score element into the section initiates with a ```-``` 
 in which begins to increase in number based on turns made by players success in the game.
 
-**Strict Checkbox**
+  - **Strict Checkbox**
 
 The strict checkbox is the element in which doesn't allow players repeat the same level again multiples times. 
 For instance, if a players is on the level 7 in the game and miss a sequence button, he or she can repeat the 
@@ -234,7 +249,7 @@ strictButton.addEventListener('click', function(event) {
 The only time the ```strictButton```and event-listener were added in the code was inserting it into the 
 ```check()``` function to provide its fucntionality in the application.
 
-#### Four playable buttons
+### Four playable buttons
 
 The four playable buttons of the Simon game are the places in which all the game logic is joined together. 
 All of the four button are displayed into the code by its ```id``` and displayed into a ```const``` within ```script.js```.
