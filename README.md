@@ -161,9 +161,9 @@ With this approach I could have a much better engaging game.
 
 The wireframes developed for this project was only taken three types of devices, desktop, tablet and mobile. In addition, the tool used to develop this wireframes was Balsamiq giving the ability to a rapid design.
 
-- [Mobile devices](assets/images/README images/simons_mobile.png)
-- [Tablet devices](assets/images/README images/simons_tablet.png)
-- [Desktop devices](assets/images/README images/simons_desktop.png)
+   - [Mobile devices](assets/images/README images/simons_mobile.png)
+   - [Tablet devices](assets/images/README images/simons_tablet.png)
+   - [Desktop devices](assets/images/README images/simons_desktop.png)
       
 
 ## Features
@@ -262,7 +262,7 @@ in which begins to increase in number based on turns made by players success in 
 ####  Strict Checkbox
 
  <p align="center">
-<img src="assets/images/README images/strict_button.png" width="30%">
+<img src="assets/images/README images/strict_button.png" width="">
 </p>
 
 The strict checkbox is the element in which doesn't allow players repeat the same level again multiples times. 
