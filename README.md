@@ -1,5 +1,7 @@
 # Simons Memory Game
 
+<img src="assets/images/README images/simons.png" >
+
 ## Table of contents
 <!--ts-->
 
