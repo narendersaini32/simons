@@ -213,7 +213,7 @@ function check() {
   }
 
   if (good == false) {
-    // btnLightColor();
+    btnLightColor();
     turnCounter.innerHTML = "NO!";
     setTimeout(() => {
       turnCounter.innerHTML = turn;
